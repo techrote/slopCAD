@@ -21,8 +21,9 @@ A family of support-free workshop organizers for standard 1/4-inch hex driver bi
 | [v5](v5-dense-contoured-13/) | 13 | dense 4–5–4 | Compact v3-style stand using v4 pocket spacing and softened lower lip |
 | [v6](v6-outward-tilted-13/) | 13 | dense 4–5–4 | Centre pocket vertical; 12 outer pockets tilted 10° outward |
 | [v7](v7-material-efficient-51/) | 51 | 6–7–8–9–8–7–6 | 5.6 mm floor reliefs plus individual 50° tapered outer-wall panels |
+| [v8](v8-tiered-tilt-19/) | 19 | radius-2 hex | Centre vertical; 6 inner pockets at 4° and 12 outer pockets at 8°; larger misaligned chamfers |
 
-**v5 is the compact vertical-pocket baseline; v6 is its splayed-pocket variant; v4 is the high-capacity baseline; v7 is the material-efficiency experiment.**
+**v5 is the compact vertical-pocket baseline; v6 proves the outward-splay concept; v8 develops it into a near-square 19-pocket two-angle stand. v4 is the high-capacity baseline; v7 is the material-efficiency experiment.**
 
 The contoured v3/v4 designs have also received the v5 comfort-lip treatment: the lower flare is 1.2 mm taller and the bottom perimeter has a 0.4 mm 45° chamfer.
 
