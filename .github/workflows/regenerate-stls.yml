@@ -1,0 +1,46 @@
+name: Regenerate STL artifacts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'projects/hex-bit-stand/**/*.scad'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install OpenSCAD
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openscad
+
+      - name: Regenerate STL files
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' scad; do
+            stl="${scad%.scad}.stl"
+            echo "Rendering $scad -> $stl"
+            openscad -o "$stl" "$scad"
+          done < <(find projects/hex-bit-stand -type f -name '*.scad' -print0 | sort -z)
+
+      - name: Commit regenerated artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'projects/hex-bit-stand/**/*.stl'
+          if git diff --cached --quiet; then
+            echo "STLs already match their OpenSCAD sources."
+          else
+            git commit -m "Regenerate STL artifacts"
+            git push
+          fi

@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand evolved through four design iterations.
+The hex bit stand evolved through five committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -12,13 +12,17 @@ The layout changed to a 4–5–4 staggered cluster and the floor was reduced to
 
 ## v3 — contoured body
 
-The rectangular outer block was replaced with a body derived from the outer pocket envelope. A small flared foot, recessed waist band, and contoured top chamfer added visual character without requiring supports.
+The rectangular outer block was replaced with a body derived from the outer pocket envelope. A flared foot, recessed waist band, and contoured top chamfer added visual character without requiring supports.
 
 ## v4 — dense 51-pocket stand
 
-Capacity increased from 13 to 51 pockets using a 6–7–8–9–8–7–6 lattice. Centre pitch was reduced to 8.8 mm. This leaves 1.8 mm between the functional 7.0 mm pocket sections and 0.6 mm at the very top of adjacent 8.2 mm lead-ins.
+Capacity increased from 13 to 51 pockets using a 6–7–8–9–8–7–6 lattice. Centre pitch was reduced to 8.8 mm, leaving 1.8 mm between the functional 7.0 mm pocket sections and 0.6 mm at the very top of adjacent 8.2 mm lead-ins.
 
-The result is approximately four times the capacity of v3 while remaining compact and materially efficient.
+## v5 — dense contoured 13-pocket stand
+
+The compact 4–5–4 format was combined with v4's 8.8 mm dense lattice. The lower lip was then revised after physical handling feedback: its full-height section was increased by 1.2 mm and a 0.4 mm × 0.4 mm 45° chamfer was added around the bottom perimeter.
+
+The same lower-lip comfort revision was backported to the contoured v3 and v4 sources.
 
 ## Common dimensions
 

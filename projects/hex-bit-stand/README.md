@@ -17,8 +17,11 @@ A family of support-free workshop organizers for standard 1/4-inch hex driver bi
 | [v1](v1-grid-16/) | 16 | 4 × 4 grid | Initial rectangular stand |
 | [v2](v2-hex-pattern-13/) | 13 | 4–5–4 | Staggered hex-pocket layout and 1 mm base |
 | [v3](v3-contoured-13/) | 13 | 4–5–4 | Body follows the pocket cluster; faceted outer-wall styling |
-| [v4](v4-dense-51/) | 51 | 6–7–8–9–8–7–6 | Much denser honeycomb packing and higher capacity |
+| [v4](v4-dense-51/) | 51 | 6–7–8–9–8–7–6 | Dense honeycomb packing and high capacity |
+| [v5](v5-dense-contoured-13/) | 13 | dense 4–5–4 | Compact v3-style stand using v4 pocket spacing and softened lower lip |
 
-**v4 is the current recommended design.**
+**v5 is the current compact design; v4 is the high-capacity option.**
 
-Each version folder contains the OpenSCAD source, printable STL, preview image(s), and version-specific notes.
+The contoured v3/v4 designs have also received the v5 comfort-lip treatment: the lower flare is 1.2 mm taller and the bottom perimeter has a 0.4 mm 45° chamfer.
+
+Each version folder contains the OpenSCAD source, printable STL, and version-specific notes.

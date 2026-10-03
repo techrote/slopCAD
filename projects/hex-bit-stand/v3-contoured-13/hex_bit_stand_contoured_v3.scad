@@ -26,13 +26,15 @@ body_h = pocket_depth + base_thickness; // 13 mm total
 
 // Side-wall styling. All horizontal changes are multiples of 0.6 mm.
 foot_flare = 0.6;             // subtle lower plinth
+lower_edge_chamfer = 0.4;      // soften bottom perimeter with a 45-degree chamfer
 waist_inset = 0.6;            // shallow recessed accent band
 top_chamfer_inset = 1.2;      // 2 nozzle widths at the top edge
 
 // Z stations for faceted/tapered wall profile.
 z0 = 0.00;
-z_foot_top = 0.90;
-z_foot_blend = 1.80;
+z_lower_chamfer_top = lower_edge_chamfer;
+z_foot_top = 2.10;             // +1.20 mm lip height
+z_foot_blend = 3.00;           // retain 0.90 mm return-to-wall blend
 z_waist_start = 7.20;
 z_waist_low = 8.00;
 z_waist_high = 8.50;
@@ -85,8 +87,11 @@ module loft_segment(z1, extra1, z2, extra2) {
 
 module styled_body() {
     union() {
-        // Slightly flared base/plinth.
-        loft_segment(z0, foot_flare, z_foot_top, foot_flare);
+        // Taller flared base/plinth with a softened bottom edge.
+        loft_segment(z0, foot_flare - lower_edge_chamfer,
+                     z_lower_chamfer_top, foot_flare);
+        loft_segment(z_lower_chamfer_top, foot_flare,
+                     z_foot_top, foot_flare);
         loft_segment(z_foot_top, foot_flare, z_foot_blend, 0);
 
         // Main wall.
@@ -142,6 +147,10 @@ module stand() {
 }
 
 // ---------- Sanity checks ----------
+assert(lower_edge_chamfer > 0 && lower_edge_chamfer <= foot_flare,
+       "Lower-edge chamfer must fit within the flared foot");
+assert(abs(z_lower_chamfer_top - lower_edge_chamfer) < 0.001,
+       "Lower-edge chamfer is intended to remain 45 degrees");
 assert(total_pockets >= 12, "Stand must hold at least 12 bits");
 assert(body_h - pocket_depth == base_thickness,
        "Pocket depth/base thickness relationship is inconsistent");
