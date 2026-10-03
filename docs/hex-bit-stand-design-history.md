@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand evolved through five committed design iterations.
+The hex bit stand evolved through six committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -23,6 +23,10 @@ Capacity increased from 13 to 51 pockets using a 6–7–8–9–8–7–6 latti
 The compact 4–5–4 format was combined with v4's 8.8 mm dense lattice. The lower lip was then revised after physical handling feedback: its full-height section was increased by 1.2 mm and a 0.4 mm × 0.4 mm 45° chamfer was added around the bottom perimeter.
 
 The same lower-lip comfort revision was backported to the contoured v3 and v4 sources.
+
+## v6 — outward-tilted dense 13-pocket stand
+
+The compact dense layout was adapted so the centre pocket remains vertical while the twelve surrounding pockets tilt **10° radially outward**. To prevent the dense pocket shafts from converging and intersecting below the surface, the v5 floor-centre lattice is retained and each tilted axis splays outward as it rises. The outer mouth centres therefore move about **2.12 mm outward** at the top. The body contour follows that splay through height, and the softened lower-lip treatment is retained.
 
 ## Common dimensions
 
