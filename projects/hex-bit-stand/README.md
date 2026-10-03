@@ -22,9 +22,10 @@ A family of support-free workshop organizers for standard 1/4-inch hex driver bi
 | [v6](v6-outward-tilted-13/) | 13 | dense 4–5–4 | Centre pocket vertical; 12 outer pockets tilted 10° outward |
 | [v7](v7-material-efficient-51/) | 51 | 6–7–8–9–8–7–6 | 5.6 mm floor reliefs plus individual 50° tapered outer-wall panels |
 | [v8](v8-tiered-tilt-19/) | 19 | radius-2 hex | Centre vertical; 6 inner pockets at 4° and 12 outer pockets at 8°; larger misaligned chamfers |
-| [v9](v9-effect-plate-19/) | 19 | radius-2 hex | v8 tilt geometry plus 15° misaligned chamfers on every pocket, inset wall panels, and effect-plate floor reliefs |
+| [v9](v9-effect-plate-19/) | 19 | radius-2 hex | v8 tilt geometry plus universal misaligned chamfers, inset wall panels, and round effect-plate floor reliefs |
+| [v10](v10-effect-plate-hex-floor-19/) | 19 | radius-2 hex | v9 refinement: centre lead-in corrected; 2 mm base with 1 mm / 55° tapered hex floor reliefs and hex through-holes |
 
-**v5 is the compact vertical-pocket baseline; v6 proves the outward-splay concept; v8 develops it into a near-square 19-pocket two-angle stand; v9 is the effect-plate / upside-down-print refinement. v4 is the high-capacity baseline; v7 is the material-efficiency experiment.**
+**v5 is the compact vertical-pocket baseline; v6 proves the outward-splay concept; v8 develops it into a near-square 19-pocket two-angle stand; v10 is the current effect-plate / upside-down-print refinement. v4 is the high-capacity baseline; v7 is the material-efficiency experiment.**
 
 The contoured v3/v4 designs have also received the v5 comfort-lip treatment: the lower flare is 1.2 mm taller and the bottom perimeter has a 0.4 mm 45° chamfer.
 
