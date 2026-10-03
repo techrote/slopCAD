@@ -42,5 +42,9 @@ jobs:
             echo "STLs already match their OpenSCAD sources."
           else
             git commit -m "Regenerate STL artifacts"
+            # The render can take long enough for unrelated documentation/index
+            # commits to land on main. Rebase the generated-artifact commit before
+            # pushing instead of failing with a non-fast-forward race.
+            git pull --rebase origin main
             git push
           fi
