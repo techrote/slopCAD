@@ -10,5 +10,6 @@ A small collection of practical CAD experiments and 3D-printable workshop parts.
   - [v3 — 13-pocket contoured body](projects/hex-bit-stand/v3-contoured-13/)
   - [v4 — dense 51-pocket stand](projects/hex-bit-stand/v4-dense-51/) — high-capacity version
   - [v5 — dense contoured 13-pocket stand](projects/hex-bit-stand/v5-dense-contoured-13/) — compact current version
+  - [v6 — outward-tilted dense 13-pocket stand](projects/hex-bit-stand/v6-outward-tilted-13/) — 12 outer pockets splayed 10°
 - [Design history](docs/hex-bit-stand-design-history.md)
 - [Printing notes](docs/printing.md)
