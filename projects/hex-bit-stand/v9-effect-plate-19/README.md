@@ -53,12 +53,12 @@ The continuous v8 waist groove is removed. In its place, the **18 actual convex
 main-wall facets** each receive a separate v7-style inset panel:
 
 - **1.0 mm border** from the facet edges
-- **1.0 mm recess depth**
+- **1.2 mm recess depth**
 - **50° taper**
 
-The v7 1.2 mm depth was reduced slightly because the compact 19-pocket body has
-shorter/sloped facets. At 1.0 mm depth the shortest panel still retains about
-**4.0 mm** of back-flat width, while preserving useful wall thickness.
+This matches the v7 panel depth. On the compact 19-pocket body the shortest actual convex
+wall face still retains about **3.5 mm** of back-flat width, while leaving roughly
+**1.8 mm** of nominal wall behind the recess.
 
 The softened lower lip and 0.4 mm lower-edge chamfer are retained.
 
