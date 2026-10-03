@@ -2,7 +2,7 @@
 
 The first accepted hex-handle design: a short, chunky handle for a nominal **26 mm hex-to-hex extension shaft**, rebuilt around the concept artwork's broad hard-edged ribs rather than the smoother eight-rib geometry used in discarded prototypes.
 
-![V1 render presentation](../assets/v1-render-presentation.jpg)
+![V1 render presentation](../assets/v1-render-presentation.png)
 
 ## Exterior geometry
 

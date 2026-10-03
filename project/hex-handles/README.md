@@ -26,7 +26,9 @@ The design direction comes from earlier hand-made/mesh-finished handles and the 
 
 ## Current design
 
-![V1 render presentation](assets/v1-render-presentation.jpg)
+![V1 render presentation generated from the committed STL](assets/v1-render-presentation.png)
+
+*The V1 presentation above is rendered directly from the committed STL; the concept artwork remains the styling reference.*
 
 The concept art is a styling reference rather than a dimensional drawing. The accepted V1 deliberately compresses the idea into a much shorter body so the metal extension shaft reinforces roughly **81% of the handle length**.
 

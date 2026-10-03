@@ -19,7 +19,7 @@ The accepted V1 geometry was developed around a printer capable of approximately
 
 The CAD socket is **6.4 mm flat-to-flat** for a nominal 1/4-inch / 6.35 mm hex shaft.
 
-That **0.05 mm nominal per-side clearance is small**. Real fit depends strongly on:
+That **0.025 mm nominal per-side clearance (0.05 mm across flats) is small**. Real fit depends strongly on:
 
 - XY calibration
 - first-layer/elephant-foot compensation
