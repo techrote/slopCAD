@@ -13,5 +13,6 @@ A small collection of practical CAD experiments and 3D-printable workshop parts.
   - [v6 — outward-tilted dense 13-pocket stand](projects/hex-bit-stand/v6-outward-tilted-13/) — 12 outer pockets splayed 10°
   - [v7 — material-efficient dense 51-pocket stand](projects/hex-bit-stand/v7-material-efficient-51/) — relieved pocket floors and tapered wall panels
   - [v8 — tiered-tilt 19-pocket stand](projects/hex-bit-stand/v8-tiered-tilt-19/) — centre vertical, inner ring 4°, outer ring 8°
+  - [v9 — effect-plate tiered-tilt 19-pocket stand](projects/hex-bit-stand/v9-effect-plate-19/) — universal misaligned chamfers, inset wall panels, and chamfered floor reliefs
 - [Design history](docs/hex-bit-stand-design-history.md)
 - [Printing notes](docs/printing.md)
