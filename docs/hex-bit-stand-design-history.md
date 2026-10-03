@@ -46,7 +46,7 @@ A physical v8 print confirmed the two-angle arrangement: with bits inserted, the
 
 v9 keeps the proven v8 **0° / 4° / 8°** tilt scheme and near-square footprint while refining both the wall treatment and print orientation.
 
-The continuous waist groove is removed and replaced by v7-style recessed panels on the **18 actual convex outer-wall facets**. Each panel keeps a **1 mm edge border**, uses a **1.0 mm recess depth**, and tapers inward at **50°**. The slightly shallower depth reflects the shorter/sloped v8 wall facets while retaining useful wall thickness.
+The continuous waist groove is removed and replaced by v7-style recessed panels on the **18 actual convex outer-wall facets**. Each panel keeps a **1 mm edge border**, uses the same **1.2 mm recess depth** as v7, and tapers inward at **50°**. The shortest actual convex wall face still leaves about **3.5 mm** of back-flat width and roughly **1.8 mm** of nominal wall behind the recess.
 
 The mouth geometry now enforces a deliberate **15° rotational mismatch on every pocket**: the functional shaft hexes use the 30° orientation while all horizontal mouth/chamfer hexes use 45°. This extends the scalloped transition to the centre pocket and to outer-ring edge-midpoint pockets that happened to align in v8.
 
