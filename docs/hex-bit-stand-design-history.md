@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand has evolved through nine committed design iterations.
+The hex bit stand has evolved through ten committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -46,16 +46,28 @@ A physical v8 print confirmed the two-angle arrangement: with bits inserted, the
 
 v9 keeps the proven v8 **0° / 4° / 8°** tilt scheme and near-square footprint while refining both the wall treatment and print orientation.
 
-The continuous waist groove is removed and replaced by v7-style recessed panels on the **18 actual convex outer-wall facets**. Each panel keeps a **1 mm edge border**, uses the same **1.2 mm recess depth** as v7, and tapers inward at **50°**. The shortest actual convex wall face still leaves about **3.5 mm** of back-flat width and roughly **1.8 mm** of nominal wall behind the recess.
+The continuous waist groove is removed and replaced by v7-style recessed panels on the **18 actual convex outer-wall facets**. Each panel keeps a **1 mm edge border**, uses the same **1.2 mm recess depth** as v7, and tapers inward at **50°**.
 
-The mouth geometry now enforces a deliberate **15° rotational mismatch on every pocket**: the functional shaft hexes use the 30° orientation while all horizontal mouth/chamfer hexes use 45°. This extends the scalloped transition to the centre pocket and to outer-ring edge-midpoint pockets that happened to align in v8.
+The mouth geometry enforces a deliberate **15° rotational mismatch** by using 30° shaft hexes and 45° horizontal mouth hexes. Slicer inspection showed that this can create an undesirable inward lip on the vertical centre pocket because its lower 7 mm chamfer profile is itself rotated relative to the shaft.
 
-For effect-plate printing, every pocket gains a **5.0 mm through-hole** in the 1 mm base. Instead of leaving a horizontal annular shelf, the cavity transitions over **1.0 mm** from a 7.0 mm circular opening to the 5.0 mm bore. When the stand is printed top-face-down, this creates an approximately **45° self-supporting transition at the hex flats**, avoiding a broad bridge while allowing the normal top surface to take a carbon, holographic, or other effect-plate texture.
+v9 also experimented with circular pocket-floor reliefs for effect-plate printing. Slicer inspection showed that the intended pocket-base transition was not expressed cleanly enough.
+
+## v10 — tapered-hex-floor effect-plate 19-pocket stand
+
+v10 keeps the successful v8/v9 **0° / 4° / 8°** pocket splay and the v7-style inset wall panels, but revises the two problem areas found in the v9 slicer preview.
+
+The centre lead-in now begins on the **exact 30° / 7 mm shaft profile** and twists only as it expands toward the **45° / 8.5 mm mouth**. This preserves the misaligned visual treatment while eliminating the potentially insertion-blocking 7 mm lip. The tilted rings retain the stronger scalloped v9 treatment that had already worked in physical testing.
+
+The structural base increases from **1 mm to 2 mm** while retaining the full **12 mm pocket depth**, giving a 14 mm total stand height. At the bottom of every pocket, its exact horizontal hex cross-section is extruded downward for **1 mm with a 55° inward draft**. The resulting smaller hex profile then cuts straight through the remaining 1 mm of base.
+
+For the vertical centre pocket, the 55° taper offsets each face inward by about **1.428 mm**, producing a nominal through-hole of about **4.14 mm AF**. For tilted pockets, the source analytically derives the exact affine/sheared horizontal cross-section of the tilted shaft and offsets that polygon inward by the same amount, so the taper meets the pocket floor without a ledge.
+
+This creates a much cleaner self-supporting cavity for **top-face-down effect-plate printing** while retaining a true hexagonal through-hole instead of the v9 circular relief.
 
 ## Common dimensions
 
 - Functional hex pocket: **7.0 mm flat-to-flat**
 - Pocket depth: **12.0 mm**
-- Base thickness on current compact designs: **1.0 mm**
 - Primary nozzle target: **0.6 mm**
-- Most early/current vertical designs use a **0.6 mm / 8.2 mm AF** lead-in; v8/v9 use **1.2 mm / 8.5 mm AF**
+- Most early/current vertical designs use a **0.6 mm / 8.2 mm AF** lead-in; v8–v10 use **1.2 mm / 8.5 mm AF**
+- v10 base thickness: **2.0 mm**; earlier compact variants generally use **1.0 mm**
