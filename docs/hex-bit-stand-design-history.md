@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand evolved through seven committed design iterations.
+The hex bit stand has evolved through eight committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -28,14 +28,22 @@ The same lower-lip comfort revision was backported to the contoured v3 and v4 so
 
 The compact dense layout was adapted so the centre pocket remains vertical while the twelve surrounding pockets tilt **10° radially outward**. To prevent the dense pocket shafts from converging and intersecting below the surface, the v5 floor-centre lattice is retained and each tilted axis splays outward as it rises. The outer mouth centres therefore move about **2.12 mm outward** at the top. The body contour follows that splay through height, and the softened lower-lip treatment is retained.
 
+Physical testing confirmed that the outward-splayed arrangement works well with long driver bits. The horizontally generated mouth chamfers intersect the rotated tilted shafts with a visible rotational mismatch; that accidental scalloped detail was retained as a deliberate feature in later tilted variants.
+
 ## v7 — material-efficient dense 51-pocket stand
 
 The v4 high-capacity geometry was revisited for lower material use. Each pocket now has a **5.6 mm circular through-hole** through its 1 mm floor, leaving 0.7 mm support at the middle of each 7 mm hex flat. The old continuous outer waist recess was removed and replaced by separate recessed panels on all **16 planar wall faces**. Each panel keeps a **1 mm border**, cuts **1.2 mm** into the wall, and uses a **50° taper**. The result remains a single watertight solid and reduces CAD solid volume by about **8.9%** relative to the current v4 baseline.
+
+## v8 — tiered-tilt 19-pocket stand
+
+The successful v6 concept was expanded into a true radius-2 hexagonal lattice: **1 centre + 6 inner-ring + 12 outer-ring pockets**. The centre remains vertical, the inner ring tilts **4° outward**, and the outer ring tilts **8° outward**. This produces a much squarer footprint of roughly **53.37 × 50.79 mm** (about **1.05:1**) while keeping a compact 19-bit capacity.
+
+Pocket pitch is **9.0 mm**. The mouth chamfer was enlarged to **1.2 mm high / 8.5 mm AF**, leaving a nominal **0.5 mm top web** before the splay increases separation. The mouth chamfers deliberately remain globally oriented while the tilted shaft hexes rotate into radial local frames, preserving and strengthening the rotationally misaligned/scalloped appearance seen on the printed v6.
 
 ## Common dimensions
 
 - Functional hex pocket: **7.0 mm flat-to-flat**
 - Pocket depth: **12.0 mm**
-- Lead-in height: **0.6 mm**
-- Lead-in mouth: **8.2 mm flat-to-flat**
+- Base thickness on current compact designs: **1.0 mm**
 - Primary nozzle target: **0.6 mm**
+- Most early/current vertical designs use a **0.6 mm / 8.2 mm AF** lead-in; v8 intentionally enlarges this to **1.2 mm / 8.5 mm AF**
