@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand has evolved through eight committed design iterations.
+The hex bit stand has evolved through nine committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -40,10 +40,22 @@ The successful v6 concept was expanded into a true radius-2 hexagonal lattice: *
 
 Pocket pitch is **9.0 mm**. The mouth chamfer was enlarged to **1.2 mm high / 8.5 mm AF**, leaving a nominal **0.5 mm top web** before the splay increases separation. The mouth chamfers deliberately remain globally oriented while the tilted shaft hexes rotate into radial local frames, preserving and strengthening the rotationally misaligned/scalloped appearance seen on the printed v6.
 
+A physical v8 print confirmed the two-angle arrangement: with bits inserted, the 4°/8° splay is visually clear and provides useful separation, while the empty stand does not look conspicuously tilted.
+
+## v9 — effect-plate tiered-tilt 19-pocket stand
+
+v9 keeps the proven v8 **0° / 4° / 8°** tilt scheme and near-square footprint while refining both the wall treatment and print orientation.
+
+The continuous waist groove is removed and replaced by v7-style recessed panels on the **18 actual convex outer-wall facets**. Each panel keeps a **1 mm edge border**, uses a **1.0 mm recess depth**, and tapers inward at **50°**. The slightly shallower depth reflects the shorter/sloped v8 wall facets while retaining useful wall thickness.
+
+The mouth geometry now enforces a deliberate **15° rotational mismatch on every pocket**: the functional shaft hexes use the 30° orientation while all horizontal mouth/chamfer hexes use 45°. This extends the scalloped transition to the centre pocket and to outer-ring edge-midpoint pockets that happened to align in v8.
+
+For effect-plate printing, every pocket gains a **5.0 mm through-hole** in the 1 mm base. Instead of leaving a horizontal annular shelf, the cavity transitions over **1.0 mm** from a 7.0 mm circular opening to the 5.0 mm bore. When the stand is printed top-face-down, this creates an approximately **45° self-supporting transition at the hex flats**, avoiding a broad bridge while allowing the normal top surface to take a carbon, holographic, or other effect-plate texture.
+
 ## Common dimensions
 
 - Functional hex pocket: **7.0 mm flat-to-flat**
 - Pocket depth: **12.0 mm**
 - Base thickness on current compact designs: **1.0 mm**
 - Primary nozzle target: **0.6 mm**
-- Most early/current vertical designs use a **0.6 mm / 8.2 mm AF** lead-in; v8 intentionally enlarges this to **1.2 mm / 8.5 mm AF**
+- Most early/current vertical designs use a **0.6 mm / 8.2 mm AF** lead-in; v8/v9 use **1.2 mm / 8.5 mm AF**
