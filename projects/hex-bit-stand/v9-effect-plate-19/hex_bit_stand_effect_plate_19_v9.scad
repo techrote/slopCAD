@@ -54,7 +54,7 @@ z_top = body_h;
 
 // ---------- v7-style face panels ----------
 panel_border = 1;
-panel_depth = 1;
+panel_depth = 1.2;
 panel_taper_degrees = 50;
 panel_taper_run = panel_depth * tan(panel_taper_degrees);
 panel_front_outset = 1.5; // deliberately crosses the slightly sloped v8 wall
@@ -249,7 +249,7 @@ module all_pockets_and_floor_reliefs() {
 // 18 tapered panel cutters on the actual convex outer-wall faces.
 // The v8 shell grows outward slightly with height; each cutter therefore
 // starts 1.5 mm outside a representative mid-height face before tapering
-// 1.0 mm into the wall. This keeps the opening connected to the exterior
+// 1.2 mm into the wall. This keeps the opening connected to the exterior
 // across the whole sloped facet rather than creating buried voids.
 wall_profile_points = [
     [0, -24.817335],
@@ -348,7 +348,7 @@ assert(minimum_straight_web_unshifted >= 2.0-0.001,
 assert(panel_border == 1.0, "Face-panel border should remain 1 mm");
 assert(abs(panel_taper_degrees-50.0)<0.001,
        "Face-panel taper should remain 50 degrees");
-assert(panel_depth == 1.0,
+assert(panel_depth == 1.2,
        "Panel depth chosen to keep useful back-flat on the short v8 facets");
 assert(lower_edge_chamfer > 0 && lower_edge_chamfer <= foot_flare,
        "Lower-edge chamfer must fit within the flared foot");
