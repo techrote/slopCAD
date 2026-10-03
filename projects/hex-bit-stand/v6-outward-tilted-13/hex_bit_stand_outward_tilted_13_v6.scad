@@ -254,6 +254,8 @@ assert(total_pockets == 13,
        "This variant is specifically the dense 13-pocket stand");
 assert(abs(outer_tilt_degrees - 10.0) < 0.001,
        "Outer-ring tilt must remain 10 degrees");
+assert(top_radial_shift > 2.0 && top_radial_shift < 2.2,
+       "Unexpected outer-mouth displacement for the 10-degree splay");
 assert(lower_edge_chamfer > 0 && lower_edge_chamfer <= foot_flare,
        "Lower-edge chamfer must fit within the flared foot");
 assert(abs(z_lower_chamfer_top - lower_edge_chamfer) < 0.001,
