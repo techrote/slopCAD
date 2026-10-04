@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand has evolved through twelve committed design iterations.
+The hex bit stand has evolved through thirteen committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -87,6 +87,14 @@ Every face can now use the same full **1.2 mm-deep / 50° tapered inset panel** 
 Pocket count, **0° / 4° / 8° / 12°** tilt bands, 2 mm base, 55° tapered hex floor reliefs, corrected centre lead-in, effect-plate orientation, and mouth-chamfer geometry are unchanged. The cleaner shell increases CAD solid volume by about **5.3%** versus v11, an intentional trade for substantially more robust side-wall printing.
 
 The envelope grows slightly to approximately **74.04 × 68.04 × 14.0 mm**.
+
+## v13 — lip-edge panel 37-pocket stand
+
+Physical evaluation of v12 showed the cleaned-up 24-face shell printing well, but the recessed wall panels still retained a visible horizontal strip between their lower edge and the flared lower lip.
+
+v13 turns each wall recess into an **open-bottom pocket** that extends directly to the **upper edge of the lower lip at z = 2.10 mm**. The 1 mm lower border and corresponding bottom taper are removed, while the **1 mm side/top borders**, **1.2 mm recess depth**, and **50° side/top taper** remain unchanged.
+
+A small **0.05 mm boolean overlap** carries the opening just into the lip boundary to prevent a residual shelf. All pocket, tilt, floor-relief, outer-shell, and effect-plate geometry is otherwise unchanged from v12.
 
 ## Common dimensions
 
