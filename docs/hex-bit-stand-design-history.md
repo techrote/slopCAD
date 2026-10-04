@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand has evolved through eleven committed design iterations.
+The hex bit stand has evolved through twelve committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -75,6 +75,18 @@ The v10 2 mm base, exact 55° tapered hex floor reliefs, corrected centre lead-i
 The larger radius-3 outline produces **42 actual outer-wall facets**, including several shorter facets. The wall-panel system therefore keeps the v10 **1.2 mm nominal recess depth** but adaptively reduces depth only on the shortest facets to preserve at least a **0.5 mm back-flat**.
 
 The overall envelope is approximately **72.84 × 67.77 × 14.0 mm**, maintaining a near-square **1.08:1** footprint despite nearly doubling the v10 pocket count.
+
+## v12 — clean-wall tiered-tilt 37-pocket stand
+
+Physical printing of v11 exposed a poor interaction between the **42 short pocket-following wall facets** and the adaptive tapered-panel logic. Several short faces produced narrow triangular residuals that sliced as thin, poorly supported towers and printed badly.
+
+v12 removes that workaround rather than tuning it. The radius-3 pocket envelope is **convexified before the outer-wall offset**, filling the shallow notches between outer-ring pockets and reducing the shell to **24 longer wall faces**. The nominal outer margin increases from **3.0 mm to 3.6 mm**.
+
+Every face can now use the same full **1.2 mm-deep / 50° tapered inset panel** with a 1 mm border. The shortest new face is about **6.78 mm**, still leaving roughly **1.92 mm of back-flat** after the taper, so the adaptive short-face depth logic and its triangular remnants are removed entirely.
+
+Pocket count, **0° / 4° / 8° / 12°** tilt bands, 2 mm base, 55° tapered hex floor reliefs, corrected centre lead-in, effect-plate orientation, and mouth-chamfer geometry are unchanged. The cleaner shell increases CAD solid volume by about **5.3%** versus v11, an intentional trade for substantially more robust side-wall printing.
+
+The envelope grows slightly to approximately **74.04 × 68.04 × 14.0 mm**.
 
 ## Common dimensions
 
