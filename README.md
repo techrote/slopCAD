@@ -17,6 +17,7 @@ A small collection of practical CAD experiments and 3D-printable workshop parts.
   - [v10 — tapered-hex-floor effect-plate 19-pocket stand](projects/hex-bit-stand/v10-effect-plate-hex-floor-19/) — corrected centre lead-in and 55° tapered hex floor reliefs
   - [v11 — tiered-tilt 37-pocket stand](projects/hex-bit-stand/v11-tiered-tilt-37/) — adds an 18-pocket outer ring at 12°
   - [v12 — clean-wall tiered-tilt 37-pocket stand](projects/hex-bit-stand/v12-clean-wall-37/) — convex 24-face shell removes short-facet triangular print artifacts
+  - [v13 — lip-edge panel 37-pocket stand](projects/hex-bit-stand/v13-lip-edge-panels-37/) — wall recesses run directly down to the lower lip
 - [Hex handles](project/hex-handles/) — compact five-rib tool handles with deep hex-shaft reinforcement, epoxy retention pockets, and tail venting.
   - [v1 — 32 mm five-rib angular handle](project/hex-handles/v1-32mm-five-rib/) — 6.4 mm AF socket for a nominal 26 mm embedded hex shaft
 - [Hex bit stand design history](docs/hex-bit-stand-design-history.md)
