@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand has evolved through ten committed design iterations.
+The hex bit stand has evolved through eleven committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -63,6 +63,18 @@ The structural base increases from **1 mm to 2 mm** while retaining the full **1
 For the vertical centre pocket, the 55° taper offsets each face inward by about **1.428 mm**, producing a nominal through-hole of about **4.14 mm AF**. For tilted pockets, the source analytically derives the exact affine/sheared horizontal cross-section of the tilted shaft and offsets that polygon inward by the same amount, so the taper meets the pocket floor without a ledge.
 
 This creates a much cleaner self-supporting cavity for **top-face-down effect-plate printing** while retaining a true hexagonal through-hole instead of the v9 circular relief.
+
+## v11 — tiered-tilt 37-pocket stand
+
+v11 expands the proven v10 radius-2 design into a **radius-3 hexagonal lattice** with **37 pockets**: 1 centre, 6 in ring 1, 12 in ring 2, and 18 in the new outer ring.
+
+The tilt bands are now **0° / 4° / 8° / 12°**. The new 18-pocket outer ring tilts **12° radially outward**, shifting its mouth centres about **2.55 mm outward** over the 12 mm pocket height. Even at 12°, the 7 mm shaft's horizontal projection leaves roughly **1.84 mm** of floor-level web on the 9 mm lattice.
+
+The v10 2 mm base, exact 55° tapered hex floor reliefs, corrected centre lead-in, effect-plate orientation, misaligned/scalloped mouth treatment, lower-lip chamfer, and per-face wall panels are retained.
+
+The larger radius-3 outline produces **42 actual outer-wall facets**, including several shorter facets. The wall-panel system therefore keeps the v10 **1.2 mm nominal recess depth** but adaptively reduces depth only on the shortest facets to preserve at least a **0.5 mm back-flat**.
+
+The overall envelope is approximately **72.84 × 67.77 × 14.0 mm**, maintaining a near-square **1.08:1** footprint despite nearly doubling the v10 pocket count.
 
 ## Common dimensions
 
