@@ -1,24 +1,27 @@
-# Printing notes
+# Printing notes and current design rules
 
-These models are intended for ordinary FDM printing with a **0.6 mm nozzle** and no supports.
+The primary hex-bit-stand target is a **0.6 mm nozzle**. Version-specific orientation and validation instructions take precedence over the early generic base-down notes.
 
-## Suggested baseline
+## Minimum top/bottom feature width — 1.3 mm
 
-- Orientation: flat base on the build plate
-- Nozzle: 0.6 mm
-- Layer height: 0.24–0.30 mm
-- Perimeters: 3–4
-- Supports: none
-- Use normal elephant-foot compensation if dimensional fit is important
+From v15 onward, use **1.3 mm as the minimum actual solid ligament/feature width on top and bottom faces**, especially the visible face printed directly against an effect plate. This is an in-plane width requirement, not a redefinition of layer height or a statement that every Z-thickness must equal 1.3 mm.
 
-For the 1 mm-base versions, choose layer heights that produce a sensible number of bottom layers and ensure the first layer is well calibrated.
+Include material between complete pocket mouths, multi-pocket junctions, exit holes and the exterior perimeter. Account for tilt projection, hex orientation, all cutter unions and intersections, and chamfer geometry. Do not substitute nominal `pitch - flat_to_flat` for actual polygon-to-polygon measurement.
 
-## Pocket fit
+A nozzle's ability to extrude a 0.5 mm line does not make a 0.5 mm face junction a reliable design target. In the owner's v14 representative-section test, interrupted first-layer paths and seams coincided with thin junctions, producing visible gaps and blips. Measuring the supplied v14 STL found top-face gaps down to about **0.024 mm**.
 
-The functional pocket is **7.0 mm flat-to-flat**, giving clearance over a nominal 1/4-inch (6.35 mm) driver bit. Printer calibration, material shrinkage, and elephant foot can affect fit.
+The v15 correction uses aligned shaft/mouth profiles, lattice-aligned shaft roll and 9.3 mm pitch. Its exported top face has **1.424 mm minimum inter-pocket web**; the underside has **4.937 mm** between exits. It also checks the exterior rim and 83 intermediate sections. See [v15](../projects/hex-bit-stand/v15-continuous-web-61/).
 
-If internal features print undersize, increase the OpenSCAD `hex_flat_to_flat` parameter by roughly 0.1–0.2 mm before exporting a new STL.
+A geometry pass is not a guarantee of seam-free toolpaths or a successful physical print. Inspect the first layers in the actual slicer and use a representative section/coupon before committing to the full part. Any new exception below 1.3 mm needs explicit owner agreement.
 
-## Dense v4 notes
+## Orientation and fit
 
-v4 intentionally uses a minimum **0.6 mm web at the very top of adjacent lead-ins**. A modern variable-width/Arachne-style perimeter generator is preferable. The straight 7.0 mm pocket region retains **1.8 mm** between neighbouring pockets.
+Early vertical stands were developed base-down. The later effect-plate variants are intended to be printed **top-face-down**, so the broad pocket-opening face contacts the plate. v15 provides `print_face_down=true` and an optional nine-pocket test coupon in its source.
+
+The functional hex pocket is **7.0 mm AF measured perpendicular to the bit axis**. A horizontal slice of a tilted pocket is slightly stretched; do not mistake that projection for changed bit clearance. Revalidate surface ligaments after changing pocket size, pitch, orientation or entrance dimensions.
+
+The historical 0.24–0.30 mm layer-height and 3–4 perimeter suggestions were starting points, not confirmed settings for every version. The owner's slicer profile and representative print remain the manufacturing authority.
+
+## Historical thin-web experiments
+
+v4/v7 used nominal 0.6 mm mouth webs; several later variants used nominal 0.5 mm spacing estimates. These remain in Git as design history and are **not** certified against the current 1.3 mm minimum. The newer rule supersedes those assumptions for future designs and revisions; it does not silently modify the earlier STLs.

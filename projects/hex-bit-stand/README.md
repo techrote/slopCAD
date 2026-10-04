@@ -1,14 +1,10 @@
 # Hex bit stand
 
-A family of support-free workshop organizers for standard 1/4-inch hex driver bits.
+A family of workshop organizers for standard 1/4-inch hex driver bits, developed through printed prototypes.
 
-## Design target
+## Current design target
 
-- **7.0 mm flat-to-flat** functional hex pockets for easy insertion/removal
-- **12 mm** pocket depth
-- **0.6 mm nozzle** as the primary FDM target
-- support-free printing
-- progressively improved packing and material efficiency
+Functional pockets are **7.0 mm AF normal to the bit axis**, with **12 mm main pocket depth** and a **0.6 mm nozzle** as the primary FDM target. New top/bottom faces must retain **at least 1.3 mm of actual solid ligament** after all cuts, projections and chamfers. Read [the current design/printing rules](../../docs/printing.md); historical thin-web variants are not certified against this newer minimum.
 
 ## Versions
 
@@ -22,15 +18,14 @@ A family of support-free workshop organizers for standard 1/4-inch hex driver bi
 | [v6](v6-outward-tilted-13/) | 13 | dense 4–5–4 | Centre pocket vertical; 12 outer pockets tilted 10° outward |
 | [v7](v7-material-efficient-51/) | 51 | 6–7–8–9–8–7–6 | 5.6 mm floor reliefs plus individual 50° tapered outer-wall panels |
 | [v8](v8-tiered-tilt-19/) | 19 | radius-2 hex | Centre vertical; 6 inner pockets at 4° and 12 outer pockets at 8°; larger misaligned chamfers |
-| [v9](v9-effect-plate-19/) | 19 | radius-2 hex | v8 tilt geometry plus universal misaligned chamfers, inset wall panels, and round effect-plate floor reliefs |
-| [v10](v10-effect-plate-hex-floor-19/) | 19 | radius-2 hex | v9 refinement: centre lead-in corrected; 2 mm base with 1 mm / 55° tapered hex floor reliefs and hex through-holes |
-| [v11](v11-tiered-tilt-37/) | 37 | radius-3 hex | v10 geometry expanded with an 18-pocket outer ring tilted 12° outward |
-| [v12](v12-clean-wall-37/) | 37 | radius-3 hex | Convex 24-face outer shell and uniform inset panels remove v11's short-facet triangular artifacts |
-| [v13](v13-lip-edge-panels-37/) | 37 | radius-3 hex | v12 wall recesses become open-bottom pockets extending directly to the upper edge of the lower lip |
-| [v14](v14-tiered-tilt-61/) | 61 | radius-4 hex | Adds a 24-pocket fourth ring at 16°; 30° nominal mouth mismatch and 1.15 mm chamfer cap keep the steepest bed-facing side near 70° |
+| [v9](v9-effect-plate-19/) | 19 | radius-2 hex | Universal misaligned chamfers, inset wall panels, and round floor reliefs |
+| [v10](v10-effect-plate-hex-floor-19/) | 19 | radius-2 hex | Corrected centre lead-in; 2 mm base with 55° tapered hex floor reliefs |
+| [v11](v11-tiered-tilt-37/) | 37 | radius-3 hex | Adds an 18-pocket outer ring tilted 12° outward |
+| [v12](v12-clean-wall-37/) | 37 | radius-3 hex | Convex clean-wall shell removes short-facet triangular artifacts |
+| [v13](v13-lip-edge-panels-37/) | 37 | radius-3 hex | Wall recesses extend to the lower lip |
+| [v14](v14-tiered-tilt-61/) | 61 | radius-4 hex | Historical 16° outer-ring / misaligned-mouth experiment; first-layer pinch points found |
+| [v15](v15-continuous-web-61/) | 61 | radius-4 hex | Aligned mouths/shaft roll, 9.3 mm pitch, measured 1.424 mm top web and exported-mesh validation |
 
-**v5 is the compact vertical-pocket baseline; v6 proves the outward-splay concept; v8 develops it into a near-square 19-pocket two-angle stand; v10 is the compact effect-plate refinement; v13 is the current 37-pocket / 12° design; v14 extends the same architecture to 61 pockets with a 16° outer ring. v4 is the high-capacity vertical baseline; v7 is the material-efficiency experiment.**
+**v15 is the current 61-pocket first-layer refinement.** It retains the 0° / 4° / 8° / 12° / 16° tilt bands and adds a nine-pocket coupon. Its geometry passes the new rule; slicer and physical print acceptance are still pending. v13 remains the 37-pocket lineage; v10 the compact effect-plate lineage; v4/v7 the high-capacity vertical lineage.
 
-The contoured v3/v4 designs have also received the v5 comfort-lip treatment: the lower flare is 1.2 mm taller and the bottom perimeter has a 0.4 mm 45° chamfer.
-
-Each version folder contains the OpenSCAD source, printable STL, and version-specific notes.
+Earlier contoured designs received a taller lower lip and 0.4 mm bottom-edge chamfer. Each version folder contains its source, printable STL and notes. Prior printed success does not automatically certify a variant against newly introduced manufacturing rules.

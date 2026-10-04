@@ -1,0 +1,52 @@
+name: Validate v15 surface webs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'projects/hex-bit-stand/v15-continuous-web-61/**'
+      - '.github/workflows/validate-hex-v15.yml'
+  pull_request:
+    paths:
+      - 'projects/hex-bit-stand/v15-continuous-web-61/**'
+      - '.github/workflows/validate-hex-v15.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  geometry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install geometry tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openscad
+          python -m pip install -r projects/hex-bit-stand/v15-continuous-web-61/requirements-validation.txt
+      - name: Render and validate actual exposed surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          dir=projects/hex-bit-stand/v15-continuous-web-61
+          src="$dir/hex_bit_stand_continuous_web_61_v15.scad"
+          mesh="$RUNNER_TEMP/v15.stl"
+          openscad -o "$mesh" "$src" 2>&1 | tee "$RUNNER_TEMP/render-v15.log"
+          if grep -Ei '(^ERROR:|^WARNING:|nonplanar)' "$RUNNER_TEMP/render-v15.log"; then
+            echo 'Render diagnostics are not accepted even if an STL was emitted.'
+            exit 1
+          fi
+          python "$dir/validate.py" --source "$src" --mesh "$mesh" --output "$RUNNER_TEMP/validation-v15.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v15-geometry-validation
+          path: |
+            ${{ runner.temp }}/validation-v15.json
+            ${{ runner.temp }}/render-v15.log
+          if-no-files-found: warn

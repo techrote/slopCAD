@@ -18,10 +18,11 @@ A small collection of practical CAD experiments and 3D-printable workshop parts.
   - [v11 — tiered-tilt 37-pocket stand](projects/hex-bit-stand/v11-tiered-tilt-37/) — adds an 18-pocket outer ring at 12°
   - [v12 — clean-wall tiered-tilt 37-pocket stand](projects/hex-bit-stand/v12-clean-wall-37/) — convex 24-face shell removes short-facet triangular print artifacts
   - [v13 — lip-edge panel 37-pocket stand](projects/hex-bit-stand/v13-lip-edge-panels-37/) — wall recesses run directly down to the lower lip
-  - [v14 — tiered-tilt 61-pocket stand](projects/hex-bit-stand/v14-tiered-tilt-61/) — adds a 24-pocket fourth ring at 16° with capped ~70° mouth-chamfer geometry
+  - [v14 — tiered-tilt 61-pocket stand](projects/hex-bit-stand/v14-tiered-tilt-61/) — historical misaligned-mouth 16° outer-ring experiment
+  - [v15 — continuous-web 61-pocket stand](projects/hex-bit-stand/v15-continuous-web-61/) — aligned entrances, measured 1.3 mm minimum surface-web rule and test coupon
 - [Hex handles](project/hex-handles/) — compact five-rib tool handles with deep hex-shaft reinforcement, epoxy retention pockets, and tail venting.
   - [v1 — 32 mm five-rib angular handle](project/hex-handles/v1-32mm-five-rib/) — 6.4 mm AF socket for a nominal 26 mm embedded hex shaft
 - [Hex bit stand design history](docs/hex-bit-stand-design-history.md)
-- [Hex bit stand printing notes](docs/printing.md)
+- [Current printing and minimum-feature rules](docs/printing.md)
 - [Hex handle design history](docs/hex-handles-design-history.md)
 - [Hex handle printing and installation notes](docs/hex-handles-printing.md)
