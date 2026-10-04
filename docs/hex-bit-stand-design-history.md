@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand has evolved through thirteen committed design iterations.
+The hex bit stand has evolved through fourteen committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -95,6 +95,20 @@ Physical evaluation of v12 showed the cleaned-up 24-face shell printing well, bu
 v13 turns each wall recess into an **open-bottom pocket** that extends directly to the **upper edge of the lower lip at z = 2.10 mm**. The 1 mm lower border and corresponding bottom taper are removed, while the **1 mm side/top borders**, **1.2 mm recess depth**, and **50° side/top taper** remain unchanged.
 
 A small **0.05 mm boolean overlap** carries the opening just into the lip boundary to prevent a residual shelf. All pocket, tilt, floor-relief, outer-shell, and effect-plate geometry is otherwise unchanged from v12.
+ 
+## v14 — tiered-tilt 61-pocket stand
+
+v14 expands the v13 radius-3 architecture by one complete hexagonal ring. The result is a **radius-4 lattice with 61 pockets**: 1 centre, 6 in ring 1, 12 in ring 2, 18 in ring 3, and **24 in the new ring 4**.
+
+The tilt bands are now **0° / 4° / 8° / 12° / 16°**. The 16° outer ring shifts its mouth centres about **3.44 mm outward** over the 12 mm pocket depth. Even at this angle, the tilted 7 mm shaft projection leaves roughly **1.72 mm of floor-level web** on the 9 mm lattice.
+
+The outer shell keeps the v13 convex clean-wall architecture and open-bottom lip-edge recesses. The larger body resolves to **30 clean wall faces** with the same **3.6 mm nominal margin**, **1 mm side/top panel borders**, **1.2 mm recess depth**, and **50° side/top taper**. The shortest face remains about **6.77 mm**, leaving roughly **1.91 mm of back-flat**, so no adaptive short-facet geometry is required.
+
+Chamfer handling changes slightly for the steeper ring. The global mouth hex is rotated to **0°** against the centre shaft's **30°** orientation, giving the maximum distinct **30° phase mismatch** at the centre; tilted shaft frames then produce naturally varying apparent misalignment around the rings. The mouth remains **8.5 mm AF**, while chamfer height is fixed at **1.15 mm**. With the 16° splay, this keeps the steepest radial side of the bed-facing chamfer at about **69.9° from the build plane**, inside the agreed ~70° experimental ceiling.
+
+The v10–v13 **2 mm base**, **1 mm-high / 55° tapered hex floor exits**, corrected centre lead-in, effect-plate orientation, softened lower lip, and open-bottom side-panel treatment are retained.
+
+The validated envelope is approximately **93.55 × 85.22 × 14.0 mm**.
 
 ## Common dimensions
 
