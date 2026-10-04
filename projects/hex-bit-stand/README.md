@@ -27,8 +27,9 @@ A family of support-free workshop organizers for standard 1/4-inch hex driver bi
 | [v11](v11-tiered-tilt-37/) | 37 | radius-3 hex | v10 geometry expanded with an 18-pocket outer ring tilted 12° outward |
 | [v12](v12-clean-wall-37/) | 37 | radius-3 hex | Convex 24-face outer shell and uniform inset panels remove v11's short-facet triangular artifacts |
 | [v13](v13-lip-edge-panels-37/) | 37 | radius-3 hex | v12 wall recesses become open-bottom pockets extending directly to the upper edge of the lower lip |
+| [v14](v14-tiered-tilt-61/) | 61 | radius-4 hex | Adds a 24-pocket fourth ring at 16°; 30° nominal mouth mismatch and 1.15 mm chamfer cap keep the steepest bed-facing side near 70° |
 
-**v5 is the compact vertical-pocket baseline; v6 proves the outward-splay concept; v8 develops it into a near-square 19-pocket two-angle stand; v10 is the compact effect-plate refinement; v13 is the current 37-pocket / 12° outer-ring design with cleaned-up wall geometry and lip-edge recesses. v4 is the high-capacity baseline; v7 is the material-efficiency experiment.**
+**v5 is the compact vertical-pocket baseline; v6 proves the outward-splay concept; v8 develops it into a near-square 19-pocket two-angle stand; v10 is the compact effect-plate refinement; v13 is the current 37-pocket / 12° design; v14 extends the same architecture to 61 pockets with a 16° outer ring. v4 is the high-capacity vertical baseline; v7 is the material-efficiency experiment.**
 
 The contoured v3/v4 designs have also received the v5 comfort-lip treatment: the lower flare is 1.2 mm taller and the bottom perimeter has a 0.4 mm 45° chamfer.
 
