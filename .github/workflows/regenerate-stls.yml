@@ -15,20 +15,50 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync latest main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git reset --hard origin/main
 
       - name: Install OpenSCAD
         run: |
           sudo apt-get update
           sudo apt-get install -y openscad
 
-      - name: Regenerate STL files
+      - name: Regenerate changed or missing STL files
         shell: bash
         run: |
           set -euo pipefail
+
+          # The triggering commit may no longer be main HEAD if documentation or
+          # another source commit landed while this run was queued. Remember the
+          # SCAD paths changed by that exact commit, but operate on current main.
+          mapfile -t changed_scads < <(
+            git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" --               'projects/hex-bit-stand/**/*.scad' || true
+          )
+
+          is_changed() {
+            local candidate="$1"
+            local changed
+            for changed in "${changed_scads[@]}"; do
+              [[ "$candidate" == "$changed" ]] && return 0
+            done
+            return 1
+          }
+
           while IFS= read -r -d '' scad; do
             stl="${scad%.scad}.stl"
-            echo "Rendering $scad -> $stl"
-            openscad -o "$stl" "$scad"
+            if [[ ! -f "$stl" ]] || is_changed "$scad"; then
+              echo "Rendering $scad -> $stl"
+              openscad -o "$stl" "$scad"
+            else
+              echo "Keeping existing $stl"
+            fi
           done < <(find projects/hex-bit-stand -type f -name '*.scad' -print0 | sort -z)
 
       - name: Commit regenerated artifacts
@@ -42,9 +72,5 @@ jobs:
             echo "STLs already match their OpenSCAD sources."
           else
             git commit -m "Regenerate STL artifacts"
-            # The render can take long enough for unrelated documentation/index
-            # commits to land on main. Rebase the generated-artifact commit before
-            # pushing instead of failing with a non-fast-forward race.
-            git pull --rebase origin main
-            git push
+            git push origin HEAD:main
           fi
