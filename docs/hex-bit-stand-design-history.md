@@ -1,6 +1,6 @@
 # Hex bit stand design history
 
-The hex bit stand has evolved through fourteen committed design iterations.
+The hex bit stand has evolved through twenty committed design iterations.
 
 ## v1 — 16-pocket grid
 
@@ -109,6 +109,35 @@ Chamfer handling changes slightly for the steeper ring. The global mouth hex is 
 The v10–v13 **2 mm base**, **1 mm-high / 55° tapered hex floor exits**, corrected centre lead-in, effect-plate orientation, softened lower lip, and open-bottom side-panel treatment are retained.
 
 The validated envelope is approximately **93.55 × 85.22 × 14.0 mm**.
+
+## v15 — continuous-web 61-pocket stand
+
+A representative face-down print of v14 exposed a first-layer manufacturing failure that nominal spacing calculations had missed: the rotated/misaligned entrance geometry created local surface pinch points, some effectively collapsing to zero-width seams. v15 removed the intentional mouth/shaft rotational mismatch, aligned the shaft roll to the lattice, and introduced a new manufacturing rule: **top and bottom exposed surfaces must retain at least 1.3 mm of actual measured solid ligament after all cuts and projections**.
+
+Pitch increased to **9.30 mm**. The exported STL measured a **1.424 mm minimum top-face web**, with the 0° / 4° / 8° / 12° / 16° tilt bands unchanged. Subsequent physical printing confirmed the corrected surface geometry and effect-plate finish.
+
+## v16 — continuous-web 91-pocket stand
+
+v16 added a **30-pocket 20° ring**, bringing capacity to **91 pockets**. To preserve the 1.3 mm actual-surface rule, pitch increased from 9.30 to **9.45 mm**; the exported mesh measured **1.433 mm minimum top web**. The aligned-mouth architecture, 7 mm normal-axis pocket size, 8.5 mm entrance profile, 2 mm base and 55° tapered hex exits were retained.
+
+## v17 — continuous-web 127-pocket stand
+
+v17 added a **36-pocket 24° ring**, giving **127 pockets total**. Pitch increased to **9.65 mm** after the prior spacing would have produced only about 1.25 mm at the tightest top-face junction. The validated model measured **1.450 mm minimum top web**.
+
+## v18 — continuous-web 169-pocket stand
+
+v18 added a **42-pocket 28° ring**, giving **169 pockets total**. Pitch increased to **9.90 mm** to keep the tightest exposed-surface ligament above the 1.3 mm rule. The exported mesh measured **1.472 mm minimum top web**.
+
+## v19 — continuous-web 217-pocket stand
+
+v19 added a **48-pocket 32° ring**, giving **217 pockets total**. Pitch increased to **10.20 mm**, producing a measured **1.493 mm minimum top web**. The steepest measured entrance-chamfer overhang remained below the 60° soft limit in the face-down print orientation.
+
+## v20 — continuous-web 271-pocket stand
+
+v20 added a **54-pocket 36° ring**, giving **271 pockets total** and tilt bands from 0° through 36° in 4° increments. Pitch increased to **10.55 mm**, yielding a measured **1.505 mm minimum top web**.
+
+At this larger splay, the outer pockets approached the backs of the side recesses more closely. The nominal outer-wall margin therefore increased from 3.8 to **4.1 mm**, and the side-recess cutter reach was extended outward so the recesses remain cleanly open rather than leaving thin cover skins. Targeted side-panel sections retained at least about **1.455 mm** of remaining wall. The full envelope is approximately **221.62 × 197.46 × 14.00 mm**; a 15° in-plane rotation gives roughly **215.7 × 215.7 mm** before skirt/brim allowance.
+
 
 ## Common dimensions
 
