@@ -25,7 +25,12 @@ Functional pockets are **7.0 mm AF normal to the bit axis**, with **12 mm main p
 | [v13](v13-lip-edge-panels-37/) | 37 | radius-3 hex | Wall recesses extend to the lower lip |
 | [v14](v14-tiered-tilt-61/) | 61 | radius-4 hex | Historical 16° outer-ring / misaligned-mouth experiment; first-layer pinch points found |
 | [v15](v15-continuous-web-61/) | 61 | radius-4 hex | Aligned mouths/shaft roll, 9.3 mm pitch, measured 1.424 mm top web and exported-mesh validation |
+| [v16](v16-continuous-web-91/) | 91 | radius-5 hex | Adds 30 pockets at 20°; pitch 9.45 mm; measured 1.433 mm minimum top web |
+| [v17](v17-continuous-web-127/) | 127 | radius-6 hex | Adds 36 pockets at 24°; pitch 9.65 mm; measured 1.450 mm minimum top web |
+| [v18](v18-continuous-web-169/) | 169 | radius-7 hex | Adds 42 pockets at 28°; pitch 9.90 mm; measured 1.472 mm minimum top web |
+| [v19](v19-continuous-web-217/) | 217 | radius-8 hex | Adds 48 pockets at 32°; pitch 10.20 mm; measured 1.493 mm minimum top web |
+| [v20](v20-continuous-web-271/) | 271 | radius-9 hex | Adds 54 pockets at 36°; pitch 10.55 mm, 4.1 mm wall margin; measured 1.505 mm minimum top web |
 
-**v15 is the current 61-pocket first-layer refinement.** It retains the 0° / 4° / 8° / 12° / 16° tilt bands and adds a nine-pocket coupon. Its geometry passes the new rule; slicer and physical print acceptance are still pending. v13 remains the 37-pocket lineage; v10 the compact effect-plate lineage; v4/v7 the high-capacity vertical lineage.
+**v15 established the continuous-web production rule and was subsequently physically printed successfully. v16–v20 extend that same aligned-mouth architecture ring by ring through 36°, with pitch increased only as required to keep actual exposed-surface ligaments above 1.3 mm. v20 is the largest prepared/published variant at 271 pockets.** v13 remains the 37-pocket historical lineage; v10 the compact effect-plate lineage; v4/v7 the high-capacity vertical lineage.
 
 Earlier contoured designs received a taller lower lip and 0.4 mm bottom-edge chamfer. Each version folder contains its source, printable STL and notes. Prior printed success does not automatically certify a variant against newly introduced manufacturing rules.
