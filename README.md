@@ -20,6 +20,11 @@ A small collection of practical CAD experiments and 3D-printable workshop parts.
   - [v13 — lip-edge panel 37-pocket stand](projects/hex-bit-stand/v13-lip-edge-panels-37/) — wall recesses run directly down to the lower lip
   - [v14 — tiered-tilt 61-pocket stand](projects/hex-bit-stand/v14-tiered-tilt-61/) — historical misaligned-mouth 16° outer-ring experiment
   - [v15 — continuous-web 61-pocket stand](projects/hex-bit-stand/v15-continuous-web-61/) — aligned entrances, measured 1.3 mm minimum surface-web rule and test coupon
+  - [v16 — continuous-web 91-pocket stand](projects/hex-bit-stand/v16-continuous-web-91/) — adds a 30-pocket 20° ring; 9.45 mm pitch
+  - [v17 — continuous-web 127-pocket stand](projects/hex-bit-stand/v17-continuous-web-127/) — adds a 36-pocket 24° ring; 9.65 mm pitch
+  - [v18 — continuous-web 169-pocket stand](projects/hex-bit-stand/v18-continuous-web-169/) — adds a 42-pocket 28° ring; 9.90 mm pitch
+  - [v19 — continuous-web 217-pocket stand](projects/hex-bit-stand/v19-continuous-web-217/) — adds a 48-pocket 32° ring; 10.20 mm pitch
+  - [v20 — continuous-web 271-pocket stand](projects/hex-bit-stand/v20-continuous-web-271/) — adds a 54-pocket 36° ring; 10.55 mm pitch and wider outer wall
 - [Hex handles](project/hex-handles/) — compact five-rib tool handles with deep hex-shaft reinforcement, epoxy retention pockets, and tail venting.
   - [v1 — 32 mm five-rib angular handle](project/hex-handles/v1-32mm-five-rib/) — 6.4 mm AF socket for a nominal 26 mm embedded hex shaft
 - [Hex bit stand design history](docs/hex-bit-stand-design-history.md)
