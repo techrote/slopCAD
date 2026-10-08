@@ -1,8 +1,17 @@
 # v16 — continuous-web 91-pocket bit stand
 
-A local-only expansion of the physically successful **v15 continuous-web 61-pocket stand**. It adds one complete ring without reverting to the earlier misaligned/scalloped entrances.
+An expansion of the physically successful **v15 continuous-web 61-pocket stand**. It adds one complete ring without reverting to the earlier misaligned/scalloped entrances.
 
 **Ready-to-print orientation:** the source supports `print_face_down=true` for effect-plate printing.
+
+## Preserved original bundle
+
+The source and upright STL are already published in this project directory, alongside the compact validation summary. [Original ZIP](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/originals/hex_bit_stand_v16_91_pocket_bundle.zip) and the [matched source, tools and evidence](https://github.com/techrote/slopCAD/tree/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v16/hex_bit_stand_continuous_web_91_v16) preserve the complete original package separately.
+
+- [Original full face-down STL](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v16/hex_bit_stand_continuous_web_91_v16/hex_bit_stand_continuous_web_91_v16_face_down.stl); [11-pocket face-down coupon](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v16/hex_bit_stand_continuous_web_91_v16/v16_eleven_pocket_test_face_down.stl); [full historical geometry report](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v16/hex_bit_stand_continuous_web_91_v16/validation.json).
+- [Family archive index and tool-use instructions](../README.md#original-bundles-and-supplementary-tools).
+
+Measurements, validation outcomes, preview-inspection statements and toolchain versions below are historical records from the original bundle. They do not describe new executions during preservation or establish a new slice, physical print or fit result.
 
 ## Pocket layout
 
@@ -44,7 +53,7 @@ The v16 exported mesh measures **1.433 mm** at the tightest top junction. Chamfe
 
 The **1.3 mm minimum top/bottom material-width rule remains in force**. It refers to actual in-plane solid ligaments and surface connectivity after cuts, not simply nominal pitch minus flat-to-flat size.
 
-## Exported-mesh validation
+## Historical exported-mesh validation
 
 | Check | Result |
 |---|---:|
@@ -63,6 +72,6 @@ Both exposed surfaces and all sampled sections remain connected after erosion by
 
 ## Files
 
-- `hex_bit_stand_continuous_web_91_v16.scad` — self-contained parametric source.
-- `hex_bit_stand_continuous_web_91_v16.stl` — canonical upright STL generated from the source.
-- `validation_summary.json` — compact measured validation record.
+- [hex_bit_stand_continuous_web_91_v16.scad](hex_bit_stand_continuous_web_91_v16.scad) — self-contained parametric source.
+- [hex_bit_stand_continuous_web_91_v16.stl](hex_bit_stand_continuous_web_91_v16.stl) — canonical upright STL generated from the source.
+- [validation_summary.json](validation_summary.json) — compact measured validation record.
