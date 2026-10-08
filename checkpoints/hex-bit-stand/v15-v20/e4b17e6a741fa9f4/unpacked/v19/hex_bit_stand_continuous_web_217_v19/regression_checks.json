@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "geometry_modules": [
+    {
+      "module": "ruled_cutter",
+      "unchanged_from_verified_v18": true,
+      "sha256": "36c94b1490cac5febc3b8cc18790ec16ee23c233fe2d5f008b64f4d7b3644d04"
+    },
+    {
+      "module": "pocket",
+      "unchanged_from_verified_v18": true,
+      "sha256": "8fa8d79a4b32cea35797b29f132b3777a526b9d97d315c70cfdf0dc39b478d19"
+    },
+    {
+      "module": "shell_slice",
+      "unchanged_from_verified_v18": true,
+      "sha256": "cb3c03d700c5814de503a35fa7a5d242f9a598485a01123a4ac0caffa4a4c85c"
+    },
+    {
+      "module": "shell_segment",
+      "unchanged_from_verified_v18": true,
+      "sha256": "fbb7cb2c7d375aadd841f66d145da3aaf4aaa6ca52a684a8ea32ebc13d361837"
+    },
+    {
+      "module": "body",
+      "unchanged_from_verified_v18": true,
+      "sha256": "b9e9b294705016c8d519f4ecbe8eb3aae41828e2fbc7bc2cf4195be11b908803"
+    },
+    {
+      "module": "panel",
+      "unchanged_from_verified_v18": true,
+      "sha256": "274e08ccb24fefe35ca8ae010300bfdf1efa28120eeb06b8b643bc3c95195d21"
+    },
+    {
+      "module": "stand",
+      "unchanged_from_verified_v18": true,
+      "sha256": "5726ceeb5f4d1466dacd22d8ad41cc9baab92b595caa19c11258052b30e2a8e7"
+    }
+  ],
+  "changes": [
+    "radius 7 -> 8, capacity 169 -> 217",
+    "add 32-degree ring",
+    "pitch 9.90 -> 10.20 mm",
+    "coupon 15 -> 17 pockets; all nine tilt bands"
+  ],
+  "previous_source_sha256": "6c87e09183cbb0921424285532af6a1ab1694d97315b1a47d97be8dc47b77940",
+  "new_source_sha256": "c116114d383e298c5054b41efe0a2cc0d475bfb1c565799af47a7dd8da3c7e5f",
+  "baseline_and_new_measured_settings": {
+    "ring_count": {
+      "v18": 7,
+      "v19": 8
+    },
+    "pitch": {
+      "v18": 9.9,
+      "v19": 10.2
+    },
+    "hex_flat_to_flat": {
+      "v18": 7.0,
+      "v19": 7.0
+    },
+    "pocket_mouth_flat_to_flat": {
+      "v18": 8.5,
+      "v19": 8.5
+    },
+    "pocket_mouth_chamfer_h": {
+      "v18": 1.15,
+      "v19": 1.15
+    },
+    "base_thickness": {
+      "v18": 2.0,
+      "v19": 2.0
+    },
+    "pocket_depth": {
+      "v18": 12.0,
+      "v19": 12.0
+    },
+    "floor_taper_h": {
+      "v18": 1.0,
+      "v19": 1.0
+    },
+    "floor_taper_degrees": {
+      "v18": 55,
+      "v19": 55
+    },
+    "wall_margin": {
+      "v18": 3.8,
+      "v19": 3.8
+    },
+    "panel_border": {
+      "v18": 1.3,
+      "v19": 1.3
+    }
+  },
+  "baseline_supplied_validation_volume_mm3": 141677.33773896532,
+  "new_measured_volume_mm3": 192060.33221019045
+}

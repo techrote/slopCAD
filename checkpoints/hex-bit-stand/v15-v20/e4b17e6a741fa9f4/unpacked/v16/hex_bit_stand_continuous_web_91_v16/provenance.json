@@ -1,0 +1,40 @@
+{
+  "revision": "v16-continuous-web-91",
+  "created_date": "2026-10-04",
+  "source": "Actual v15 conversation attachments and its retained bundle; not reconstructed from a chat description.",
+  "parent_model": "v15-continuous-web-61",
+  "parent_source_and_mesh_match_retained_validation_hashes": true,
+  "publication_status": "LOCAL_ONLY; no GitHub reads, writes, branches, commits, or workflow dispatches in this turn.",
+  "parent_acceptance": "Owner reports v15 model is perfect and remaining finish imperfections are due to print settings. This is owner-reported physical evidence, not an independent measurement.",
+  "inputs": {
+    "hex_bit_stand_continuous_web_61_v15.scad": {
+      "sha256": "9b2591dbff8c0e03638a62c1c8604764547f15415dfa6d9b23be0bb128f3ebec",
+      "bytes": 8512
+    },
+    "hex_bit_stand_continuous_web_61_v15.stl": {
+      "sha256": "3d9d0b860d2006144c812a4dac005bff9dd5c8f3f86628c2465837711745a8c8",
+      "bytes": 1142624
+    },
+    "validation_summary.json": {
+      "sha256": "f2844cc2e1d985d0413fc8db88b0ffe1807a7917dc84ada2241c21eb56d4a2f9",
+      "bytes": 2342
+    },
+    "hex_bit_stand_v15_bundle.zip": {
+      "sha256": "1cb35443ed51a46e1889aa9614e9ae29fa72ca99b306920c9790f196e6cdd4da",
+      "bytes": 410733
+    }
+  },
+  "intentional_changes": [
+    "Add ring 5: 30 pockets, 20 degrees outward, 91 total.",
+    "Increase common pitch 9.30 -> 9.45 mm to maintain at least the previous measured ~1.424 mm face web.",
+    "Extend test coupon to eleven pockets including all six tilt bands."
+  ],
+  "retained": [
+    "7.0 mm AF normal to shaft axis; 8.5 mm aligned mouth profile; 1.15 mm lead-in height.",
+    "Existing 0/4/8/12/16 degree rings; minimal-rotation lattice alignment, no deliberately rotated mouths.",
+    "2 mm base; 1 mm / 55 degree hex floor taper and hex through-exits.",
+    "3.8 mm nominal wall margin; 1.3 mm panel top/side reference margins; 1.2 mm recess; lip-edge panel bottoms.",
+    "14 mm height; softened lower lip with 0.4 mm lower chamfer.",
+    "1.3 mm minimum actual in-plane solid ligament; exposed taper edges may terminate at a line and are not themselves finite-width webs."
+  ]
+}

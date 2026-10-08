@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "baseline_source_sha256": "c116114d383e298c5054b41efe0a2cc0d475bfb1c565799af47a7dd8da3c7e5f",
+  "new_source_sha256": "28c0cda69852c18e2da3378d3528a00a4e1c5a3189dcac4468a19c7be1a9c8dd",
+  "unchanged_geometry_modules": [
+    {
+      "module": "ruled_cutter",
+      "unchanged": true,
+      "sha256": "36c94b1490cac5febc3b8cc18790ec16ee23c233fe2d5f008b64f4d7b3644d04"
+    },
+    {
+      "module": "pocket",
+      "unchanged": true,
+      "sha256": "8fa8d79a4b32cea35797b29f132b3777a526b9d97d315c70cfdf0dc39b478d19"
+    },
+    {
+      "module": "shell_slice",
+      "unchanged": true,
+      "sha256": "cb3c03d700c5814de503a35fa7a5d242f9a598485a01123a4ac0caffa4a4c85c"
+    },
+    {
+      "module": "shell_segment",
+      "unchanged": true,
+      "sha256": "fbb7cb2c7d375aadd841f66d145da3aaf4aaa6ca52a684a8ea32ebc13d361837"
+    },
+    {
+      "module": "body",
+      "unchanged": true,
+      "sha256": "b9e9b294705016c8d519f4ecbe8eb3aae41828e2fbc7bc2cf4195be11b908803"
+    },
+    {
+      "module": "panel",
+      "unchanged": true,
+      "sha256": "274e08ccb24fefe35ca8ae010300bfdf1efa28120eeb06b8b643bc3c95195d21"
+    },
+    {
+      "module": "stand",
+      "unchanged": true,
+      "sha256": "5726ceeb5f4d1466dacd22d8ad41cc9baab92b595caa19c11258052b30e2a8e7"
+    }
+  ],
+  "source_parameters_changed": {
+    "ring_count": {
+      "v19": 8,
+      "v20": 9
+    },
+    "pitch": {
+      "v19": 10.2,
+      "v20": 10.55
+    },
+    "tilt_angles": {
+      "v19": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32
+      ],
+      "v20": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36
+      ]
+    },
+    "wall_margin": {
+      "v19": 3.8,
+      "v20": 4.1
+    }
+  },
+  "additional_cutter_parameter_change": {
+    "panel_front_outset_mm": {
+      "v19": 2.0,
+      "v20": 3.0
+    }
+  },
+  "previous_ring_tilts_retained": true,
+  "new_ring_pockets": 54,
+  "new_ring_tilt_degrees": 36,
+  "scalar_vs_vectorized_clearance_checks": [
+    {
+      "surface": "top",
+      "scalar_gap_mm": 1.4929342448764473,
+      "vectorized_gap_mm": 1.4929342448764473,
+      "difference_mm": 0.0
+    },
+    {
+      "surface": "bottom",
+      "scalar_gap_mm": 4.965131322247243,
+      "vectorized_gap_mm": 4.965131322247243,
+      "difference_mm": 0.0
+    },
+    {
+      "surface": "z9.5",
+      "scalar_gap_mm": 2.8075793180362942,
+      "vectorized_gap_mm": 2.8075793180362942,
+      "difference_mm": 0.0
+    }
+  ],
+  "validation_changes": [
+    "Vectorized all-pairs distances and disjointness; no neighbour filtering or width-rule change.",
+    "Entrance normals classified by spanning both endpoints of their ruled segment, excluding 96 exterior 0.01 mm vertical cap triangles.",
+    "Count/coupon identifiers updated for 271/19; full STL export uses binary precision."
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "validation_scope": "Geometry; slicer toolpaths and physical print acceptance pending",
+  "source_sha256": "28c0cda69852c18e2da3378d3528a00a4e1c5a3189dcac4468a19c7be1a9c8dd",
+  "mesh_sha256": "cf67bc943303b57aeccf11e9a8ec5afe38793927c8366c73410c2a078a6aa938",
+  "settings": {
+    "min_surface_feature": 1.3,
+    "ring_count": 9,
+    "hex_flat_to_flat": 7.0,
+    "pitch": 10.55,
+    "base_thickness": 2.0,
+    "pocket_depth": 12.0,
+    "pocket_mouth_flat_to_flat": 8.5,
+    "pocket_mouth_chamfer_h": 1.15,
+    "floor_taper_h": 1.0,
+    "floor_taper_degrees": 55,
+    "shaft_hex_rotation": 30,
+    "tilt_angles": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36
+    ],
+    "panel_border": 1.3,
+    "wall_margin": 4.1,
+    "height": 14.0
+  },
+  "mesh": {
+    "watertight": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "euler_number": -540,
+    "triangles": 20588,
+    "envelope_mm": [
+      221.62246704101562,
+      197.45989990234375,
+      14.0
+    ],
+    "volume_mm3": 259903.51628261583
+  },
+  "top_face": {
+    "minimum_inter_pocket_web_mm": 1.505279541015625,
+    "minimum_pocket_to_exterior_mm": 1.738176012291108,
+    "narrowest_pair_centres_xy_mm": [
+      [
+        -103.66851043701172,
+        -0.0
+      ],
+      [
+        -91.89843326144747,
+        -0.0
+      ]
+    ],
+    "connected_after_half_minimum_erosion": true,
+    "hole_count": 271,
+    "surface_area_mm2": 14341.230746848167
+  },
+  "bottom_face": {
+    "minimum_inter_pocket_web_mm": 4.952934265136719,
+    "minimum_pocket_to_exterior_mm": 5.651896011348448,
+    "narrowest_pair_centres_xy_mm": [
+      [
+        -84.39999818040165,
+        -0.0
+      ],
+      [
+        -94.95000028169963,
+        1.428074662380046e-17
+      ]
+    ],
+    "connected_after_half_minimum_erosion": true,
+    "hole_count": 271,
+    "surface_area_mm2": 24046.66856911853
+  },
+  "sampled_sections": {
+    "count": 83,
+    "minimum_inter_pocket_web_mm": 1.5067530284681823,
+    "minimum_pocket_to_exterior_mm": 1.4583785423976294,
+    "all_connected_after_half_minimum_erosion": true
+  },
+  "functional_checks": {
+    "pockets_checked": 271,
+    "maximum_tilt_error_degrees": 1.1411651545500945e-05,
+    "maximum_normal_AF_error_mm": 4.774528655104859e-06,
+    "maximum_centre_error_mm": 2.8421439708381513e-06,
+    "maximum_radial_displacement_error_mm": 2.238657221072628e-06,
+    "one_to_one_pocket_assignment": true
+  },
+  "entrance_chamfer_checks": {
+    "triangles_checked": 3252,
+    "maximum_overhang_from_vertical_degrees": 56.877378600217575,
+    "minimum_overhang_from_vertical_degrees": 4.550265290318154,
+    "under_60_degree_soft_limit": true,
+    "angle_definition": "Face-down print: vertical = 0 degrees; horizontal unsupported ceiling = 90 degrees.",
+    "scope": "Entrance chamfer faces only, not all external side-panel surfaces."
+  },
+  "dependencies": {
+    "numpy": "2.3.5",
+    "shapely": "2.1.2",
+    "trimesh": "4.11.1"
+  }
+}

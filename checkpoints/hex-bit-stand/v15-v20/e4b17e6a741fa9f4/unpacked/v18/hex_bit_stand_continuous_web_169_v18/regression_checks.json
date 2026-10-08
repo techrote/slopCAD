@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "source_sha256": "6c87e09183cbb0921424285532af6a1ab1694d97315b1a47d97be8dc47b77940",
+  "intentional_parameter_changes": {
+    "ring_count": {
+      "v17": 6,
+      "v18": 7
+    },
+    "pitch": {
+      "v17": 9.65,
+      "v18": 9.9
+    },
+    "tilt_angles": {
+      "v17": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "v18": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28
+      ]
+    }
+  },
+  "existing_tilt_bands_preserved": true,
+  "unchanged_functional_modules_against_actual_v17_source": [
+    "ruled_cutter",
+    "pocket",
+    "shell_slice",
+    "shell_segment",
+    "body",
+    "panel",
+    "stand"
+  ],
+  "actual_ring_pocket_counts": {
+    "0": 1,
+    "1": 6,
+    "2": 12,
+    "3": 18,
+    "4": 24,
+    "5": 30,
+    "6": 36,
+    "7": 42
+  },
+  "mouth_chamfer_faces": {
+    "triangles_checked": 2028,
+    "maximum_overhang_from_vertical_degrees": 51.7914799976232,
+    "minimum_overhang_from_vertical_degrees": 11.687886425103253,
+    "under_60_degree_soft_limit": true,
+    "angle_definition": "Face-down print: vertical = 0 degrees; horizontal unsupported ceiling = 90 degrees.",
+    "scope": "Entrance chamfer faces only, not all external side-panel surfaces."
+  },
+  "new_outer_axis_offset_over_12mm_mm": 6.380513179937745,
+  "nominal_centre_exit_AF_mm": 4.143703986515771,
+  "v17_retained_validated_volume_mm3": 102829.04069864303,
+  "v18_volume_mm3": 141677.33773896532,
+  "note": "Parameter/module comparison and actual mesh measurements; no slicer or physical test."
+}

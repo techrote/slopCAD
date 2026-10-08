@@ -1,0 +1,3127 @@
+{
+  "status": "PASS",
+  "validation_scope": "Geometry; slicer toolpaths and physical print acceptance pending",
+  "source_sha256": "345b464a33f8b37273c1ef297f5623a9c029a29eee79eb8e698b12d52779368a",
+  "mesh_sha256": "b949726d3f2bf9dabcfcdfca30333e033045a53ce1942b957ac4f318a7484ec8",
+  "settings": {
+    "min_surface_feature": 1.3,
+    "ring_count": 6,
+    "hex_flat_to_flat": 7.0,
+    "pitch": 9.65,
+    "base_thickness": 2.0,
+    "pocket_depth": 12.0,
+    "pocket_mouth_flat_to_flat": 8.5,
+    "pocket_mouth_chamfer_h": 1.15,
+    "floor_taper_h": 1.0,
+    "floor_taper_degrees": 55,
+    "shaft_hex_rotation": 30,
+    "tilt_angles": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "panel_border": 1.3,
+    "wall_margin": 3.8,
+    "height": 14.0
+  },
+  "mesh": {
+    "watertight": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "euler_number": -252,
+    "triangles": 10408,
+    "envelope_mm": [
+      140.9826,
+      126.7836,
+      14.0
+    ],
+    "volume_mm3": 102829.04069864303
+  },
+  "top_face": {
+    "minimum_inter_pocket_web_mm": 1.450099999999999,
+    "minimum_pocket_to_exterior_mm": 2.131113374895696,
+    "narrowest_pair_centres_xy_mm": [
+      [
+        -63.242744444444426,
+        -6.916017875666239e-17
+      ],
+      [
+        -52.617644444444444,
+        -0.0
+      ]
+    ],
+    "connected_after_half_minimum_erosion": true,
+    "hole_count": 127,
+    "surface_area_mm2": 5195.179092076427
+  },
+  "bottom_face": {
+    "minimum_inter_pocket_web_mm": 4.950399999999995,
+    "minimum_pocket_to_exterior_mm": 5.846873494981096,
+    "narrowest_pair_centres_xy_mm": [
+      [
+        -48.25,
+        -5.3904218862794595e-17
+      ],
+      [
+        -57.89999999999999,
+        -0.0
+      ]
+    ],
+    "connected_after_half_minimum_erosion": true,
+    "hole_count": 127,
+    "surface_area_mm2": 9976.533716303418
+  },
+  "sampled_sections": {
+    "count": 83,
+    "minimum_inter_pocket_web_mm": 1.4514266956521737,
+    "minimum_pocket_to_exterior_mm": 2.132615306383027,
+    "all_connected_after_half_minimum_erosion": true
+  },
+  "functional_checks": {
+    "pockets_checked": 127,
+    "maximum_tilt_error_degrees": 0.0002262856161756588,
+    "maximum_normal_AF_error_mm": 9.262210083438305e-05,
+    "maximum_centre_error_mm": 4.979354251568092e-05,
+    "maximum_radial_displacement_error_mm": 3.710772940871969e-05,
+    "one_to_one_pocket_assignment": true
+  },
+  "entrance_chamfer_checks": {
+    "triangles_checked": 1524,
+    "maximum_overhang_from_vertical_degrees": 49.21514486326355,
+    "minimum_overhang_from_vertical_degrees": 15.035941548221004,
+    "under_60_degree_soft_limit": true,
+    "angle_definition": "Face-down print: vertical = 0 degrees; horizontal unsupported ceiling = 90 degrees.",
+    "scope": "Entrance chamfer faces only, not all external side-panel surfaces."
+  },
+  "dependencies": {
+    "numpy": "2.3.5",
+    "shapely": "2.1.2",
+    "trimesh": "4.11.1"
+  },
+  "sections": [
+    {
+      "z_mm": 0.001,
+      "minimum_inter_pocket_web_mm": 4.950399999999995,
+      "minimum_pocket_to_exterior_mm": 5.847899165761093,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -57.9,
+          1.2245223922250438e-16
+        ],
+        [
+          -48.249999999999986,
+          -1.0128097372267265e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 9976.946594556597
+    },
+    {
+      "z_mm": 0.05,
+      "minimum_inter_pocket_web_mm": 4.950399999999995,
+      "minimum_pocket_to_exterior_mm": 5.898157033981071,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          57.9,
+          -1.7176862049841708e-17
+        ],
+        [
+          48.24999999999999,
+          8.759435565204119e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 9997.185960728135
+    },
+    {
+      "z_mm": 0.1,
+      "minimum_inter_pocket_web_mm": 4.950399999999994,
+      "minimum_pocket_to_exterior_mm": 5.949440572981043,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -57.899999999999984,
+          -1.6200125554670526e-17
+        ],
+        [
+          -48.25,
+          1.7968072954264863e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 10017.855208756415
+    },
+    {
+      "z_mm": 0.25,
+      "minimum_inter_pocket_web_mm": 4.950399999999995,
+      "minimum_pocket_to_exterior_mm": 6.103291189980968,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -57.9,
+          -5.219146591689275e-18
+        ],
+        [
+          -48.249999999999986,
+          6.288825533992703e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 10079.964974462677
+    },
+    {
+      "z_mm": 0.30000000000000004,
+      "minimum_inter_pocket_web_mm": 4.950399999999994,
+      "minimum_pocket_to_exterior_mm": 6.154570347158676,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          57.89999999999999,
+          6.44132326869064e-18
+        ],
+        [
+          48.25000000000001,
+          -1.7968072954264863e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 10100.70223690523
+    },
+    {
+      "z_mm": 0.5,
+      "minimum_inter_pocket_web_mm": 4.950399999999995,
+      "minimum_pocket_to_exterior_mm": 6.249246470857642,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -57.89999999999999,
+          -8.58843102492085e-18
+        ],
+        [
+          -48.24999999999999,
+          2.695210943139728e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 10139.030046959266
+    },
+    {
+      "z_mm": 0.5000000000000001,
+      "minimum_inter_pocket_web_mm": 4.950399999999994,
+      "minimum_pocket_to_exterior_mm": 6.249246470857642,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          57.89999999999999,
+          1.5400924811431048e-17
+        ],
+        [
+          48.25000000000001,
+          -3.593614590852973e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 10139.030046959266
+    },
+    {
+      "z_mm": 0.7000000000000001,
+      "minimum_inter_pocket_web_mm": 4.950399999999995,
+      "minimum_pocket_to_exterior_mm": 6.253997653190987,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -57.899999999999984,
+          7.986849757498595e-17
+        ],
+        [
+          -48.25,
+          3.5936145908529726e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 10140.930397552425
+    },
+    {
+      "z_mm": 0.9000000000000001,
+      "minimum_inter_pocket_web_mm": 4.950399999999995,
+      "minimum_pocket_to_exterior_mm": 6.258748835524335,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -57.89999999999999,
+          -1.8391894225784266e-18
+        ],
+        [
+          -48.25000000000001,
+          -0.0
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 10142.809071326203
+    },
+    {
+      "z_mm": 0.999,
+      "minimum_inter_pocket_web_mm": 4.950399999999995,
+      "minimum_pocket_to_exterior_mm": 6.261099884424849,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -57.899999999999984,
+          -5.3744791023137525e-17
+        ],
+        [
+          -48.25,
+          2.93384941206356e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 10143.730994150097
+    },
+    {
+      "z_mm": 1.001,
+      "minimum_inter_pocket_web_mm": 4.947543799999998,
+      "minimum_pocket_to_exterior_mm": 6.259719176930763,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -57.900000000000006,
+          -7.029454006481381e-17
+        ],
+        [
+          -48.25000000000001,
+          -8.031377989614381e-18
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 10141.026621560193
+    },
+    {
+      "z_mm": 1.1000000000000003,
+      "minimum_inter_pocket_web_mm": 4.6647799999999995,
+      "minimum_pocket_to_exterior_mm": 6.1206805931718495,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -57.900000000000006,
+          1.516623260643262e-17
+        ],
+        [
+          -48.25000000000001,
+          -2.5328497665135636e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 9863.4845317912
+    },
+    {
+      "z_mm": 1.3000000000000003,
+      "minimum_inter_pocket_web_mm": 4.093539999999997,
+      "minimum_pocket_to_exterior_mm": 5.839794565376073,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          57.9,
+          2.4153024012504892e-17
+        ],
+        [
+          48.250000000000014,
+          -4.8476681359850016e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 9249.094472596631
+    },
+    {
+      "z_mm": 1.5000000000000004,
+      "minimum_inter_pocket_web_mm": 3.522290165793524,
+      "minimum_pocket_to_exterior_mm": 5.5589085375803,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          28.94999648092467,
+          50.142879295695145
+        ],
+        [
+          24.12500715177235,
+          41.78571452510274
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 8562.866328114915
+    },
+    {
+      "z_mm": 1.7000000000000004,
+      "minimum_inter_pocket_web_mm": 2.951043568350755,
+      "minimum_pocket_to_exterior_mm": 5.278022509784527,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -28.949998475675983,
+          -50.14287803968727
+        ],
+        [
+          -24.1250085413006,
+          -41.785712957671876
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7804.800098346094
+    },
+    {
+      "z_mm": 1.9000000000000004,
+      "minimum_inter_pocket_web_mm": 2.3797969709079827,
+      "minimum_pocket_to_exterior_mm": 4.997136481988747,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -28.95000015201429,
+          -50.14287770655463
+        ],
+        [
+          -24.12500906084488,
+          -41.78571167876997
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6974.8957832901315
+    },
+    {
+      "z_mm": 1.999,
+      "minimum_inter_pocket_web_mm": 2.097029905173805,
+      "minimum_pocket_to_exterior_mm": 4.858097898229834,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -28.95000084499901,
+          -50.14287781002465
+        ],
+        [
+          -24.125009034053384,
+          -41.78571110074188
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6537.512157805155
+    },
+    {
+      "z_mm": 2.001,
+      "minimum_inter_pocket_web_mm": 2.0942549312092105,
+      "minimum_pocket_to_exterior_mm": 4.856271963337004,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -28.95022347024626,
+          50.143263390195806
+        ],
+        [
+          -24.12519101446225,
+          41.7860263023905
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6533.0130860186
+    },
+    {
+      "z_mm": 2.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.102299574447675,
+      "minimum_pocket_to_exterior_mm": 4.818743649645921,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -28.972262722705732,
+          50.18143564478566
+        ],
+        [
+          -24.143207188355262,
+          41.81723183305438
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6535.505190636426
+    },
+    {
+      "z_mm": 2.3000000000000007,
+      "minimum_inter_pocket_web_mm": 2.11855137896985,
+      "minimum_pocket_to_exterior_mm": 4.6861932039490695,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.016786457724088,
+          50.258551306495356
+        ],
+        [
+          -24.179603492008603,
+          41.880273313428205
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6517.4357711393
+    },
+    {
+      "z_mm": 2.5000000000000004,
+      "minimum_inter_pocket_web_mm": 2.1348031834920187,
+      "minimum_pocket_to_exterior_mm": 4.551372289030542,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.061310182957786,
+          50.335666962856315
+        ],
+        [
+          -24.21599978612453,
+          41.94331479962154
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6497.732304244377
+    },
+    {
+      "z_mm": 2.7000000000000006,
+      "minimum_inter_pocket_web_mm": 2.1510549880141943,
+      "minimum_pocket_to_exterior_mm": 4.416554421713178,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          29.105833898422834,
+          -50.41278261407795
+        ],
+        [
+          24.252396070883822,
+          -42.006356291738754
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6477.328292514054
+    },
+    {
+      "z_mm": 2.900000000000001,
+      "minimum_inter_pocket_web_mm": 2.167306792536367,
+      "minimum_pocket_to_exterior_mm": 4.281736554395809,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.150357604135223,
+          50.48989826036966
+        ],
+        [
+          -24.28879234646728,
+          42.06939778988425
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6456.223735948313
+    },
+    {
+      "z_mm": 3.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.183558597058528,
+      "minimum_pocket_to_exterior_mm": 4.218740863580108,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.19488130011096,
+          50.56701390194087
+        ],
+        [
+          -24.325188613055712,
+          42.132439294162445
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6465.033578205808
+    },
+    {
+      "z_mm": 3.3000000000000007,
+      "minimum_inter_pocket_web_mm": 2.199810401580703,
+      "minimum_pocket_to_exterior_mm": 4.218740140568638,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.239404986366065,
+          50.644129539000986
+        ],
+        [
+          -24.361584870829937,
+          42.195480804677715
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6500.8654965113765
+    },
+    {
+      "z_mm": 3.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.216062206102872,
+      "minimum_pocket_to_exterior_mm": 4.218739417557169,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.283928662916544,
+          50.721245171759385
+        ],
+        [
+          -24.39798111997076,
+          42.25852232153444
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6536.678227710723
+    },
+    {
+      "z_mm": 3.7000000000000006,
+      "minimum_inter_pocket_web_mm": 2.2323140106250454,
+      "minimum_pocket_to_exterior_mm": 4.2187386945456975,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.328452329778386,
+          50.79836080042552
+        ],
+        [
+          -24.43437736065896,
+          42.321563844837044
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6572.471771803823
+    },
+    {
+      "z_mm": 3.900000000000001,
+      "minimum_inter_pocket_web_mm": 2.2485658151472125,
+      "minimum_pocket_to_exterior_mm": 4.218737971534229,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.372972001584046,
+          -50.87547643260632
+        ],
+        [
+          -24.470771635867017,
+          -42.38460898941168
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6608.246128790695
+    },
+    {
+      "z_mm": 4.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.2648176196693814,
+      "minimum_pocket_to_exterior_mm": 4.2187372485227606,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          29.4174996345002,
+          -50.95259204631857
+        ],
+        [
+          24.507169817400772,
+          -42.447646911197424
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6644.001298671302
+    },
+    {
+      "z_mm": 4.300000000000001,
+      "minimum_inter_pocket_web_mm": 2.28106942419155,
+      "minimum_pocket_to_exterior_mm": 4.218736525511291,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.462023272392187,
+          51.0297076639643
+        ],
+        [
+          -24.543566033816,
+          42.51068845446401
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6679.7372814456885
+    },
+    {
+      "z_mm": 4.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.2973212287137237,
+      "minimum_pocket_to_exterior_mm": 4.218735802499827,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.506546900659565,
+          51.10682327835539
+        ],
+        [
+          -24.57996224250183,
+          42.57373000459403
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6713.616786298499
+    },
+    {
+      "z_mm": 4.7,
+      "minimum_inter_pocket_web_mm": 2.3135730332358984,
+      "minimum_pocket_to_exterior_mm": 4.2187354054852815,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          29.551070519318337,
+          -51.183938889701246
+        ],
+        [
+          24.616358443639076,
+          -42.63677156169189
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6743.195835041139
+    },
+    {
+      "z_mm": 4.9,
+      "minimum_inter_pocket_web_mm": 2.3298248377580655,
+      "minimum_pocket_to_exterior_mm": 4.210866684400902,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.595594128384512,
+          51.261054498211294
+        ],
+        [
+          -24.652754637408567,
+          42.699813125862
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6766.634806356917
+    },
+    {
+      "z_mm": 5.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.3460766422802326,
+      "minimum_pocket_to_exterior_mm": 4.121819608297144,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          29.64011772787408,
+          -51.338170104094885
+        ],
+        [
+          24.689150823991074,
+          -42.76285469720872
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6784.964031974498
+    },
+    {
+      "z_mm": 5.300000000000001,
+      "minimum_inter_pocket_web_mm": 2.3623284468024015,
+      "minimum_pocket_to_exterior_mm": 4.0327725321933885,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          29.684641317803052,
+          -51.415285707561466
+        ],
+        [
+          24.725547003567428,
+          -42.82589627583647
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6802.569043433343
+    },
+    {
+      "z_mm": 5.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.3785802513245766,
+      "minimum_pocket_to_exterior_mm": 3.9437254560896338,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.729164898187438,
+          51.49240130882045
+        ],
+        [
+          -24.76194317631842,
+          42.88893786184963
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6819.4442810444725
+    },
+    {
+      "z_mm": 5.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.3948320558467455,
+      "minimum_pocket_to_exterior_mm": 3.8546783799858786,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.77368846904323,
+          51.56951690808121
+        ],
+        [
+          -24.798339342424867,
+          42.95197945535261
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6835.57873354482
+    },
+    {
+      "z_mm": 5.9,
+      "minimum_inter_pocket_web_mm": 2.411083860368919,
+      "minimum_pocket_to_exterior_mm": 3.765631303882124,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          29.818212030386444,
+          -51.64663250555322
+        ],
+        [
+          24.834735502067566,
+          -43.01502105644978
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6850.972183817856
+    },
+    {
+      "z_mm": 6.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.427335664891086,
+      "minimum_pocket_to_exterior_mm": 3.676584227778364,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.86273558223305,
+          51.72374810144581
+        ],
+        [
+          -24.871131655427334,
+          43.078062665245575
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6865.624633160873
+    },
+    {
+      "z_mm": 6.300000000000001,
+      "minimum_inter_pocket_web_mm": 2.443587469413255,
+      "minimum_pocket_to_exterior_mm": 3.58753715167461,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          29.907259124599086,
+          -51.80086369596844
+        ],
+        [
+          24.907527802684953,
+          -43.141104281844335
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6879.536083971116
+    },
+    {
+      "z_mm": 6.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.4598392739354296,
+      "minimum_pocket_to_exterior_mm": 3.498490075570855,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.95178265750053,
+          51.87797928933048
+        ],
+        [
+          -24.943923944021268,
+          43.2041459063505
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6892.7065363013735
+    },
+    {
+      "z_mm": 6.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.4760910784575962,
+      "minimum_pocket_to_exterior_mm": 3.4094429994670983,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -29.99630618095339,
+          51.955094881741374
+        ],
+        [
+          -24.980320079617055,
+          43.26718753886843
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6905.145189800241
+    },
+    {
+      "z_mm": 6.900000000000001,
+      "minimum_inter_pocket_web_mm": 2.4923419354838714,
+      "minimum_pocket_to_exterior_mm": 3.3203959233633418,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -60.081626456739556,
+          3.265595089029944e-06
+        ],
+        [
+          -50.03346451612903,
+          -5.2448187811657515e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6916.8737765304395
+    },
+    {
+      "z_mm": 7.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.5085926267281167,
+      "minimum_pocket_to_exterior_mm": 3.2313488472595866,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -60.17067246240439,
+          3.28463566924576e-06
+        ],
+        [
+          -50.106258986175106,
+          -2.0979275124662991e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6927.889467812756
+    },
+    {
+      "z_mm": 7.300000000000001,
+      "minimum_inter_pocket_web_mm": 2.524843317972355,
+      "minimum_pocket_to_exterior_mm": 3.142301771155834,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          60.25971846840843,
+          -3.294715600184222e-06
+        ],
+        [
+          50.17905345622119,
+          -1.9409097486743743e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6938.179570699282
+    },
+    {
+      "z_mm": 7.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.5410940092165926,
+      "minimum_pocket_to_exterior_mm": 3.0532546950520807,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          60.348764474542904,
+          -3.2958348877644124e-06
+        ],
+        [
+          50.25184792626728,
+          -5.244818781165748e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6947.814373487427
+    },
+    {
+      "z_mm": 7.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.557344700460838,
+      "minimum_pocket_to_exterior_mm": 2.9642076189483237,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -60.43781048059907,
+          3.2879935375863686e-06
+        ],
+        [
+          -50.32464239631337,
+          8.992720133219701e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6957.156296018871
+    },
+    {
+      "z_mm": 7.900000000000001,
+      "minimum_inter_pocket_web_mm": 2.573595391705076,
+      "minimum_pocket_to_exterior_mm": 2.875160542844566,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          60.52685648636814,
+          -3.2711915572259447e-06
+        ],
+        [
+          50.397436866359456,
+          8.196604528401e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6966.501244699166
+    },
+    {
+      "z_mm": 8.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.589846082949314,
+      "minimum_pocket_to_exterior_mm": 2.7861134667408125,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -60.6159024916413,
+          3.2454289528312988e-06
+        ],
+        [
+          -50.47023133640551,
+          1.180084225762294e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6975.856574484629
+    },
+    {
+      "z_mm": 8.3,
+      "minimum_inter_pocket_web_mm": 2.606096774193553,
+      "minimum_pocket_to_exterior_mm": 2.6970663906370556,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -60.704948496209845,
+          3.2107057312835406e-06
+        ],
+        [
+          -50.54302580645161,
+          -1.1053076495110643e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6985.224141345096
+    },
+    {
+      "z_mm": 8.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.622347465437791,
+      "minimum_pocket_to_exterior_mm": 2.608019314533299,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          60.79399449986492,
+          -3.1670218980107357e-06
+        ],
+        [
+          50.6158202764977,
+          -2.622409390582876e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6994.6235985466665
+    },
+    {
+      "z_mm": 8.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.638598156682029,
+      "minimum_pocket_to_exterior_mm": 2.5189722384295448,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          60.883040502397805,
+          -3.114377460184486e-06
+        ],
+        [
+          50.68861474654377,
+          -3.0688723989531014e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7004.0646243358005
+    },
+    {
+      "z_mm": 8.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.6548488479262673,
+      "minimum_pocket_to_exterior_mm": 2.4299251623257874,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -60.97208650359972,
+          3.0527724245529826e-06
+        ],
+        [
+          -50.76140921658986,
+          -3.159061755875202e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7013.535295557347
+    },
+    {
+      "z_mm": 9.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.6710995391705055,
+      "minimum_pocket_to_exterior_mm": 2.340878086222034,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -61.06113250326184,
+          2.982206796792664e-06
+        ],
+        [
+          -50.83420368663595,
+          -4.458095963990889e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7023.023058817532
+    },
+    {
+      "z_mm": 9.3,
+      "minimum_inter_pocket_web_mm": 2.6873502304147507,
+      "minimum_pocket_to_exterior_mm": 2.2518310101182766,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          61.15017850117549,
+          -2.90268058417377e-06
+        ],
+        [
+          50.906998156682036,
+          4.2691943289910224e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7032.52791204789
+    },
+    {
+      "z_mm": 9.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.703600921658996,
+      "minimum_pocket_to_exterior_mm": 2.1878330853535246,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -61.239224497131794,
+          2.81419379234063e-06
+        ],
+        [
+          -50.97979262672811,
+          -9.169289178076242e-18
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7046.762521917171
+    },
+    {
+      "z_mm": 9.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.719851612903234,
+      "minimum_pocket_to_exterior_mm": 2.2652198176054914,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -61.328270490922016,
+          2.716746428439577e-06
+        ],
+        [
+          -51.05258709677418,
+          1.311204695291438e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7089.236084581239
+    },
+    {
+      "z_mm": 9.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.7361023041474724,
+      "minimum_pocket_to_exterior_mm": 2.342607300123828,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -61.417316482337405,
+          2.610338498140267e-06
+        ],
+        [
+          -51.12538156682027,
+          -8.522830519394347e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7134.547027063416
+    },
+    {
+      "z_mm": 10.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.75235299539171,
+      "minimum_pocket_to_exterior_mm": 2.419988254678874,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -61.50636247116917,
+          2.4949700088849503e-06
+        ],
+        [
+          -51.19817603686636,
+          2.819090094876592e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7182.69534936366
+    },
+    {
+      "z_mm": 10.300000000000002,
+      "minimum_inter_pocket_web_mm": 2.7686036866359482,
+      "minimum_pocket_to_exterior_mm": 2.4973635699453003,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -61.59540845720851,
+          2.3706409676775902e-06
+        ],
+        [
+          -51.27097050691243,
+          9.178432867040059e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7233.681051481941
+    },
+    {
+      "z_mm": 10.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.7848543778801864,
+      "minimum_pocket_to_exterior_mm": 2.5747388852117323,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          61.6844544402467,
+          -2.2373513788437037e-06
+        ],
+        [
+          51.343764976958525,
+          2.3271806003449725e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7287.504133664104
+    },
+    {
+      "z_mm": 10.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.801105069124432,
+      "minimum_pocket_to_exterior_mm": 2.652114200478155,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          61.773500420074946,
+          -2.095101250432729e-06
+        ],
+        [
+          51.41655944700461,
+          9.47465863055955e-18
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7344.164668388555
+    },
+    {
+      "z_mm": 10.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.8173557603686703,
+      "minimum_pocket_to_exterior_mm": 4.218708294930878,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          61.862546396484454,
+          -1.9438905883250505e-06
+        ],
+        [
+          51.48935391705069,
+          6.994700980358453e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7848.3182038985815
+    },
+    {
+      "z_mm": 11.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.833606451612908,
+      "minimum_pocket_to_exterior_mm": 4.218715553888472,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          61.95159236926646,
+          -1.7837193991786172e-06
+        ],
+        [
+          51.56214838709678,
+          -1.1800842257622944e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7883.404523041028
+    },
+    {
+      "z_mm": 11.300000000000002,
+      "minimum_inter_pocket_web_mm": 2.849857142857146,
+      "minimum_pocket_to_exterior_mm": 4.2187228128460665,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -62.040638338212204,
+          1.6145876893247364e-06
+        ],
+        [
+          -51.63494285714285,
+          2.0857469359631742e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7918.471770392867
+    },
+    {
+      "z_mm": 11.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.866107834101385,
+      "minimum_pocket_to_exterior_mm": 4.218730071803662,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -62.129684303112946,
+          1.4364954649162415e-06
+        ],
+        [
+          -51.70773732718894,
+          -0.0
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7953.51994595415
+    },
+    {
+      "z_mm": 11.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.882358525345623,
+      "minimum_pocket_to_exterior_mm": 4.2187370176150605,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          62.21873026375984,
+          -1.2494427330747443e-06
+        ],
+        [
+          51.78053179723503,
+          -0.0
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7988.549049724874
+    },
+    {
+      "z_mm": 11.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.8986092165898683,
+      "minimum_pocket_to_exterior_mm": 4.21873651019102,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -62.307776219944174,
+          1.053429501661175e-06
+        ],
+        [
+          -51.853326267281105,
+          -0.0
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 8023.5590817049915
+    },
+    {
+      "z_mm": 12.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.9148599078341135,
+      "minimum_pocket_to_exterior_mm": 4.218736695587162,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -62.396822171457174,
+          8.484557735778469e-07
+        ],
+        [
+          -51.92612073732719,
+          4.917017607342894e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 8058.55004189455
+    },
+    {
+      "z_mm": 12.300000000000002,
+      "minimum_inter_pocket_web_mm": 2.9311105990783513,
+      "minimum_pocket_to_exterior_mm": 4.153916692840411,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -62.48586811809001,
+          6.34521557938082e-07
+        ],
+        [
+          -51.99891520737326,
+          5.244818781165753e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 8067.046499786178
+    },
+    {
+      "z_mm": 12.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.94736129032259,
+      "minimum_pocket_to_exterior_mm": 4.01984175527123,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          62.57491405963395,
+          -4.1162686064935307e-07
+        ],
+        [
+          52.071709677419356,
+          -8.434613196206714e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 8046.7696888144965
+    },
+    {
+      "z_mm": 12.700000000000003,
+      "minimum_inter_pocket_web_mm": 2.9636119815668276,
+      "minimum_pocket_to_exterior_mm": 3.88576681770202,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          62.663959995880255,
+          -1.7977168758527036e-07
+        ],
+        [
+          52.14450414746543,
+          1.0060857536437063e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 8026.343833046308
+    },
+    {
+      "z_mm": 12.85,
+      "minimum_inter_pocket_web_mm": 2.9758000000000067,
+      "minimum_pocket_to_exterior_mm": 3.7852106145251407,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          62.73074444446278,
+          7.64822918068384e-17
+        ],
+        [
+          52.199099999999994,
+          1.0489637562331506e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 8010.926630572454
+    },
+    {
+      "z_mm": 12.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.9094652173913076,
+      "minimum_pocket_to_exterior_mm": 3.7159971095457816,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -62.753005335987716,
+          -1.164251760412679e-07
+        ],
+        [
+          -52.21729748206046,
+          5.588637251274821e-07
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7899.450712875038
+    },
+    {
+      "z_mm": 13.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.6441260869565184,
+      "minimum_pocket_to_exterior_mm": 3.439143089628359,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -62.842048840234945,
+          -4.5932476359993785e-07
+        ],
+        [
+          -52.29008769894256,
+          2.2048487302196763e-06
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 7443.594416336218
+    },
+    {
+      "z_mm": 13.300000000000002,
+      "minimum_inter_pocket_web_mm": 2.3787869565217434,
+      "minimum_pocket_to_exterior_mm": 3.1622890697109507,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          62.93109228665847,
+          6.209434636044646e-07
+        ],
+        [
+          52.36287818566384,
+          -2.9806496092921973e-06
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6971.813918598631
+    },
+    {
+      "z_mm": 13.5,
+      "minimum_inter_pocket_web_mm": 2.113447826086961,
+      "minimum_pocket_to_exterior_mm": 2.8784872814950524,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          63.020135719523154,
+          6.193594985397628e-07
+        ],
+        [
+          52.43566873565839,
+          -2.9730458031518683e-06
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6484.109219662208
+    },
+    {
+      "z_mm": 13.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.113447826086954,
+      "minimum_pocket_to_exterior_mm": 2.8784872814950524,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -63.02013571952313,
+          -6.193594973024891e-07
+        ],
+        [
+          -52.435668735658375,
+          2.9730458029032485e-06
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 6484.109219662208
+    },
+    {
+      "z_mm": 13.700000000000003,
+      "minimum_inter_pocket_web_mm": 1.848108695652172,
+      "minimum_pocket_to_exterior_mm": 2.579549935646642,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          63.10917917260264,
+          4.70324627210514e-07
+        ],
+        [
+          52.50845919131867,
+          -2.2576491698800445e-06
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 5980.480319526989
+    },
+    {
+      "z_mm": 13.75,
+      "minimum_inter_pocket_web_mm": 1.7817739130434729,
+      "minimum_pocket_to_exterior_mm": 2.5048141664553745,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          63.131440042186924,
+          4.1168114770372437e-07
+        ],
+        [
+          52.52665677576696,
+          -1.9761490563935875e-06
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 5852.084938055879
+    },
+    {
+      "z_mm": 13.900000000000002,
+      "minimum_inter_pocket_web_mm": 1.582769565217383,
+      "minimum_pocket_to_exterior_mm": 2.280606858881543,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          63.19822267153833,
+          1.8762672037995003e-07
+        ],
+        [
+          52.581249432986965,
+          -9.006444193547343e-07
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 5460.927218192978
+    },
+    {
+      "z_mm": 13.95,
+      "minimum_inter_pocket_web_mm": 1.5164347826086981,
+      "minimum_pocket_to_exterior_mm": 2.2058710896902753,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          63.22048355581828,
+          9.752074722073923e-08
+        ],
+        [
+          52.59944694885662,
+          -4.681183667249052e-07
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 5328.550786422182
+    },
+    {
+      "z_mm": 13.999,
+      "minimum_inter_pocket_web_mm": 1.4514266956521737,
+      "minimum_pocket_to_exterior_mm": 2.132615306383027,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -63.24229922662779,
+          -2.0219747430511134e-09
+        ],
+        [
+          -52.61728049473856,
+          9.705871828945587e-09
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 5197.856279536577
+    }
+  ],
+  "pocket_measurements": [
+    {
+      "q": -6,
+      "r": 0,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.00006089342418,
+      "normal_axis_AF_mm": [
+        6.99995913441447,
+        6.999996736249239,
+        7.000000284820461
+      ]
+    },
+    {
+      "q": -6,
+      "r": 1,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.99993369986386,
+      "normal_axis_AF_mm": [
+        7.000011950393001,
+        7.000014995635369,
+        7.000065317165589
+      ]
+    },
+    {
+      "q": -6,
+      "r": 2,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.999943213031745,
+      "normal_axis_AF_mm": [
+        7.000023974875072,
+        7.000058268153275,
+        7.000068514284502
+      ]
+    },
+    {
+      "q": -6,
+      "r": 3,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.999915532840426,
+      "normal_axis_AF_mm": [
+        6.99997410414665,
+        7.000023644588955,
+        6.999971722967949
+      ]
+    },
+    {
+      "q": -6,
+      "r": 4,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000034227414364,
+      "normal_axis_AF_mm": [
+        6.9999830484570875,
+        6.999943265048181,
+        7.000036648180654
+      ]
+    },
+    {
+      "q": -6,
+      "r": 5,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.00010088174394,
+      "normal_axis_AF_mm": [
+        7.0000410869793175,
+        7.000033173548944,
+        7.000039050885961
+      ]
+    },
+    {
+      "q": -6,
+      "r": 6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000021233324468,
+      "normal_axis_AF_mm": [
+        7.000001456222758,
+        7.00006080434847,
+        7.000005570875753
+      ]
+    },
+    {
+      "q": -5,
+      "r": -1,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.999922594238534,
+      "normal_axis_AF_mm": [
+        7.000006343756686,
+        7.000061690188005,
+        7.000018799711765
+      ]
+    },
+    {
+      "q": -5,
+      "r": 0,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 20.0001070538494,
+      "normal_axis_AF_mm": [
+        6.999958270758394,
+        6.999996736249239,
+        6.999996736249241
+      ]
+    },
+    {
+      "q": -5,
+      "r": 1,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999948680607936,
+      "normal_axis_AF_mm": [
+        7.000062664281853,
+        7.000061338953152,
+        7.000046828161921
+      ]
+    },
+    {
+      "q": -5,
+      "r": 2,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 20.000096386783298,
+      "normal_axis_AF_mm": [
+        7.000054735979236,
+        7.000035533045907,
+        7.000012424551548
+      ]
+    },
+    {
+      "q": -5,
+      "r": 3,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.99994172654767,
+      "normal_axis_AF_mm": [
+        7.000076825500823,
+        7.000047390104669,
+        7.000008304706614
+      ]
+    },
+    {
+      "q": -5,
+      "r": 4,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.9999815779021,
+      "normal_axis_AF_mm": [
+        7.0000232713175645,
+        7.00006034101334,
+        7.000038289148083
+      ]
+    },
+    {
+      "q": -5,
+      "r": 5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999923333520275,
+      "normal_axis_AF_mm": [
+        6.999998885780624,
+        7.000044329283957,
+        7.00004254937881
+      ]
+    },
+    {
+      "q": -5,
+      "r": 6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000016855901848,
+      "normal_axis_AF_mm": [
+        6.999949020815386,
+        6.999981546574569,
+        6.999994000331608
+      ]
+    },
+    {
+      "q": -4,
+      "r": -2,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.999935169535355,
+      "normal_axis_AF_mm": [
+        7.000023974875072,
+        7.000070589031501,
+        7.000058268153273
+      ]
+    },
+    {
+      "q": -4,
+      "r": -1,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999946642111535,
+      "normal_axis_AF_mm": [
+        7.000062664281853,
+        7.000046828161924,
+        7.000061338953153
+      ]
+    },
+    {
+      "q": -4,
+      "r": 0,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999841473412884,
+      "normal_axis_AF_mm": [
+        6.999916529377641,
+        6.999996736249239,
+        6.999999512894883
+      ]
+    },
+    {
+      "q": -4,
+      "r": 1,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999908577377312,
+      "normal_axis_AF_mm": [
+        7.000003737398824,
+        6.999992217203614,
+        7.000041972108701
+      ]
+    },
+    {
+      "q": -4,
+      "r": 2,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999877512249046,
+      "normal_axis_AF_mm": [
+        6.999962020560762,
+        7.0000731983627436,
+        7.000034475038747
+      ]
+    },
+    {
+      "q": -4,
+      "r": 3,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999922087782464,
+      "normal_axis_AF_mm": [
+        7.000003997726378,
+        7.0000203517411315,
+        7.000072400852688
+      ]
+    },
+    {
+      "q": -4,
+      "r": 4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999953023573399,
+      "normal_axis_AF_mm": [
+        6.99999928428379,
+        7.000027111761865,
+        7.00001302880286
+      ]
+    },
+    {
+      "q": -4,
+      "r": 5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.9999710203437,
+      "normal_axis_AF_mm": [
+        7.000079443609488,
+        7.000053693091622,
+        7.000053548741066
+      ]
+    },
+    {
+      "q": -4,
+      "r": 6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000036585700833,
+      "normal_axis_AF_mm": [
+        6.999989029354712,
+        6.999978764731457,
+        7.00002607779339
+      ]
+    },
+    {
+      "q": -3,
+      "r": -3,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.99991078532017,
+      "normal_axis_AF_mm": [
+        6.99997410414665,
+        6.99997172296795,
+        7.000023644588952
+      ]
+    },
+    {
+      "q": -3,
+      "r": -2,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 20.000080359296515,
+      "normal_axis_AF_mm": [
+        7.000056691440168,
+        7.000011346133552,
+        7.000035533045905
+      ]
+    },
+    {
+      "q": -3,
+      "r": -1,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999915699486406,
+      "normal_axis_AF_mm": [
+        7.000003737398821,
+        7.0000479688915185,
+        6.999992217203612
+      ]
+    },
+    {
+      "q": -3,
+      "r": 0,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999804499906945,
+      "normal_axis_AF_mm": [
+        7.000015489891405,
+        7.00001477332436,
+        7.000014773324358
+      ]
+    },
+    {
+      "q": -3,
+      "r": 1,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999949416672248,
+      "normal_axis_AF_mm": [
+        7.000085920665076,
+        7.000059313830094,
+        7.000027626020367
+      ]
+    },
+    {
+      "q": -3,
+      "r": 2,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999951427222218,
+      "normal_axis_AF_mm": [
+        6.99996549496384,
+        7.00003919673598,
+        7.0000637466340905
+      ]
+    },
+    {
+      "q": -3,
+      "r": 3,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999901633808987,
+      "normal_axis_AF_mm": [
+        7.000007815668083,
+        7.000042065491439,
+        7.000009158602431
+      ]
+    },
+    {
+      "q": -3,
+      "r": 4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999858325189464,
+      "normal_axis_AF_mm": [
+        6.999951581576612,
+        7.000013180035213,
+        7.000023660105817
+      ]
+    },
+    {
+      "q": -3,
+      "r": 5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999952448811367,
+      "normal_axis_AF_mm": [
+        7.000004310026101,
+        6.9999868993667755,
+        6.999994924373139
+      ]
+    },
+    {
+      "q": -3,
+      "r": 6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000082696604377,
+      "normal_axis_AF_mm": [
+        7.0,
+        7.00004915333448,
+        7.00004041415575
+      ]
+    },
+    {
+      "q": -2,
+      "r": -4,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000035042392124,
+      "normal_axis_AF_mm": [
+        6.9999830484570875,
+        7.0000366481806555,
+        6.9999432650481825
+      ]
+    },
+    {
+      "q": -2,
+      "r": -3,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.99993714355294,
+      "normal_axis_AF_mm": [
+        7.000082723859253,
+        7.00001095348373,
+        7.000047390104667
+      ]
+    },
+    {
+      "q": -2,
+      "r": -2,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999877704756976,
+      "normal_axis_AF_mm": [
+        6.999962020560762,
+        7.000034475038746,
+        7.0000731983627436
+      ]
+    },
+    {
+      "q": -2,
+      "r": -1,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.99996064024191,
+      "normal_axis_AF_mm": [
+        7.000092622100834,
+        7.000027626020369,
+        7.000055560840734
+      ]
+    },
+    {
+      "q": -2,
+      "r": 0,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.000165417130773,
+      "normal_axis_AF_mm": [
+        7.000006924320414,
+        7.000010490538865,
+        7.0000104905388625
+      ]
+    },
+    {
+      "q": -2,
+      "r": 1,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.00020155143986,
+      "normal_axis_AF_mm": [
+        7.000007038652787,
+        6.999983469340895,
+        6.999987609740861
+      ]
+    },
+    {
+      "q": -2,
+      "r": 2,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.000053873670812,
+      "normal_axis_AF_mm": [
+        6.999999929592402,
+        7.000026971506749,
+        7.0000409072383984
+      ]
+    },
+    {
+      "q": -2,
+      "r": 3,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999874748068855,
+      "normal_axis_AF_mm": [
+        7.000004933810731,
+        7.000050851294525,
+        7.000053178599214
+      ]
+    },
+    {
+      "q": -2,
+      "r": 4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.99992279878491,
+      "normal_axis_AF_mm": [
+        7.0,
+        7.000019570145119,
+        7.000016505529619
+      ]
+    },
+    {
+      "q": -2,
+      "r": 5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999952448811413,
+      "normal_axis_AF_mm": [
+        7.000004310026101,
+        6.999994924373141,
+        6.999986899366773
+      ]
+    },
+    {
+      "q": -2,
+      "r": 6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000034278448013,
+      "normal_axis_AF_mm": [
+        6.999989029354712,
+        7.00002607779339,
+        6.999978764731458
+      ]
+    },
+    {
+      "q": -1,
+      "r": -5,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.00010088174394,
+      "normal_axis_AF_mm": [
+        7.0000410869793175,
+        7.00003905088596,
+        7.000033173548943
+      ]
+    },
+    {
+      "q": -1,
+      "r": -4,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999973397515003,
+      "normal_axis_AF_mm": [
+        7.00002716391509,
+        7.000038289148083,
+        7.000057551315599
+      ]
+    },
+    {
+      "q": -1,
+      "r": -3,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999932704915,
+      "normal_axis_AF_mm": [
+        7.000003997726378,
+        7.000070599172428,
+        7.0000203517411315
+      ]
+    },
+    {
+      "q": -1,
+      "r": -2,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999962403122753,
+      "normal_axis_AF_mm": [
+        6.99996549496384,
+        7.000062790158825,
+        7.00003919673598
+      ]
+    },
+    {
+      "q": -1,
+      "r": -1,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.000202570610517,
+      "normal_axis_AF_mm": [
+        7.0000070386527895,
+        6.999987011938721,
+        6.999984011418828
+      ]
+    },
+    {
+      "q": -1,
+      "r": 0,
+      "ring": 1,
+      "specified_tilt_degrees": 4,
+      "measured_tilt_degrees": 4.000226285616176,
+      "normal_axis_AF_mm": [
+        6.99996509360054,
+        7.000003096876567,
+        7.000003096876567
+      ]
+    },
+    {
+      "q": -1,
+      "r": 1,
+      "ring": 1,
+      "specified_tilt_degrees": 4,
+      "measured_tilt_degrees": 4.000005994717582,
+      "normal_axis_AF_mm": [
+        7.00000002382335,
+        7.000023315959169,
+        7.000023278538054
+      ]
+    },
+    {
+      "q": -1,
+      "r": 2,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 7.999906495476651,
+      "normal_axis_AF_mm": [
+        7.0,
+        7.000044330755108,
+        7.000044330755109
+      ]
+    },
+    {
+      "q": -1,
+      "r": 3,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999894202983013,
+      "normal_axis_AF_mm": [
+        7.000004933810731,
+        7.000049719171276,
+        7.000056203426942
+      ]
+    },
+    {
+      "q": -1,
+      "r": 4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.9998587915996,
+      "normal_axis_AF_mm": [
+        6.999951581576613,
+        7.000023660105818,
+        7.000013180035213
+      ]
+    },
+    {
+      "q": -1,
+      "r": 5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.99997094124949,
+      "normal_axis_AF_mm": [
+        7.000079443609488,
+        7.000053548741067,
+        7.00005369309162
+      ]
+    },
+    {
+      "q": -1,
+      "r": 6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.00000693964855,
+      "normal_axis_AF_mm": [
+        6.999949020815386,
+        6.999999271168797,
+        6.999990138417612
+      ]
+    },
+    {
+      "q": 0,
+      "r": -6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000016485508255,
+      "normal_axis_AF_mm": [
+        7.000001456222758,
+        7.000003679241145,
+        7.00005839312675
+      ]
+    },
+    {
+      "q": 0,
+      "r": -5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999928775630085,
+      "normal_axis_AF_mm": [
+        6.999998885780625,
+        7.00004254937881,
+        7.000048019365945
+      ]
+    },
+    {
+      "q": 0,
+      "r": -4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999953023573557,
+      "normal_axis_AF_mm": [
+        6.99999928428379,
+        7.000013028802861,
+        7.000027111761865
+      ]
+    },
+    {
+      "q": 0,
+      "r": -3,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.99991312380835,
+      "normal_axis_AF_mm": [
+        7.0000078156680825,
+        7.0000149405787315,
+        7.000033319516475
+      ]
+    },
+    {
+      "q": 0,
+      "r": -2,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.000053873670847,
+      "normal_axis_AF_mm": [
+        6.999999929592402,
+        7.000040907238399,
+        7.000026971506749
+      ]
+    },
+    {
+      "q": 0,
+      "r": -1,
+      "ring": 1,
+      "specified_tilt_degrees": 4,
+      "measured_tilt_degrees": 4.000006686451662,
+      "normal_axis_AF_mm": [
+        7.000000642221586,
+        7.000023278538054,
+        7.000023315959167
+      ]
+    },
+    {
+      "q": 0,
+      "r": 0,
+      "ring": 0,
+      "specified_tilt_degrees": 0,
+      "measured_tilt_degrees": 5.01627577551632e-17,
+      "normal_axis_AF_mm": [
+        7.0,
+        7.000007028378658,
+        7.000007028378656
+      ]
+    },
+    {
+      "q": 0,
+      "r": 1,
+      "ring": 1,
+      "specified_tilt_degrees": 4,
+      "measured_tilt_degrees": 4.000006686451672,
+      "normal_axis_AF_mm": [
+        7.000000642221586,
+        7.000023278538054,
+        7.000023315959167
+      ]
+    },
+    {
+      "q": 0,
+      "r": 2,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.00005387367084,
+      "normal_axis_AF_mm": [
+        6.999999929592402,
+        7.000040907238399,
+        7.000026971506749
+      ]
+    },
+    {
+      "q": 0,
+      "r": 3,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999913123808248,
+      "normal_axis_AF_mm": [
+        7.0000078156680825,
+        7.000014940578732,
+        7.000033319516474
+      ]
+    },
+    {
+      "q": 0,
+      "r": 4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999953023573504,
+      "normal_axis_AF_mm": [
+        6.99999928428379,
+        7.00001302880286,
+        7.000027111761866
+      ]
+    },
+    {
+      "q": 0,
+      "r": 5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.99992877562996,
+      "normal_axis_AF_mm": [
+        6.999998885780624,
+        7.00004254937881,
+        7.000048019365945
+      ]
+    },
+    {
+      "q": 0,
+      "r": 6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000016485508212,
+      "normal_axis_AF_mm": [
+        7.000001456222758,
+        7.000003679241145,
+        7.00005839312675
+      ]
+    },
+    {
+      "q": 1,
+      "r": -6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000006939648543,
+      "normal_axis_AF_mm": [
+        6.999949020815386,
+        6.999999271168797,
+        6.999990138417611
+      ]
+    },
+    {
+      "q": 1,
+      "r": -5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999970941249536,
+      "normal_axis_AF_mm": [
+        7.000079443609488,
+        7.000053548741068,
+        7.000053693091619
+      ]
+    },
+    {
+      "q": 1,
+      "r": -4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999858791599697,
+      "normal_axis_AF_mm": [
+        6.999951581576613,
+        7.000023660105818,
+        7.000013180035213
+      ]
+    },
+    {
+      "q": 1,
+      "r": -3,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999894202983015,
+      "normal_axis_AF_mm": [
+        7.000004933810731,
+        7.000049719171275,
+        7.000056203426942
+      ]
+    },
+    {
+      "q": 1,
+      "r": -2,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 7.999906495476651,
+      "normal_axis_AF_mm": [
+        7.0,
+        7.000044330755109,
+        7.0000443307551095
+      ]
+    },
+    {
+      "q": 1,
+      "r": -1,
+      "ring": 1,
+      "specified_tilt_degrees": 4,
+      "measured_tilt_degrees": 4.0000059947175615,
+      "normal_axis_AF_mm": [
+        7.000000023823351,
+        7.000023315959169,
+        7.000023278538054
+      ]
+    },
+    {
+      "q": 1,
+      "r": 0,
+      "ring": 1,
+      "specified_tilt_degrees": 4,
+      "measured_tilt_degrees": 4.000226285616164,
+      "normal_axis_AF_mm": [
+        6.99996509360054,
+        7.000003096876567,
+        7.000003096876567
+      ]
+    },
+    {
+      "q": 1,
+      "r": 1,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.000202570610513,
+      "normal_axis_AF_mm": [
+        7.000007038652788,
+        6.999987011938721,
+        6.999984011418828
+      ]
+    },
+    {
+      "q": 1,
+      "r": 2,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999962403122714,
+      "normal_axis_AF_mm": [
+        6.99996549496384,
+        7.000062790158825,
+        7.00003919673598
+      ]
+    },
+    {
+      "q": 1,
+      "r": 3,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999932704914885,
+      "normal_axis_AF_mm": [
+        7.000003997726378,
+        7.000070599172428,
+        7.000020351741133
+      ]
+    },
+    {
+      "q": 1,
+      "r": 4,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999973397514953,
+      "normal_axis_AF_mm": [
+        7.00002716391509,
+        7.000038289148083,
+        7.000057551315599
+      ]
+    },
+    {
+      "q": 1,
+      "r": 5,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000100881744007,
+      "normal_axis_AF_mm": [
+        7.000041086979318,
+        7.00003905088596,
+        7.0000331735489425
+      ]
+    },
+    {
+      "q": 2,
+      "r": -6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.0000342784481,
+      "normal_axis_AF_mm": [
+        6.999989029354712,
+        7.00002607779339,
+        6.999978764731459
+      ]
+    },
+    {
+      "q": 2,
+      "r": -5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999952448811413,
+      "normal_axis_AF_mm": [
+        7.000004310026101,
+        6.999994924373141,
+        6.999986899366773
+      ]
+    },
+    {
+      "q": 2,
+      "r": -4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999922798784866,
+      "normal_axis_AF_mm": [
+        7.0,
+        7.000019570145117,
+        7.000016505529619
+      ]
+    },
+    {
+      "q": 2,
+      "r": -3,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999874748068853,
+      "normal_axis_AF_mm": [
+        7.000004933810731,
+        7.000050851294525,
+        7.000053178599214
+      ]
+    },
+    {
+      "q": 2,
+      "r": -2,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.000053873670874,
+      "normal_axis_AF_mm": [
+        6.999999929592402,
+        7.000026971506749,
+        7.0000409072383984
+      ]
+    },
+    {
+      "q": 2,
+      "r": -1,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.000201551439895,
+      "normal_axis_AF_mm": [
+        7.000007038652787,
+        6.999983469340895,
+        6.999987609740861
+      ]
+    },
+    {
+      "q": 2,
+      "r": 0,
+      "ring": 2,
+      "specified_tilt_degrees": 8,
+      "measured_tilt_degrees": 8.000165417130699,
+      "normal_axis_AF_mm": [
+        7.000006924320414,
+        7.000010490538865,
+        7.0000104905388625
+      ]
+    },
+    {
+      "q": 2,
+      "r": 1,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.99996064024189,
+      "normal_axis_AF_mm": [
+        7.000092622100834,
+        7.00002762602037,
+        7.000055560840735
+      ]
+    },
+    {
+      "q": 2,
+      "r": 2,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999877704756884,
+      "normal_axis_AF_mm": [
+        6.999962020560762,
+        7.000034475038747,
+        7.000073198362745
+      ]
+    },
+    {
+      "q": 2,
+      "r": 3,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999937143552845,
+      "normal_axis_AF_mm": [
+        7.000082723859253,
+        7.000010953483731,
+        7.000047390104667
+      ]
+    },
+    {
+      "q": 2,
+      "r": 4,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000035042392128,
+      "normal_axis_AF_mm": [
+        6.9999830484570875,
+        7.0000366481806555,
+        6.999943265048182
+      ]
+    },
+    {
+      "q": 3,
+      "r": -6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000082696604416,
+      "normal_axis_AF_mm": [
+        7.0,
+        7.00004915333448,
+        7.00004041415575
+      ]
+    },
+    {
+      "q": 3,
+      "r": -5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.99995244881146,
+      "normal_axis_AF_mm": [
+        7.000004310026101,
+        6.9999868993667755,
+        6.999994924373139
+      ]
+    },
+    {
+      "q": 3,
+      "r": -4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999858325189617,
+      "normal_axis_AF_mm": [
+        6.999951581576612,
+        7.000013180035213,
+        7.000023660105817
+      ]
+    },
+    {
+      "q": 3,
+      "r": -3,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999901633809047,
+      "normal_axis_AF_mm": [
+        7.000007815668083,
+        7.000042065491439,
+        7.000009158602431
+      ]
+    },
+    {
+      "q": 3,
+      "r": -2,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.999951427222202,
+      "normal_axis_AF_mm": [
+        6.99996549496384,
+        7.00003919673598,
+        7.0000637466340905
+      ]
+    },
+    {
+      "q": 3,
+      "r": -1,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.99994941667217,
+      "normal_axis_AF_mm": [
+        7.000085920665076,
+        7.000059313830094,
+        7.000027626020367
+      ]
+    },
+    {
+      "q": 3,
+      "r": 0,
+      "ring": 3,
+      "specified_tilt_degrees": 12,
+      "measured_tilt_degrees": 11.99980449990692,
+      "normal_axis_AF_mm": [
+        7.000015489891405,
+        7.00001477332436,
+        7.0000147733243585
+      ]
+    },
+    {
+      "q": 3,
+      "r": 1,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999915699486495,
+      "normal_axis_AF_mm": [
+        7.000003737398824,
+        7.0000479688915185,
+        6.999992217203612
+      ]
+    },
+    {
+      "q": 3,
+      "r": 2,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 20.00008035929646,
+      "normal_axis_AF_mm": [
+        7.000056691440168,
+        7.000011346133551,
+        7.000035533045905
+      ]
+    },
+    {
+      "q": 3,
+      "r": 3,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.99991078532016,
+      "normal_axis_AF_mm": [
+        6.99997410414665,
+        6.99997172296795,
+        7.000023644588952
+      ]
+    },
+    {
+      "q": 4,
+      "r": -6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.00003658570096,
+      "normal_axis_AF_mm": [
+        6.999989029354712,
+        6.999978764731457,
+        7.00002607779339
+      ]
+    },
+    {
+      "q": 4,
+      "r": -5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.99997102034372,
+      "normal_axis_AF_mm": [
+        7.000079443609488,
+        7.000053693091622,
+        7.000053548741067
+      ]
+    },
+    {
+      "q": 4,
+      "r": -4,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999953023573545,
+      "normal_axis_AF_mm": [
+        6.99999928428379,
+        7.000027111761865,
+        7.00001302880286
+      ]
+    },
+    {
+      "q": 4,
+      "r": -3,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999922087782561,
+      "normal_axis_AF_mm": [
+        7.000003997726378,
+        7.0000203517411315,
+        7.000072400852688
+      ]
+    },
+    {
+      "q": 4,
+      "r": -2,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.99987751224898,
+      "normal_axis_AF_mm": [
+        6.999962020560762,
+        7.0000731983627436,
+        7.000034475038747
+      ]
+    },
+    {
+      "q": 4,
+      "r": -1,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.999908577377305,
+      "normal_axis_AF_mm": [
+        7.000003737398824,
+        6.999992217203614,
+        7.000041972108701
+      ]
+    },
+    {
+      "q": 4,
+      "r": 0,
+      "ring": 4,
+      "specified_tilt_degrees": 16,
+      "measured_tilt_degrees": 15.99984147341298,
+      "normal_axis_AF_mm": [
+        6.999916529377641,
+        6.999996736249239,
+        6.999999512894883
+      ]
+    },
+    {
+      "q": 4,
+      "r": 1,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999946642111535,
+      "normal_axis_AF_mm": [
+        7.000062664281853,
+        7.000046828161924,
+        7.000061338953154
+      ]
+    },
+    {
+      "q": 4,
+      "r": 2,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.999935169535426,
+      "normal_axis_AF_mm": [
+        7.000023974875072,
+        7.000070589031501,
+        7.000058268153273
+      ]
+    },
+    {
+      "q": 5,
+      "r": -6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.00001685590199,
+      "normal_axis_AF_mm": [
+        6.999949020815386,
+        6.999981546574569,
+        6.9999940003316095
+      ]
+    },
+    {
+      "q": 5,
+      "r": -5,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.99992333352037,
+      "normal_axis_AF_mm": [
+        6.999998885780624,
+        7.000044329283957,
+        7.00004254937881
+      ]
+    },
+    {
+      "q": 5,
+      "r": -4,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999981577902204,
+      "normal_axis_AF_mm": [
+        7.0000232713175645,
+        7.00006034101334,
+        7.000038289148083
+      ]
+    },
+    {
+      "q": 5,
+      "r": -3,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.99994172654772,
+      "normal_axis_AF_mm": [
+        7.000076825500823,
+        7.000047390104669,
+        7.000008304706615
+      ]
+    },
+    {
+      "q": 5,
+      "r": -2,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 20.000096386783465,
+      "normal_axis_AF_mm": [
+        7.000054735979237,
+        7.000035533045907,
+        7.000012424551548
+      ]
+    },
+    {
+      "q": 5,
+      "r": -1,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 19.999948680607936,
+      "normal_axis_AF_mm": [
+        7.000062664281853,
+        7.000061338953152,
+        7.0000468281619215
+      ]
+    },
+    {
+      "q": 5,
+      "r": 0,
+      "ring": 5,
+      "specified_tilt_degrees": 20,
+      "measured_tilt_degrees": 20.00010705384936,
+      "normal_axis_AF_mm": [
+        6.999958270758394,
+        6.999996736249239,
+        6.99999673624924
+      ]
+    },
+    {
+      "q": 5,
+      "r": 1,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.999922594238488,
+      "normal_axis_AF_mm": [
+        7.000006343756686,
+        7.000061690188005,
+        7.000018799711765
+      ]
+    },
+    {
+      "q": 6,
+      "r": -6,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000021233324443,
+      "normal_axis_AF_mm": [
+        7.000001456222758,
+        7.00006080434847,
+        7.000005570875754
+      ]
+    },
+    {
+      "q": 6,
+      "r": -5,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000100881744007,
+      "normal_axis_AF_mm": [
+        7.000041086979318,
+        7.000033173548943,
+        7.0000390508859605
+      ]
+    },
+    {
+      "q": 6,
+      "r": -4,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000034227414424,
+      "normal_axis_AF_mm": [
+        6.999983048457087,
+        6.999943265048181,
+        7.000036648180654
+      ]
+    },
+    {
+      "q": 6,
+      "r": -3,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.999915532840628,
+      "normal_axis_AF_mm": [
+        6.99997410414665,
+        7.000023644588955,
+        6.999971722967949
+      ]
+    },
+    {
+      "q": 6,
+      "r": -2,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.99994321303176,
+      "normal_axis_AF_mm": [
+        7.000023974875072,
+        7.000058268153276,
+        7.000068514284502
+      ]
+    },
+    {
+      "q": 6,
+      "r": -1,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 23.999933699863824,
+      "normal_axis_AF_mm": [
+        7.0000119503930005,
+        7.000014995635369,
+        7.000065317165589
+      ]
+    },
+    {
+      "q": 6,
+      "r": 0,
+      "ring": 6,
+      "specified_tilt_degrees": 24,
+      "measured_tilt_degrees": 24.000060893424052,
+      "normal_axis_AF_mm": [
+        6.99995913441447,
+        6.999996736249239,
+        7.000000284820462
+      ]
+    }
+  ]
+}

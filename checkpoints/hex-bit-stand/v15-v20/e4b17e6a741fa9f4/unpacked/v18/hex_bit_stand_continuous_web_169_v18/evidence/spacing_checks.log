@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "source_sha256": "6c87e09183cbb0921424285532af6a1ab1694d97315b1a47d97be8dc47b77940",
+  "pitch_sweep_analytic": [
+    {
+      "pitch_mm": 9.65,
+      "minimum_top_gap_mm": 1.2221420571561865,
+      "limiting_pair_axial_coordinates": [
+        [
+          -7,
+          7
+        ],
+        [
+          -6,
+          6
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 9.75,
+      "minimum_top_gap_mm": 1.3221420571561944,
+      "limiting_pair_axial_coordinates": [
+        [
+          -7,
+          7
+        ],
+        [
+          -6,
+          6
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 9.8,
+      "minimum_top_gap_mm": 1.372142057156194,
+      "limiting_pair_axial_coordinates": [
+        [
+          -7,
+          7
+        ],
+        [
+          -6,
+          6
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 9.85,
+      "minimum_top_gap_mm": 1.42214205715619,
+      "limiting_pair_axial_coordinates": [
+        [
+          -7,
+          7
+        ],
+        [
+          -6,
+          6
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 9.9,
+      "minimum_top_gap_mm": 1.4721420571561823,
+      "limiting_pair_axial_coordinates": [
+        [
+          -7,
+          7
+        ],
+        [
+          -6,
+          6
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 9.95,
+      "minimum_top_gap_mm": 1.5221420571561943,
+      "limiting_pair_axial_coordinates": [
+        [
+          -7,
+          7
+        ],
+        [
+          -6,
+          6
+        ]
+      ]
+    }
+  ],
+  "selected_pitch_mesh_gap_mm": 1.4720957865997069,
+  "negative_control": {
+    "pitch_mm": 9.65,
+    "source_sha256": "c3ee0921cce56d272a2e32a106162a842753241aeb3a4ab881ee20d5e1887dad",
+    "mesh_gap_mm": 1.2220999999999975,
+    "validator_returncode": 1,
+    "validator_output": "FAIL: top web < 1.3 mm",
+    "rejected_as_expected": true
+  },
+  "note": "Only the pitch guard was relaxed in the temporary negative source; the 1.3 mm measurement rule remained enabled."
+}

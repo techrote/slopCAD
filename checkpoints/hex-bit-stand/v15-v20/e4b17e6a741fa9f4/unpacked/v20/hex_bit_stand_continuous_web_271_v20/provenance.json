@@ -1,0 +1,13 @@
+{
+  "revision": "v20 continuous-web 271-pocket stand",
+  "derived_from": "v19 continuous-web 217-pocket stand",
+  "baseline_bundle": "hex_bit_stand_v19_217_pocket_bundle.zip",
+  "baseline_bundle_sha256": "6015d540ae8ae7c909c620001ff9ca3b9d1b3562322c765a26590d355632f2f4",
+  "source_sha256": "28c0cda69852c18e2da3378d3528a00a4e1c5a3189dcac4468a19c7be1a9c8dd",
+  "utc_recorded_at": "2026-10-04T21:58:42.683411+00:00",
+  "scope": "Local CAD design, rendering and geometry verification; no repository reads or mutations.",
+  "publication_status": "Not published; ready for a later publication turn.",
+  "slicer_validation": "Not performed with user printer profile.",
+  "physical_validation": "Not performed.",
+  "source_provenance": "The actual supplied v19 ZIP was extracted, all 31 manifest entries verified, and 9 mounted attachments compared byte-for-byte."
+}

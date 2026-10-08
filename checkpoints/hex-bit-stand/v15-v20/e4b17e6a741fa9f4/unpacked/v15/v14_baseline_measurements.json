@@ -1,0 +1,21 @@
+{
+  "mesh_sha256": "eadaf9c1505bb03d1bb06d8197e7b1f0be20e7adf663f13d37315b987bf51f73",
+  "top_face": {
+    "minimum_inter_pocket_web_mm": 0.02416000000000018,
+    "minimum_pocket_to_exterior_mm": 1.7338999999999987,
+    "narrowest_pair_centres_xy_mm": [
+      [
+        -0.0,
+        -0.0
+      ],
+      [
+        -9.839128888900966,
+        -0.0
+      ]
+    ],
+    "connected_after_half_minimum_erosion": false,
+    "hole_count": 61,
+    "surface_area_mm2": 2169.680304586211
+  },
+  "volume_mm3": 44597.00536346141
+}

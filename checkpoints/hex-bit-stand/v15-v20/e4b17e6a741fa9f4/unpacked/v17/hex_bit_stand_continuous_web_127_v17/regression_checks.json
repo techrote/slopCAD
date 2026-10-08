@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "intentional_parameter_changes": {
+    "ring_count": {
+      "v16": 5,
+      "v17": 6
+    },
+    "pitch": {
+      "v16": 9.45,
+      "v17": 9.65
+    },
+    "tilt_angles": {
+      "v16": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "v17": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ]
+    }
+  },
+  "existing_tilt_bands_preserved": true,
+  "actual_ring_pocket_counts": {
+    "0": 1,
+    "1": 6,
+    "2": 12,
+    "3": 18,
+    "4": 24,
+    "5": 30,
+    "6": 36
+  },
+  "mouth_chamfer_faces": {
+    "triangles_checked": 1524,
+    "minimum_overhang_from_vertical_degrees": 15.035941548221004,
+    "maximum_overhang_from_vertical_degrees": 49.21514486326355,
+    "definition": "Face-down print: vertical wall = 0 degrees; horizontal unsupported ceiling = 90 degrees. Entrance surfaces only, not every underside/side-panel surface.",
+    "under_60_degree_soft_limit": true
+  },
+  "new_outer_axis_offset_over_12mm_mm": 5.342744223702434,
+  "nominal_centre_exit_AF_mm": 4.143703986515771,
+  "v16_retained_validated_volume_mm3": 72907.14333376057,
+  "v17_volume_mm3": 102829.04069864303,
+  "note": "Parameter comparison and mesh measurements, not a slicer or physical test."
+}

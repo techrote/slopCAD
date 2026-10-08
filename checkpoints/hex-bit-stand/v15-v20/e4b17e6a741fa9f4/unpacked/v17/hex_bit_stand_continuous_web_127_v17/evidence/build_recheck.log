@@ -1,0 +1,285 @@
+Geometries in cache: 222
+Geometry cache size in bytes: 988584
+CGAL Polyhedrons in cache: 4
+CGAL cache size in bytes: 21641584
+Total rendering time: 0:00:16.107
+   Top level object is a 3D object:
+   Simple:        yes
+   Vertices:     4952
+   Halfedges:   21516
+   Edges:       10758
+   Halffacets:  11626
+   Facets:       5813
+   Volumes:         2
+Geometries in cache: 30
+Geometry cache size in bytes: 73168
+CGAL Polyhedrons in cache: 4
+CGAL cache size in bytes: 3491776
+Total rendering time: 0:00:00.870
+   Top level object is a 3D object:
+   Simple:        yes
+   Vertices:      412
+   Halfedges:    1796
+   Edges:         898
+   Halffacets:    976
+   Facets:        488
+   Volumes:         2
+{
+  "status": "PASS",
+  "validation_scope": "Geometry; slicer toolpaths and physical print acceptance pending",
+  "source_sha256": "345b464a33f8b37273c1ef297f5623a9c029a29eee79eb8e698b12d52779368a",
+  "mesh_sha256": "b949726d3f2bf9dabcfcdfca30333e033045a53ce1942b957ac4f318a7484ec8",
+  "settings": {
+    "min_surface_feature": 1.3,
+    "ring_count": 6,
+    "hex_flat_to_flat": 7.0,
+    "pitch": 9.65,
+    "base_thickness": 2.0,
+    "pocket_depth": 12.0,
+    "pocket_mouth_flat_to_flat": 8.5,
+    "pocket_mouth_chamfer_h": 1.15,
+    "floor_taper_h": 1.0,
+    "floor_taper_degrees": 55,
+    "shaft_hex_rotation": 30,
+    "tilt_angles": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "panel_border": 1.3,
+    "wall_margin": 3.8,
+    "height": 14.0
+  },
+  "mesh": {
+    "watertight": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "euler_number": -252,
+    "triangles": 10408,
+    "envelope_mm": [
+      140.9826,
+      126.7836,
+      14.0
+    ],
+    "volume_mm3": 102829.04069864303
+  },
+  "top_face": {
+    "minimum_inter_pocket_web_mm": 1.450099999999999,
+    "minimum_pocket_to_exterior_mm": 2.131113374895696,
+    "narrowest_pair_centres_xy_mm": [
+      [
+        -63.242744444444426,
+        -6.916017875666239e-17
+      ],
+      [
+        -52.617644444444444,
+        -0.0
+      ]
+    ],
+    "connected_after_half_minimum_erosion": true,
+    "hole_count": 127,
+    "surface_area_mm2": 5195.179092076427
+  },
+  "bottom_face": {
+    "minimum_inter_pocket_web_mm": 4.950399999999995,
+    "minimum_pocket_to_exterior_mm": 5.846873494981096,
+    "narrowest_pair_centres_xy_mm": [
+      [
+        -48.25,
+        -5.3904218862794595e-17
+      ],
+      [
+        -57.89999999999999,
+        -0.0
+      ]
+    ],
+    "connected_after_half_minimum_erosion": true,
+    "hole_count": 127,
+    "surface_area_mm2": 9976.533716303418
+  },
+  "sampled_sections": {
+    "count": 83,
+    "minimum_inter_pocket_web_mm": 1.4514266956521737,
+    "minimum_pocket_to_exterior_mm": 2.132615306383027,
+    "all_connected_after_half_minimum_erosion": true
+  },
+  "functional_checks": {
+    "pockets_checked": 127,
+    "maximum_tilt_error_degrees": 0.0002262856161756588,
+    "maximum_normal_AF_error_mm": 9.262210083438305e-05,
+    "maximum_centre_error_mm": 4.979354251568092e-05,
+    "maximum_radial_displacement_error_mm": 3.710772940871969e-05,
+    "one_to_one_pocket_assignment": true
+  },
+  "dependencies": {
+    "numpy": "2.3.5",
+    "shapely": "2.1.2",
+    "trimesh": "4.11.1"
+  }
+}
+{
+  "status": "PASS",
+  "scope": "Face-down rigid-transform equivalence; thirteen-pocket coupon geometry and its match to the full model. Not toolpath or physical validation.",
+  "face_down": {
+    "sha256": "325b143b118ec74a343fcd42022b2a9420542aa49043784614f6d5589dd5663c",
+    "maximum_vertex_difference_after_rotation_mm": 3.5522460990478066e-06,
+    "envelope_mm": [
+      140.98260498046875,
+      126.78359985351562,
+      14.0
+    ],
+    "bed_contact_face": {
+      "minimum_inter_pocket_web_mm": 1.4500999450683594,
+      "minimum_pocket_to_exterior_mm": 2.131116071820047,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -63.24274275037977,
+          6.91602061409106e-17
+        ],
+        [
+          -52.61764356825087,
+          -0.0
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 127,
+      "surface_area_mm2": 5195.178943309536
+    },
+    "watertight": true,
+    "connected_components": 1,
+    "through_holes": 127
+  },
+  "coupon": {
+    "sha256": "90d5253c09b1976e426f6e015716533975f125ad0a7197a52751d30cedf3af00",
+    "pocket_count": 13,
+    "axial_coordinates": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "tilt_bands_degrees": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "envelope_mm": [
+      76.14494323730469,
+      23.027389526367188,
+      14.0
+    ],
+    "volume_mm3": 15178.424811049337,
+    "watertight": true,
+    "connected_components": 1,
+    "top_face": {
+      "minimum_inter_pocket_web_mm": 1.4501419067382812,
+      "minimum_pocket_to_exterior_mm": 1.9999871966883243,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          52.6176414489746,
+          -3.5570211025397646e-17
+        ],
+        [
+          63.242744445800774,
+          -0.0
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 13,
+      "surface_area_mm2": 783.4232118659688
+    },
+    "bottom_face": {
+      "minimum_inter_pocket_web_mm": 4.950447082519531,
+      "minimum_pocket_to_exterior_mm": 4.1781473134687115,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          48.25,
+          1.7968272943954554e-17
+        ],
+        [
+          57.89999984323535,
+          -3.435402619426093e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 13,
+      "surface_area_mm2": 1421.073777346941
+    },
+    "full_model_comparison_z_mm": [
+      0.05,
+      0.5,
+      1.5,
+      2.05,
+      3.0,
+      7.0,
+      11.0,
+      12.9,
+      13.5,
+      13.8,
+      13.999
+    ],
+    "maximum_hole_outline_difference_mm": 5.9312797174840005e-05,
+    "contains_worst_20_24_degree_pair": true,
+    "limitation": "Simplified perimeter; does not test production side-wall panels."
+  }
+}
+v17 meshes built and geometric checks passed. Previews and narrative documentation are not regenerated.
+real 34.63
+user 36.48
+sys 0.67

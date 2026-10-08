@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "positive_parent_control": {
+    "model": "Actual retained v15 STL and matching source",
+    "validator": "v16 generalized exported-mesh validator",
+    "result": "PASS",
+    "minimum_top_web_mm": 1.4239825279826996
+  },
+  "negative_spacing_control": {
+    "model": "Private five-ring/91-pocket copy with old 9.30 mm pitch; pitch precondition relaxed only in that private copy.",
+    "reason": "Prove that mesh-based clearance tests reject a superficially valid watertight new-ring model with inadequate exposed webs.",
+    "expected_result": "FAIL: top web < 1.3 mm",
+    "observed_result": "FAIL: top web < 1.3 mm",
+    "exit_code": 1,
+    "observed_minimum_top_web_mm": 1.282631018616056,
+    "negative_mesh_sha256": "03e55c2a7c3d71460589fd96b037b441622f82d3817e4b897715a624f1d14843",
+    "not_included_as_printable_asset": true
+  }
+}

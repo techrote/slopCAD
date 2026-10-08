@@ -1,0 +1,13 @@
+{
+  "pockets": 9,
+  "watertight": true,
+  "components": 1,
+  "envelope_mm": [
+    53.3122,
+    22.72427,
+    14.0
+  ],
+  "volume_mm3": 10092.017525400954,
+  "first_layer_web_mm": 1.4241000000000028,
+  "use": "Cropped-layout coupon: exact production cavity positions and tilt; simplified outside, no panels."
+}

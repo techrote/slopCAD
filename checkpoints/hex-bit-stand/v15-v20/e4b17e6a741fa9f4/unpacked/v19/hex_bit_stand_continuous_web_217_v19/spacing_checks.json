@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "source_sha256": "c116114d383e298c5054b41efe0a2cc0d475bfb1c565799af47a7dd8da3c7e5f",
+  "pitch_sweep_analytic": [
+    {
+      "pitch_mm": 9.9,
+      "minimum_top_gap_mm": 1.1929881132568554,
+      "limiting_pair_axial_coordinates": [
+        [
+          -8,
+          8
+        ],
+        [
+          -7,
+          7
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.0,
+      "minimum_top_gap_mm": 1.2929881132568473,
+      "limiting_pair_axial_coordinates": [
+        [
+          -8,
+          8
+        ],
+        [
+          -7,
+          7
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.05,
+      "minimum_top_gap_mm": 1.342988113256851,
+      "limiting_pair_axial_coordinates": [
+        [
+          -8,
+          0
+        ],
+        [
+          -7,
+          0
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.1,
+      "minimum_top_gap_mm": 1.3929881132568482,
+      "limiting_pair_axial_coordinates": [
+        [
+          -8,
+          0
+        ],
+        [
+          -7,
+          0
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.15,
+      "minimum_top_gap_mm": 1.4429881132568512,
+      "limiting_pair_axial_coordinates": [
+        [
+          -8,
+          8
+        ],
+        [
+          -7,
+          7
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.2,
+      "minimum_top_gap_mm": 1.4929881132568472,
+      "limiting_pair_axial_coordinates": [
+        [
+          -8,
+          8
+        ],
+        [
+          -7,
+          7
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.25,
+      "minimum_top_gap_mm": 1.542988113256854,
+      "limiting_pair_axial_coordinates": [
+        [
+          -8,
+          0
+        ],
+        [
+          -7,
+          0
+        ]
+      ]
+    }
+  ],
+  "selected_pitch_mesh_gap_mm": 1.4929342448764473,
+  "negative_control": {
+    "pitch_mm": 9.9,
+    "source_sha256": "3b294f56ac9f593211427b2ea5b10642de08f33b3428e144c428555a17ee1b5d",
+    "mesh_gap_mm": 1.1929408449495744,
+    "validator_returncode": 1,
+    "validator_output": "FAIL: top web < 1.3 mm",
+    "rejected_as_expected": true
+  },
+  "note": "Only the pitch guard was relaxed in the temporary negative source; the 1.3 mm measurement rule remained enabled."
+}

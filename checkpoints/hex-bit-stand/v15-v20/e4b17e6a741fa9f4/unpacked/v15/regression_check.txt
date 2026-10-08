@@ -1,0 +1,1 @@
+Supplied v14 STL correctly rejected by v15 validation: top web < 1.3 mm

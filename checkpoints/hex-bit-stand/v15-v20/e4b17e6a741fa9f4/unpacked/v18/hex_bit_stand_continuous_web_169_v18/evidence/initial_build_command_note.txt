@@ -1,0 +1,5 @@
+The combined build invocation was interrupted by the container command time limit after
+the upright mesh, face-down transform, coupon and full mesh validation had completed.
+No child processes remained. validate_exports.py was then run separately and passed.
+The validation summary was extracted from the successful full validation report.
+No geometry was changed to address the command interruption.

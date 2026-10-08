@@ -1,0 +1,161 @@
+{
+  "baseline_bundle_sha256": "c952f683a98fd67bf5e5cc5ae35bf105fd31257255feeb46b4b9da1773d4865f",
+  "manifest_records_verified": 29,
+  "matching_mounted_attachments": [
+    "validation_summary.json",
+    "hex_bit_stand_continuous_web_127_v17_face_down.stl",
+    "top.png",
+    "README.md",
+    "hex_bit_stand_continuous_web_127_v17.stl",
+    "perspective.png",
+    "hex_bit_stand_continuous_web_127_v17.scad",
+    "v17_thirteen_pocket_test_face_down.stl"
+  ],
+  "checks": [
+    {
+      "path": "PUBLICATION_NOTES.md",
+      "sha256": "35be4dfde066149455c58d94b26d0e2c5e67562fecd00cab373c6e223d70d523",
+      "matched": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "d09b589bc0842c27de1855e80b144688a90fc09d4e6d46ed3f93184388443b66",
+      "matched": true
+    },
+    {
+      "path": "build.py",
+      "sha256": "9626ee50988061c79f7cb1c1e441d38fcc35dde6dfbd38736e74ad87749a4f76",
+      "matched": true
+    },
+    {
+      "path": "check_spacing.py",
+      "sha256": "e437ed89da631ebb1d05c6cbf50e8d5be0cf8fc8f823cfc0500c1444f28c6c05",
+      "matched": true
+    },
+    {
+      "path": "evidence/build_recheck.log",
+      "sha256": "ce4dda03e557ce30bd0d64a5421f987a5d45036a223390294ff217a3780c60b0",
+      "matched": true
+    },
+    {
+      "path": "evidence/negative_spacing_build.log",
+      "sha256": "2ee3c0c5f86bf88e997ec194b44b9c9852575de0f2fb01c95b0d69567949f6d2",
+      "matched": true
+    },
+    {
+      "path": "evidence/render_perspective.log",
+      "sha256": "2d3fa756217789956b250f084302699401156ac9e2a8c90c65ee309628aee18f",
+      "matched": true
+    },
+    {
+      "path": "evidence/render_top.log",
+      "sha256": "c9847409c8cb83b02b80cb1c639d4a9bf76dfad6f57c911fd433ca567305ebcc",
+      "matched": true
+    },
+    {
+      "path": "evidence/render_underside.log",
+      "sha256": "923fc75f9bd71b19b62ddc07fb1ea85d626f433d43d7056480445eb3da20ccb9",
+      "matched": true
+    },
+    {
+      "path": "evidence/source_changes.patch",
+      "sha256": "3a23dfffdf0ced315852286ce29ba48715fdb6f9b232adedfba53af55b9609f4",
+      "matched": true
+    },
+    {
+      "path": "evidence/spacing_checks.log",
+      "sha256": "02c8cdbd2af4a890677bdfce04bbbd1cd9a2e9f0049e1610dc830152ad21db77",
+      "matched": true
+    },
+    {
+      "path": "evidence/validate_final.log",
+      "sha256": "ec948f344b31546e82e79734522dc50d5ea1027435473eddc00f4e4eb4c8cad8",
+      "matched": true
+    },
+    {
+      "path": "export_validation.json",
+      "sha256": "b36b52e83e4f192c38f20ffac57b34b74fab327438e7820caa7c1e48b7b1bf1d",
+      "matched": true
+    },
+    {
+      "path": "hex_bit_stand_continuous_web_127_v17.scad",
+      "sha256": "345b464a33f8b37273c1ef297f5623a9c029a29eee79eb8e698b12d52779368a",
+      "matched": true
+    },
+    {
+      "path": "hex_bit_stand_continuous_web_127_v17.stl",
+      "sha256": "b949726d3f2bf9dabcfcdfca30333e033045a53ce1942b957ac4f318a7484ec8",
+      "matched": true
+    },
+    {
+      "path": "hex_bit_stand_continuous_web_127_v17_face_down.stl",
+      "sha256": "325b143b118ec74a343fcd42022b2a9420542aa49043784614f6d5589dd5663c",
+      "matched": true
+    },
+    {
+      "path": "perspective.png",
+      "sha256": "80ed3c1a6ed73b0237421e34199625fc0250c3a32c3ad991348cd2ac6e29db91",
+      "matched": true
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "92c547151b3cb9660cda340157c34175075c41fd44d8cb211d344767c489b644",
+      "matched": true
+    },
+    {
+      "path": "regression_checks.json",
+      "sha256": "aea3ce38738cddd63fa57d8133bdaf44aebbca3f55f928439c48e7dce4cf37fe",
+      "matched": true
+    },
+    {
+      "path": "render_previews.py",
+      "sha256": "82e806a24c11b1dc04099a38c4630d6173f3273f03f22cbc5d9114dcff901399",
+      "matched": true
+    },
+    {
+      "path": "requirements-validation.txt",
+      "sha256": "3005bc7c90c67d4d5585c79e7f8c6bd6a7f50393abab37f31a55a87c0f5a023d",
+      "matched": true
+    },
+    {
+      "path": "spacing_checks.json",
+      "sha256": "02c8cdbd2af4a890677bdfce04bbbd1cd9a2e9f0049e1610dc830152ad21db77",
+      "matched": true
+    },
+    {
+      "path": "top.png",
+      "sha256": "304200df9abc3f035cfb238e2fb597daa2437e50379b9746ee003b250517099a",
+      "matched": true
+    },
+    {
+      "path": "underside.png",
+      "sha256": "a3aa3c014f4006e05b11b728f9707edb6b12c24f0f80af43f5b4de25dfc1f49d",
+      "matched": true
+    },
+    {
+      "path": "v17_thirteen_pocket_test_face_down.stl",
+      "sha256": "90d5253c09b1976e426f6e015716533975f125ad0a7197a52751d30cedf3af00",
+      "matched": true
+    },
+    {
+      "path": "validate.py",
+      "sha256": "66847498efa95b098f46cfd2be51ef74f0f9fcdfcb41d5ecf90d69aa97a89966",
+      "matched": true
+    },
+    {
+      "path": "validate_exports.py",
+      "sha256": "d5040a5ddb75301f78ed03030f65195b4fed96ab6025faa528f1d3585d97e1c3",
+      "matched": true
+    },
+    {
+      "path": "validation.json",
+      "sha256": "666367d380d5e49b284ea80f9db20d8b8005c640d76cf8b82325b3199b44aa18",
+      "matched": true
+    },
+    {
+      "path": "validation_summary.json",
+      "sha256": "ec948f344b31546e82e79734522dc50d5ea1027435473eddc00f4e4eb4c8cad8",
+      "matched": true
+    }
+  ]
+}

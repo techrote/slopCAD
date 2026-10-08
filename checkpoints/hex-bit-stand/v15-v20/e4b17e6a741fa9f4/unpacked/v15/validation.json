@@ -1,0 +1,1588 @@
+{
+  "status": "PASS",
+  "validation_scope": "Geometry; slicer toolpaths and physical print acceptance pending",
+  "source_sha256": "9b2591dbff8c0e03638a62c1c8604764547f15415dfa6d9b23be0bb128f3ebec",
+  "mesh_sha256": "3d9d0b860d2006144c812a4dac005bff9dd5c8f3f86628c2465837711745a8c8",
+  "settings": {
+    "min_surface_feature": 1.3,
+    "ring_count": 4,
+    "hex_flat_to_flat": 7.0,
+    "pitch": 9.3,
+    "base_thickness": 2.0,
+    "pocket_depth": 12.0,
+    "pocket_mouth_flat_to_flat": 8.5,
+    "pocket_mouth_chamfer_h": 1.15,
+    "floor_taper_h": 1.0,
+    "floor_taper_degrees": 55,
+    "shaft_hex_rotation": 30,
+    "tilt_angles": [
+      0,
+      4,
+      8,
+      12,
+      16
+    ],
+    "panel_border": 1.3,
+    "wall_margin": 3.8,
+    "height": 14.0
+  },
+  "mesh": {
+    "watertight": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "euler_number": -120,
+    "triangles": 6536,
+    "envelope_mm": [
+      96.3496,
+      87.6974,
+      14.0
+    ],
+    "volume_mm3": 49858.27338386987
+  },
+  "top_face": {
+    "minimum_inter_pocket_web_mm": 1.4239825279826996,
+    "minimum_pocket_to_exterior_mm": 2.399328963064688,
+    "narrowest_pair_centres_xy_mm": [
+      [
+        -20.320472222279005,
+        35.19609037761427
+      ],
+      [
+        -15.225327989106033,
+        26.371087402368094
+      ]
+    ],
+    "connected_after_half_minimum_erosion": true,
+    "hole_count": 61,
+    "surface_area_mm2": 2439.3885028860614
+  },
+  "bottom_face": {
+    "minimum_inter_pocket_web_mm": 4.937010808282607,
+    "minimum_pocket_to_exterior_mm": 6.037037737259775,
+    "narrowest_pair_centres_xy_mm": [
+      [
+        -18.6,
+        32.21615
+      ],
+      [
+        -13.949990713964517,
+        24.16213894681129
+      ]
+    ],
+    "connected_after_half_minimum_erosion": true,
+    "hole_count": 61,
+    "surface_area_mm2": 4870.538551378998
+  },
+  "sampled_sections": {
+    "count": 83,
+    "minimum_inter_pocket_web_mm": 1.4252536161806024,
+    "minimum_pocket_to_exterior_mm": 2.4007929396258945,
+    "all_connected_after_half_minimum_erosion": true
+  },
+  "functional_checks": {
+    "pockets_checked": 61,
+    "maximum_tilt_error_degrees": 0.0002262856161507898,
+    "maximum_normal_AF_error_mm": 8.598825341188387e-05
+  },
+  "dependencies": {
+    "numpy": "2.3.5",
+    "shapely": "2.1.2",
+    "trimesh": "4.11.1"
+  },
+  "sections": [
+    {
+      "z_mm": 0.001,
+      "minimum_inter_pocket_web_mm": 4.937010808282607,
+      "minimum_pocket_to_exterior_mm": 6.038063408039774,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.6,
+          32.21615000000001
+        ],
+        [
+          13.949990713964516,
+          24.16213894681129
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4870.824050654309
+    },
+    {
+      "z_mm": 0.05,
+      "minimum_inter_pocket_web_mm": 4.937010808282606,
+      "minimum_pocket_to_exterior_mm": 6.088321276259752,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.6,
+          -32.216150000000006
+        ],
+        [
+          -13.949990713964516,
+          -24.16213894681129
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4884.821828378435
+    },
+    {
+      "z_mm": 0.1,
+      "minimum_inter_pocket_web_mm": 4.937010808282606,
+      "minimum_pocket_to_exterior_mm": 6.139604815259724,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.6,
+          32.21615000000001
+        ],
+        [
+          13.949990713964517,
+          24.16213894681129
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4899.1220711613905
+    },
+    {
+      "z_mm": 0.25,
+      "minimum_inter_pocket_web_mm": 4.937010808282606,
+      "minimum_pocket_to_exterior_mm": 6.29345543225965,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.6,
+          32.216150000000006
+        ],
+        [
+          -13.949990713964517,
+          24.162138946811293
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4942.124594211377
+    },
+    {
+      "z_mm": 0.30000000000000004,
+      "minimum_inter_pocket_web_mm": 4.937010808282606,
+      "minimum_pocket_to_exterior_mm": 6.344734699192547,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.599999999999998,
+          32.21615
+        ],
+        [
+          -13.949990713964517,
+          24.162138946811286
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4956.4927001284095
+    },
+    {
+      "z_mm": 0.5,
+      "minimum_inter_pocket_web_mm": 4.937010808282607,
+      "minimum_pocket_to_exterior_mm": 6.4385653368008064,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.6,
+          32.21615
+        ],
+        [
+          13.949990713964517,
+          24.16213894681129
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4982.825171701464
+    },
+    {
+      "z_mm": 0.5000000000000001,
+      "minimum_inter_pocket_web_mm": 4.937010808282607,
+      "minimum_pocket_to_exterior_mm": 6.4385653368008064,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.6,
+          -32.216150000000006
+        ],
+        [
+          -13.949990713964516,
+          -24.16213894681129
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4982.825171701464
+    },
+    {
+      "z_mm": 0.7000000000000001,
+      "minimum_inter_pocket_web_mm": 4.937010808282606,
+      "minimum_pocket_to_exterior_mm": 6.441625546952729,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.599999999999998,
+          -32.21615
+        ],
+        [
+          -13.949990713964514,
+          -24.16213894681128
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4983.672739985567
+    },
+    {
+      "z_mm": 0.9000000000000001,
+      "minimum_inter_pocket_web_mm": 4.937010808282606,
+      "minimum_pocket_to_exterior_mm": 6.444685757104652,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.6,
+          -32.21615000000001
+        ],
+        [
+          13.949990713964517,
+          -24.16213894681129
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4984.510625207239
+    },
+    {
+      "z_mm": 0.999,
+      "minimum_inter_pocket_web_mm": 4.937010808282607,
+      "minimum_pocket_to_exterior_mm": 6.44619809236319,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.6,
+          -32.21615000000001
+        ],
+        [
+          13.949990713964516,
+          -24.162138946811286
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4984.921795537824
+    },
+    {
+      "z_mm": 1.001,
+      "minimum_inter_pocket_web_mm": 4.934154477063356,
+      "minimum_pocket_to_exterior_mm": 6.444800464374607,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.600000013647556,
+          -32.21614997463373
+        ],
+        [
+          13.949990731611791,
+          -24.162138931139413
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4983.653126890102
+    },
+    {
+      "z_mm": 1.1000000000000003,
+      "minimum_inter_pocket_web_mm": 4.651383554580709,
+      "minimum_pocket_to_exterior_mm": 6.304929084039472,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.60000114267709,
+          -32.216147351964366
+        ],
+        [
+          13.949992449928633,
+          -24.162136954724176
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4853.376558295132
+    },
+    {
+      "z_mm": 1.3000000000000003,
+      "minimum_inter_pocket_web_mm": 4.080129253408184,
+      "minimum_pocket_to_exterior_mm": 6.022361446814867,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.60000231797866,
+          -32.216141676812626
+        ],
+        [
+          13.949995524402675,
+          -24.162130984652755
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4564.408708096646
+    },
+    {
+      "z_mm": 1.5000000000000004,
+      "minimum_inter_pocket_web_mm": 3.508882944534946,
+      "minimum_pocket_to_exterior_mm": 5.739794847294702,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.60000240167138,
+          -32.216135899463715
+        ],
+        [
+          13.949997824622574,
+          -24.162123270035814
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 4240.948733298931
+    },
+    {
+      "z_mm": 1.7000000000000004,
+      "minimum_inter_pocket_web_mm": 2.9376408777454284,
+      "minimum_pocket_to_exterior_mm": 5.457230608755831,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.600001705106145,
+          -32.21613025359916
+        ],
+        [
+          13.949999284159686,
+          -24.162114464437558
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3882.996633901974
+    },
+    {
+      "z_mm": 1.9000000000000004,
+      "minimum_inter_pocket_web_mm": 2.366398810955913,
+      "minimum_pocket_to_exterior_mm": 5.174669221163948,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.600000431636275,
+          -32.216124832054476
+        ],
+        [
+          13.949999945131168,
+          -24.162104948216722
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3490.5524099057884
+    },
+    {
+      "z_mm": 1.999,
+      "minimum_inter_pocket_web_mm": 2.083633987895101,
+      "minimum_pocket_to_exterior_mm": 5.034801334305973,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.599999632188048,
+          32.21612224156849
+        ],
+        [
+          -13.950000000308725,
+          24.162100049998156
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3283.5300017744066
+    },
+    {
+      "z_mm": 2.001,
+      "minimum_inter_pocket_web_mm": 2.0808519591010195,
+      "minimum_pocket_to_exterior_mm": 5.0331170175195545,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.600142996884898,
+          -32.21637054291165
+        ],
+        [
+          13.950106275196747,
+          -24.16228408064524
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3281.3996492989104
+    },
+    {
+      "z_mm": 2.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.0881959315476077,
+      "minimum_pocket_to_exterior_mm": 4.776093816575298,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.61433695084975,
+          32.24095493744438
+        ],
+        [
+          -13.960627520862007,
+          24.18050806242076
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3239.8017928751533
+    },
+    {
+      "z_mm": 2.3000000000000007,
+      "minimum_inter_pocket_web_mm": 2.1030322395205134,
+      "minimum_pocket_to_exterior_mm": 4.718744160391533,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.643011605607473,
+          32.29062039777792
+        ],
+        [
+          -13.98188256978092,
+          24.217324174518783
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3229.4575610099046
+    },
+    {
+      "z_mm": 2.5000000000000004,
+      "minimum_inter_pocket_web_mm": 2.1178685474934205,
+      "minimum_pocket_to_exterior_mm": 4.6613945042077685,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.671686260738248,
+          -32.340285880456875
+        ],
+        [
+          14.003137628293029,
+          -24.254140269625484
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3218.114705766101
+    },
+    {
+      "z_mm": 2.7000000000000006,
+      "minimum_inter_pocket_web_mm": 2.132704855466327,
+      "minimum_pocket_to_exterior_mm": 4.604044848024004,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.700360916235013,
+          -32.389951385272376
+        ],
+        [
+          14.024392696398316,
+          -24.29095634774087
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3206.1999861476907
+    },
+    {
+      "z_mm": 2.900000000000001,
+      "minimum_inter_pocket_web_mm": 2.1475411634392305,
+      "minimum_pocket_to_exterior_mm": 4.473510624941812,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.72903557209069,
+          -32.43961691201546
+        ],
+        [
+          14.045647774096771,
+          -24.32777240886495
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3190.8258445552974
+    },
+    {
+      "z_mm": 3.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.16237747141214,
+      "minimum_pocket_to_exterior_mm": 4.408971206640288,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.757710228298215,
+          -32.48928246047731
+        ],
+        [
+          14.066902861388392,
+          -24.36458845299775
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3188.785641886482
+    },
+    {
+      "z_mm": 3.3000000000000007,
+      "minimum_inter_pocket_web_mm": 2.1772137793850463,
+      "minimum_pocket_to_exterior_mm": 4.4089894353694215,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.786384884850506,
+          -32.538948030448964
+        ],
+        [
+          14.088157958273172,
+          -24.401404480139274
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3200.824056390239
+    },
+    {
+      "z_mm": 3.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.192050087357952,
+      "minimum_pocket_to_exterior_mm": 4.374646223288945,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.815059541740503,
+          32.58861362172157
+        ],
+        [
+          -14.109413064751106,
+          24.438220490289535
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3209.738471878537
+    },
+    {
+      "z_mm": 3.7000000000000006,
+      "minimum_inter_pocket_web_mm": 2.206886395330859,
+      "minimum_pocket_to_exterior_mm": 4.317296567105181,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.843734198961133,
+          -32.63827923408621
+        ],
+        [
+          14.13066818082218,
+          -24.475036483448548
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3218.1271887407374
+    },
+    {
+      "z_mm": 3.900000000000001,
+      "minimum_inter_pocket_web_mm": 2.221722703303766,
+      "minimum_pocket_to_exterior_mm": 4.259946910921423,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.872408856505306,
+          32.687944867333975
+        ],
+        [
+          -14.151923306486394,
+          24.51185245961632
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3226.271494982725
+    },
+    {
+      "z_mm": 4.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.2365590112766713,
+      "minimum_pocket_to_exterior_mm": 4.202597254737657,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.90108351436596,
+          -32.737610521255995
+        ],
+        [
+          14.173178441743742,
+          -24.548668418792854
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3234.1902626684587
+    },
+    {
+      "z_mm": 4.300000000000001,
+      "minimum_inter_pocket_web_mm": 2.2513953192495806,
+      "minimum_pocket_to_exterior_mm": 4.145247598553893,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -18.929758172536033,
+          32.78727619564335
+        ],
+        [
+          -14.194433586594219,
+          24.58548436097817
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3241.8868989367875
+    },
+    {
+      "z_mm": 4.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.2662316272224863,
+      "minimum_pocket_to_exterior_mm": 4.087897942370128,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.958432831008437,
+          -32.83694189028716
+        ],
+        [
+          14.215688741037821,
+          -24.622300286172287
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3249.3617745213946
+    },
+    {
+      "z_mm": 4.7,
+      "minimum_inter_pocket_web_mm": 2.2810679351953933,
+      "minimum_pocket_to_exterior_mm": 4.030548286186363,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          18.98710748977611,
+          -32.88660760497851
+        ],
+        [
+          14.236943905074533,
+          -24.659116194375194
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3256.624697766377
+    },
+    {
+      "z_mm": 4.9,
+      "minimum_inter_pocket_web_mm": 2.2959042431683017,
+      "minimum_pocket_to_exterior_mm": 3.9731986300026,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.01578214883198,
+          -32.936273339508524
+        ],
+        [
+          14.258199078704362,
+          -24.695932085586914
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3263.6803429454244
+    },
+    {
+      "z_mm": 5.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.310740551141205,
+      "minimum_pocket_to_exterior_mm": 3.915848973818833,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.044456808168967,
+          32.98593909366827
+        ],
+        [
+          -14.2794542619273,
+          24.73274795980744
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3270.5298087578285
+    },
+    {
+      "z_mm": 5.300000000000001,
+      "minimum_inter_pocket_web_mm": 2.32557685911411,
+      "minimum_pocket_to_exterior_mm": 3.8584993176350695,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.073131467780005,
+          -33.0356048672489
+        ],
+        [
+          14.300709454743346,
+          -24.769563817036783
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3277.17318760769
+    },
+    {
+      "z_mm": 5.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.3404131670870196,
+      "minimum_pocket_to_exterior_mm": 3.801149661451303,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.101806127658026,
+          33.085270660041466
+        ],
+        [
+          -14.32196465715249,
+          24.806379657274956
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3283.610479495027
+    },
+    {
+      "z_mm": 5.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.3552494750599235,
+      "minimum_pocket_to_exterior_mm": 3.74380000526754,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.13048078779594,
+          33.13493647183711
+        ],
+        [
+          -14.343219869154732,
+          24.84319548052196
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3289.8416846754535
+    },
+    {
+      "z_mm": 5.9,
+      "minimum_inter_pocket_web_mm": 2.3700857830328315,
+      "minimum_pocket_to_exterior_mm": 3.6864503490837746,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.159155448186695,
+          -33.18460230242692
+        ],
+        [
+          14.364475090750071,
+          -24.880011286777805
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3295.866807254635
+    },
+    {
+      "z_mm": 6.1000000000000005,
+      "minimum_inter_pocket_web_mm": 2.3849220910057394,
+      "minimum_pocket_to_exterior_mm": 3.6291006929000114,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.187830108823203,
+          33.23426815160198
+        ],
+        [
+          -14.385730321938505,
+          24.916827076042487
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3301.6858486634255
+    },
+    {
+      "z_mm": 6.300000000000001,
+      "minimum_inter_pocket_web_mm": 2.3997583989786455,
+      "minimum_pocket_to_exterior_mm": 3.571751036716246,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.21650476969841,
+          33.28393401915343
+        ],
+        [
+          -14.406985562720024,
+          24.953642848316022
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3307.2988089018236
+    },
+    {
+      "z_mm": 6.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.414594706951551,
+      "minimum_pocket_to_exterior_mm": 3.5144013805324814,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.24517943080522,
+          33.33359990487234
+        ],
+        [
+          -14.42824081309463,
+          24.99045860359839
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3312.7056879698303
+    },
+    {
+      "z_mm": 6.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.429431014924456,
+      "minimum_pocket_to_exterior_mm": 3.4570517243487173,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.273854092136578,
+          33.38326580854982
+        ],
+        [
+          -14.449496073062333,
+          25.02727434188963
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3317.9064858674365
+    },
+    {
+      "z_mm": 6.900000000000001,
+      "minimum_inter_pocket_web_mm": 2.4442673228973644,
+      "minimum_pocket_to_exterior_mm": 3.399702068164953,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.30252875368541,
+          -33.432931729976985
+        ],
+        [
+          14.47075134262311,
+          -25.064090063189713
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3322.901202594662
+    },
+    {
+      "z_mm": 7.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.4591036308702687,
+      "minimum_pocket_to_exterior_mm": 3.3423524119811927,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.331203415444637,
+          -33.482597668944926
+        ],
+        [
+          14.492006621776985,
+          -25.100905767498666
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3327.687517779174
+    },
+    {
+      "z_mm": 7.300000000000001,
+      "minimum_inter_pocket_web_mm": 2.4739399388431775,
+      "minimum_pocket_to_exterior_mm": 3.285002755797429,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.359878077407192,
+          -33.53226362524476
+        ],
+        [
+          14.513261910523934,
+          -25.137721454816457
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3332.2553424650173
+    },
+    {
+      "z_mm": 7.500000000000001,
+      "minimum_inter_pocket_web_mm": 2.4887774432729493,
+      "minimum_pocket_to_exterior_mm": 3.2276530996136623,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.38855273956601,
+          -33.581929598667564
+        ],
+        [
+          14.534517208863969,
+          -25.174537125143114
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3336.623873059763
+    },
+    {
+      "z_mm": 7.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.50361694394841,
+      "minimum_pocket_to_exterior_mm": 3.170303443429899,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.417227401914,
+          33.63159558900448
+        ],
+        [
+          -14.555772516797088,
+          25.211352778478638
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3340.918473199153
+    },
+    {
+      "z_mm": 7.900000000000001,
+      "minimum_inter_pocket_web_mm": 2.518456444623874,
+      "minimum_pocket_to_exterior_mm": 3.112953787246134,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.44590206444411,
+          -33.68126159604657
+        ],
+        [
+          14.577027834323289,
+          -25.248168414823006
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3345.2108641131367
+    },
+    {
+      "z_mm": 8.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.5332959452993338,
+      "minimum_pocket_to_exterior_mm": 3.055604131062369,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.474576727149245,
+          -33.730927619584946
+        ],
+        [
+          14.598283161442577,
+          -25.28498403417623
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3349.5016120785804
+    },
+    {
+      "z_mm": 8.3,
+      "minimum_inter_pocket_web_mm": 2.5481354459747965,
+      "minimum_pocket_to_exterior_mm": 2.9982544748786055,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.503251390022353,
+          -33.78059365941072
+        ],
+        [
+          14.619538498154949,
+          -25.321799636538312
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3353.791471563715
+    },
+    {
+      "z_mm": 8.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.562974946650259,
+      "minimum_pocket_to_exterior_mm": 2.940904818694842,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.531926053056356,
+          -33.830259715315
+        ],
+        [
+          14.640793844460406,
+          -25.358615221909258
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3358.0936221086095
+    },
+    {
+      "z_mm": 8.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.5778144473257205,
+      "minimum_pocket_to_exterior_mm": 2.8835551625110756,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.560600716244174,
+          -33.87992578708887
+        ],
+        [
+          14.662049200358952,
+          -25.395430790289044
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3362.412870982845
+    },
+    {
+      "z_mm": 8.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.592653948001181,
+      "minimum_pocket_to_exterior_mm": 2.826205506327311,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.58927537957874,
+          -33.929591874523446
+        ],
+        [
+          14.683304565850591,
+          -25.432246341677676
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3366.749218186399
+    },
+    {
+      "z_mm": 9.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.607493448676645,
+      "minimum_pocket_to_exterior_mm": 2.7688558501435496,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.617950043052996,
+          33.97925797740983
+        ],
+        [
+          -14.70455994093532,
+          25.46906187607516
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3371.102663719257
+    },
+    {
+      "z_mm": 9.3,
+      "minimum_inter_pocket_web_mm": 2.622332949352105,
+      "minimum_pocket_to_exterior_mm": 2.711506193959783,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.646624706659846,
+          -34.028924095539125
+        ],
+        [
+          14.725815325613148,
+          -25.505877393481477
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3375.4732075814572
+    },
+    {
+      "z_mm": 9.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.637172450027564,
+      "minimum_pocket_to_exterior_mm": 2.6792024711033693,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.67529937039223,
+          -34.07859022870241
+        ],
+        [
+          14.747070719884071,
+          -25.54269289389663
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3382.9610957583964
+    },
+    {
+      "z_mm": 9.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.65201195070303,
+      "minimum_pocket_to_exterior_mm": 2.788270976563113,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          19.703974034243075,
+          -34.12825637669082
+        ],
+        [
+          14.768326123748086,
+          -25.579508377320593
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3409.1142172857053
+    },
+    {
+      "z_mm": 9.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.66685145137849,
+      "minimum_pocket_to_exterior_mm": 2.897339482022851,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.73264869820531,
+          34.17792253929546
+        ],
+        [
+          -14.789581537205214,
+          25.616323843753392
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3437.2813774419096
+    },
+    {
+      "z_mm": 10.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.681690952053953,
+      "minimum_pocket_to_exterior_mm": 3.0064069773966775,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -19.761323362271852,
+          34.22758871630739
+        ],
+        [
+          -14.810836960255443,
+          25.653139293195004
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3467.462576226975
+    },
+    {
+      "z_mm": 10.300000000000002,
+      "minimum_inter_pocket_web_mm": 2.6965299539170497,
+      "minimum_pocket_to_exterior_mm": 3.1154711237778225,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -39.57996204970355,
+          -2.494478147654857e-06
+        ],
+        [
+          -29.66418986175115,
+          7.506685357010145e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3499.657813640912
+    },
+    {
+      "z_mm": 10.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.7113668202764956,
+      "minimum_pocket_to_exterior_mm": 3.2245352701589733,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          39.637310536711475,
+          2.3542257683423027e-06
+        ],
+        [
+          29.70670046082949,
+          -1.3648518830927537e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3533.8670897431284
+    },
+    {
+      "z_mm": 10.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.7262036866359476,
+      "minimum_pocket_to_exterior_mm": 3.3335994165401166,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          39.694659026929344,
+          2.2045447738131155e-06
+        ],
+        [
+          29.749211059907825,
+          -1.6378222597113039e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3570.090419208548
+    },
+    {
+      "z_mm": 10.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.741040552995393,
+      "minimum_pocket_to_exterior_mm": 4.408954133892383,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          39.75200752056594,
+          2.045435170106029e-06
+        ],
+        [
+          29.79172165898618,
+          2.2077262505068572e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3804.412893113101
+    },
+    {
+      "z_mm": 11.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.7558774193548388,
+      "minimum_pocket_to_exterior_mm": 4.408955288822205,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          39.80935601783003,
+          1.8768969662859697e-06
+        ],
+        [
+          29.834232258064517,
+          3.326826465038587e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3819.9120118397714
+    },
+    {
+      "z_mm": 11.300000000000002,
+      "minimum_inter_pocket_web_mm": 2.770714285714291,
+      "minimum_pocket_to_exterior_mm": 4.408954817275748,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -39.866704518930376,
+          -1.698930167275307e-06
+        ],
+        [
+          -29.87674285714286,
+          2.0662962313423119e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3835.4000421150295
+    },
+    {
+      "z_mm": 11.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.7855511520737366,
+      "minimum_pocket_to_exterior_mm": 4.408954345729292,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          39.92405302407578,
+          1.511534781776001e-06
+        ],
+        [
+          29.919253456221192,
+          1.2283666947834788e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3850.8769839388897
+    },
+    {
+      "z_mm": 11.700000000000001,
+      "minimum_inter_pocket_web_mm": 2.800388018433182,
+      "minimum_pocket_to_exterior_mm": 4.408953874182828,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -39.98140153347497,
+          -1.31471081745807e-06
+        ],
+        [
+          -29.961764055299536,
+          2.1837630129484066e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3866.3428373113243
+    },
+    {
+      "z_mm": 11.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.8152248847926273,
+      "minimum_pocket_to_exterior_mm": 4.408953402636371,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          40.03875004733677,
+          1.1084582790221016e-06
+        ],
+        [
+          30.004274654377877,
+          3.0026741428040593e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3881.7976022323637
+    },
+    {
+      "z_mm": 12.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.8300617511520727,
+      "minimum_pocket_to_exterior_mm": 4.408952931089922,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          40.096098565869895,
+          8.927771760336787e-07
+        ],
+        [
+          30.046785253456225,
+          -3.093702028721539e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3897.241278701994
+    },
+    {
+      "z_mm": 12.300000000000002,
+      "minimum_inter_pocket_web_mm": 2.844898617511518,
+      "minimum_pocket_to_exterior_mm": 4.345747599870804,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          40.15344708928317,
+          6.67667514804142e-07
+        ],
+        [
+          30.08929585253457,
+          -1.0406995608582247e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3894.7093772001526
+    },
+    {
+      "z_mm": 12.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.8597354838709634,
+      "minimum_pocket_to_exterior_mm": 4.211670264140788,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          40.21079561778532,
+          4.3312930144448755e-07
+        ],
+        [
+          30.13180645161291,
+          -1.0160838517687958e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3871.802264425812
+    },
+    {
+      "z_mm": 12.700000000000003,
+      "minimum_inter_pocket_web_mm": 2.874572350230409,
+      "minimum_pocket_to_exterior_mm": 4.077592928410766,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          40.26814415158516,
+          1.8916254505820459e-07
+        ],
+        [
+          30.174317050691247,
+          2.953591101581831e-16
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3848.8282855977795
+    },
+    {
+      "z_mm": 12.85,
+      "minimum_inter_pocket_web_mm": 2.8857,
+      "minimum_pocket_to_exterior_mm": 3.977034926613255,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -40.31115555553722,
+          -0.0
+        ],
+        [
+          -30.2062,
+          -5.459407532371015e-17
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3831.5539206290287
+    },
+    {
+      "z_mm": 12.900000000000002,
+      "minimum_inter_pocket_web_mm": 2.822152173913039,
+      "minimum_pocket_to_exterior_mm": 3.9095917201539057,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -40.32549397595767,
+          1.265883221854145e-06
+        ],
+        [
+          -30.216828604896197,
+          -5.817295079685639e-07
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3776.135876080674
+    },
+    {
+      "z_mm": 13.100000000000001,
+      "minimum_inter_pocket_web_mm": 2.567960869565219,
+      "minimum_pocket_to_exterior_mm": 3.6398188943165364,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -40.382848296771556,
+          4.994217170797512e-06
+        ],
+        [
+          -30.25934273584187,
+          -2.295062545533344e-06
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3549.817437289234
+    },
+    {
+      "z_mm": 13.300000000000002,
+      "minimum_inter_pocket_web_mm": 2.313744346069637,
+      "minimum_pocket_to_exterior_mm": 3.3700412704605047,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -20.220112430713595,
+          -35.02225110898488
+        ],
+        [
+          -15.150934264561682,
+          -26.242205281830625
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3316.064981540896
+    },
+    {
+      "z_mm": 13.5,
+      "minimum_inter_pocket_web_mm": 2.0595266837265687,
+      "minimum_pocket_to_exterior_mm": 3.100260232675251,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -20.24878597360051,
+          -35.07191882166432
+        ],
+        [
+          -15.172191189257086,
+          -26.279029569001757
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3074.8785088356494
+    },
+    {
+      "z_mm": 13.500000000000002,
+      "minimum_inter_pocket_web_mm": 2.0595266837265687,
+      "minimum_pocket_to_exterior_mm": 3.1002602326752435,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          20.248785973600505,
+          35.07191882166432
+        ],
+        [
+          15.17219118925709,
+          26.279029569001764
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 3074.8785088356476
+    },
+    {
+      "z_mm": 13.700000000000003,
+      "minimum_inter_pocket_web_mm": 1.8053090213834897,
+      "minimum_pocket_to_exterior_mm": 2.8304791948899832,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          20.277460122129146,
+          35.121587022717435
+        ],
+        [
+          15.193446761892856,
+          26.315853286872848
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 2826.2580191734933
+    },
+    {
+      "z_mm": 13.75,
+      "minimum_inter_pocket_web_mm": 1.7417546057977271,
+      "minimum_pocket_to_exterior_mm": 2.7628276972287873,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          -20.284628739204866,
+          -35.13400415747994
+        ],
+        [
+          -15.198760466554955,
+          -26.32505910431515
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 2762.9413316084424
+    },
+    {
+      "z_mm": 13.900000000000002,
+      "minimum_inter_pocket_web_mm": 1.5510913590404236,
+      "minimum_pocket_to_exterior_mm": 2.5447602294041887,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          20.30613475542999,
+          35.17125577774238
+        ],
+        [
+          15.214701170689175,
+          26.352676248901776
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 2570.203512554428
+    },
+    {
+      "z_mm": 13.95,
+      "minimum_inter_pocket_web_mm": 1.4875369434546573,
+      "minimum_pocket_to_exterior_mm": 2.472071073462658,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          20.313303477511084,
+          35.18367305867088
+        ],
+        [
+          15.220014610156158,
+          26.361881854448093
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 2505.028320750148
+    },
+    {
+      "z_mm": 13.999,
+      "minimum_inter_pocket_web_mm": 1.4252536161806024,
+      "minimum_pocket_to_exterior_mm": 2.4007929396258945,
+      "narrowest_pair_centres_xy_mm": [
+        [
+          20.32032884716977,
+          35.19584203085976
+        ],
+        [
+          15.22522172210622,
+          26.370903291984764
+        ]
+      ],
+      "connected_after_half_minimum_erosion": true,
+      "hole_count": 61,
+      "surface_area_mm2": 2440.705852578725
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version": "v18",
+  "created_utc": "2026-10-04T21:14:16.019457+00:00",
+  "derivative_of": "v17 continuous-web 127-pocket stand",
+  "baseline_bundle_filename": "hex_bit_stand_v17_127_pocket_bundle.zip",
+  "baseline_bundle_sha256": "c952f683a98fd67bf5e5cc5ae35bf105fd31257255feeb46b4b9da1773d4865f",
+  "baseline_source_sha256": "345b464a33f8b37273c1ef297f5623a9c029a29eee79eb8e698b12d52779368a",
+  "baseline_upright_mesh_sha256": "b949726d3f2bf9dabcfcdfca30333e033045a53ce1942b957ac4f318a7484ec8",
+  "baseline_integrity": "All 29 SHA256SUMS entries verified; 8 corresponding mounted artifacts matched packet bytes.",
+  "source_sha256": "6c87e09183cbb0921424285532af6a1ab1694d97315b1a47d97be8dc47b77940",
+  "upright_mesh_sha256": "50a2ed57a7c372d9fb53135141a4162dfb5bd10201a2d5f6b4f9e22c942ff692",
+  "face_down_mesh_sha256": "c2b18c2b3048fe7db93e79b15126e5662f30a1acc8c075f1382e9f5a388df98f",
+  "coupon_sha256": "c4e302d0030fff34d438d38805c11ee6d0c2ba9c0cb67fd11165ef5a1bc0feac",
+  "github_actions_this_turn": [],
+  "publication_status": "LOCAL_ONLY; no GitHub tool calls, branches, commits, uploads or workflow runs",
+  "validation_status": "Geometric checks passed; owner-profile slicing and physical printing pending",
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "openscad": "OpenSCAD version 2021.01",
+    "numpy": "2.3.5",
+    "shapely": "2.1.2",
+    "trimesh": "4.11.1",
+    "networkx": "3.6.1",
+    "Pillow": "12.3.0"
+  },
+  "build_note": "Initial combined build hit the container command timeout after mesh validation. Export checks were rerun separately and passed; see evidence.",
+  "geometry_change_scope": [
+    "ring_count",
+    "pitch",
+    "tilt_angles"
+  ],
+  "retained_mesh_acceptance_criteria": "1.3 mm minimum actual surface ligament; normal-axis 7 mm AF; specified radial angles; single watertight positive volume; requested hole topology."
+}

@@ -1,0 +1,147 @@
+{
+  "sweep": [
+    {
+      "pitch_mm": 10.2,
+      "minimum_top_gap_mm": 1.155280994489388,
+      "limiting_pair_axial_coordinates": [
+        [
+          -9,
+          0
+        ],
+        [
+          -8,
+          0
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.3,
+      "minimum_top_gap_mm": 1.2552809944893806,
+      "limiting_pair_axial_coordinates": [
+        [
+          -9,
+          9
+        ],
+        [
+          -8,
+          8
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.35,
+      "minimum_top_gap_mm": 1.3052809944893766,
+      "limiting_pair_axial_coordinates": [
+        [
+          -9,
+          9
+        ],
+        [
+          -8,
+          8
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.4,
+      "minimum_top_gap_mm": 1.3552809944893884,
+      "limiting_pair_axial_coordinates": [
+        [
+          -9,
+          9
+        ],
+        [
+          -8,
+          8
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.45,
+      "minimum_top_gap_mm": 1.4052809944893843,
+      "limiting_pair_axial_coordinates": [
+        [
+          -9,
+          9
+        ],
+        [
+          -8,
+          8
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.5,
+      "minimum_top_gap_mm": 1.455280994489368,
+      "limiting_pair_axial_coordinates": [
+        [
+          -9,
+          9
+        ],
+        [
+          -8,
+          8
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.55,
+      "minimum_top_gap_mm": 1.5052809944893764,
+      "limiting_pair_axial_coordinates": [
+        [
+          -9,
+          9
+        ],
+        [
+          -8,
+          8
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.6,
+      "minimum_top_gap_mm": 1.5552809944893724,
+      "limiting_pair_axial_coordinates": [
+        [
+          -9,
+          9
+        ],
+        [
+          -8,
+          8
+        ]
+      ]
+    },
+    {
+      "pitch_mm": 10.65,
+      "minimum_top_gap_mm": 1.6052809944893842,
+      "limiting_pair_axial_coordinates": [
+        [
+          -9,
+          9
+        ],
+        [
+          -8,
+          8
+        ]
+      ]
+    }
+  ],
+  "top_rim": [
+    {
+      "pitch": 10.55,
+      "wall_margin": 3.8,
+      "top_rim_min": 1.4381920067213645
+    },
+    {
+      "pitch": 10.55,
+      "wall_margin": 3.9,
+      "top_rim_min": 1.538192006721363
+    },
+    {
+      "pitch": 10.55,
+      "wall_margin": 4.0,
+      "top_rim_min": 1.6381920067213602
+    }
+  ]
+}

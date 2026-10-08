@@ -1,0 +1,48 @@
+{
+  "variant": "v19",
+  "capacity": 217,
+  "derived_from": "verified v18 169-pocket packet",
+  "publication_status": "local only; no GitHub requests or remote mutations in this turn",
+  "source_sha256": "c116114d383e298c5054b41efe0a2cc0d475bfb1c565799af47a7dd8da3c7e5f",
+  "upright_mesh_sha256": "7a230b2866eefe0202b006ea168a34962455f511621e25000f9dfab3ffcf8571",
+  "baseline_packet_sha256": "7f759eb77d535d7c63099a113acca554a4773be0de49054effe289a37a4f4d67",
+  "baseline_source_sha256": "6c87e09183cbb0921424285532af6a1ab1694d97315b1a47d97be8dc47b77940",
+  "baseline_manifest_verified_entries": 32,
+  "baseline_matching_mounted_attachments": 9,
+  "environment": {
+    "openscad": "OpenSCAD version 2021.01",
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "shapely": "2.1.2",
+    "trimesh": "4.11.1",
+    "networkx": "3.6.1",
+    "Pillow": "12.3.0"
+  },
+  "main_parameter_changes": {
+    "ring_count": [
+      7,
+      8
+    ],
+    "pocket_count": [
+      169,
+      217
+    ],
+    "new_outer_tilt_degrees": 32,
+    "pitch_mm": [
+      9.9,
+      10.2
+    ]
+  },
+  "retained_parameters": [
+    "7 mm normal-axis shaft AF",
+    "8.5 mm aligned entrance equivalent profile AF",
+    "1.15 mm entrance chamfer height",
+    "2 mm base zone",
+    "12 mm main pocket vertical depth",
+    "1 mm floor taper with 55-degree inward draft",
+    "3.8 mm nominal shell margin",
+    "lip-edge side recesses with 1.3 mm top/side reference borders"
+  ],
+  "physical_acceptance": "Not sliced with owner profile and not printed here. Coupon and full-part acceptance pending."
+}

@@ -1,0 +1,27 @@
+{
+  "candidate": "radius-9, pitch 10.55, margin 4.1, inherited 2 mm panel-front reach",
+  "source_sha256": "6cb222d8a7fe5ee947f359e7c0205295698bda551a1ae9ef87e94172c2f1ff59",
+  "mesh_sha256": "4def138f817c0d3ee0b6cb7a73f89a722e34c446b50a086c630a5e6d99ae3134",
+  "validator_returncode": 1,
+  "validator_output": "FAIL: Expected exterior plus 271 holes at z=10.500000000000002",
+  "sections_observed": [
+    {
+      "z": 10.3,
+      "closed_rings": 272
+    },
+    {
+      "z": 10.5,
+      "closed_rings": 320
+    },
+    {
+      "z": 10.7,
+      "closed_rings": 320
+    },
+    {
+      "z": 10.9,
+      "closed_rings": 272
+    }
+  ],
+  "diagnosis": "The 2 mm front reach is less than the outer shell displacement above the midheight reference plane. 48 side recesses become fully enclosed in these horizontal sections, leaving thin exterior cover skins.",
+  "correction": "Increase only the outward reach of the side cutters to 3 mm; retained 1.2 mm recess depth and side/top taper. Validate final exported mesh."
+}

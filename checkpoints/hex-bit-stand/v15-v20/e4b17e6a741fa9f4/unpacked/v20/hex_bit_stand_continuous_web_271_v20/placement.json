@@ -1,0 +1,27 @@
+{
+  "source_mesh_sha256": "cf67bc943303b57aeccf11e9a8ec5afe38793927c8366c73410c2a078a6aa938",
+  "placements": [
+    {
+      "rotation_about_z_degrees": 0,
+      "bounding_rectangle_mm": [
+        221.62246704101562,
+        197.45989990234375
+      ]
+    },
+    {
+      "rotation_about_z_degrees": 15,
+      "bounding_rectangle_mm": [
+        215.71481733315636,
+        215.71482379948742
+      ]
+    },
+    {
+      "rotation_about_z_degrees": 30,
+      "bounding_rectangle_mm": [
+        197.4599179041919,
+        221.62247660535888
+      ]
+    }
+  ],
+  "note": "XY rigid rotations only. No scaling. Dimensions exclude skirt, brim, clips and printer-specific excluded areas."
+}

@@ -1,0 +1,9 @@
+{
+  "observation": "36 degree shell has 96 additional vertical exterior cap triangles at z=13.99..14.00 mm.",
+  "old_mask_count": 3348,
+  "entrance_count": 3252,
+  "expected_entrance_count": 3252,
+  "excluded_cap_normals_z": 0.0,
+  "change": "Require entrance triangles to span both endpoints of the defined 1.15 mm ruled entrance segment. Retain six triangulated faces per pocket check and angle limits.",
+  "geometry_changed_for_this_fix": false
+}

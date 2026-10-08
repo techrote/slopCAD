@@ -1,0 +1,54 @@
+{
+  "revision": "v17-continuous-web-127",
+  "created_date": "2026-10-04",
+  "source": "Actual mounted v16 conversation bundle and SCAD, with its SHA256SUMS verified before use. Not reconstructed from prose.",
+  "parent_model": "v16-continuous-web-91",
+  "parent_manifest_entries_verified": 23,
+  "publication_status": "LOCAL_ONLY: no GitHub reads, writes, branch changes, comments, or workflow actions.",
+  "inputs": {
+    "hex_bit_stand_continuous_web_91_v16.scad": {
+      "sha256": "644622c174573d7c39ad8fd2b751e952493fabd66644de494305823f1f95cf6d",
+      "bytes": 8821
+    },
+    "hex_bit_stand_continuous_web_91_v16.stl": {
+      "sha256": "248b8ae5eb5c00264bba5b5e552f4ff1ac797a81b24c4ec8cada3449725dab2e",
+      "bytes": 1385205
+    },
+    "validation_summary.json": {
+      "sha256": "d85c6580ed7a77dc126618ad3f4a5ccb445f3614c73ff7a9215be2575add9b84",
+      "bytes": 2503
+    },
+    "SHA256SUMS": {
+      "sha256": "b621ddecbbce38affbc46b792b7adf5e3d4576774ef0291aa927550869974b82",
+      "bytes": 2090
+    },
+    "hex_bit_stand_v16_91_pocket_bundle.zip": {
+      "sha256": "0fdd36023ca42ab27d33a00bd1ce3d76872451d24a51a4bd35f526f6ba3ebadc",
+      "bytes": 547313
+    }
+  },
+  "intentional_changes": [
+    "Add ring 6: 36 pockets at 24 degrees outward, 127 total.",
+    "Increase pitch 9.45 -> 9.65 mm to obtain 1.450 mm measured top webs.",
+    "Extend the coupon from eleven to thirteen pockets to include all seven bands and the worst 20/24 degree pair."
+  ],
+  "retained_geometry": "All other model dimension parameters from v16 retained; see regression_checks.json and the source patch.",
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "openscad": "OpenSCAD version 2021.01",
+    "numpy": "2.3.5",
+    "shapely": "2.1.2",
+    "trimesh": "4.11.1",
+    "networkx": "3.6.1",
+    "pillow": "12.3.0"
+  },
+  "validation": "Exported mesh surfaces + 83 sampled sections; independent 127-pocket fit/axis checks; every-vertex face-down equivalence; coupon/full hole matching; negative old-spacing mesh rejected.",
+  "limits": [
+    "No slicer toolpath or printer-profile validation performed.",
+    "No physical v17 print.",
+    "Existing v15 physical acceptance was user-reported; no new v16 physical acceptance is inferred.",
+    "First aggregate build command timed out after the main mesh checks. A subsequent complete build/export validation succeeded; final records reference the delivered files.",
+    "STL byte ordering differed between two geometrically equivalent OpenSCAD builds; final hashes identify this delivered set."
+  ]
+}
