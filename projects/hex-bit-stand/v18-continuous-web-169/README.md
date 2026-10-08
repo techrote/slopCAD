@@ -1,14 +1,23 @@
 # v18 — continuous-web 169-pocket stand
 
-Local-only expansion of the actual v17 127-pocket model. The new seventh ring contains **42 pockets tilted 28° radially outward**. No GitHub calls or publication were made while preparing this version.
+Expansion of the actual v17 127-pocket model. The new seventh ring contains **42 pockets tilted 28° radially outward**.
+
+## Preserved original bundle
+
+The source and upright STL are already published in this project directory, alongside the compact validation summary. [Original ZIP](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/originals/hex_bit_stand_v18_169_pocket_bundle.zip) and the [matched source, tools and evidence](https://github.com/techrote/slopCAD/tree/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18) preserve the complete original package separately.
+
+- [Original full face-down STL](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/hex_bit_stand_continuous_web_169_v18_face_down.stl); [15-pocket face-down coupon](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/v18_fifteen_pocket_test_face_down.stl); [full historical geometry report](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/validation.json).
+- [Family archive index and tool-use instructions](../README.md#original-bundles-and-supplementary-tools).
+
+Measurements, validation outcomes, preview-inspection statements and toolchain versions below are historical records from the original bundle. They do not describe new executions during preservation or establish a new slice, physical print or fit result.
 
 ## Print files and orientation
 
-**Use `hex_bit_stand_continuous_web_169_v18_face_down.stl` for effect-plate printing.** It is already rotated so the normal pocket-opening face is on the bed at Z = 0. Do not flip it again. The maximum envelope is **165.55 × 148.26 × 14.00 mm**, before any slicer brim or skirt.
+**Use [hex_bit_stand_continuous_web_169_v18_face_down.stl](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/hex_bit_stand_continuous_web_169_v18_face_down.stl) for effect-plate printing.** It is already rotated so the normal pocket-opening face is on the bed at Z = 0. Do not flip it again. The maximum envelope is **165.55 × 148.26 × 14.00 mm**, before any slicer brim or skirt.
 
-`hex_bit_stand_continuous_web_169_v18.stl` is the identical part in its upright/use orientation for inspection. The SCAD defaults to that upright orientation.
+[hex_bit_stand_continuous_web_169_v18.stl](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/hex_bit_stand_continuous_web_169_v18.stl) is the identical part in its upright/use orientation for inspection. The SCAD defaults to that upright orientation.
 
-`v18_fifteen_pocket_test_face_down.stl` is a smaller, **already face-down** test section. It contains all eight tilt bands, a symmetry-equivalent instance of the narrowest 24°/28° pair, and adjacent three-pocket junctions at the exact production coordinates. Its exterior is simplified; it does not validate the complete side-wall panel treatment. Its envelope is approximately **88.74 × 23.24 × 14.00 mm**.
+[v18_fifteen_pocket_test_face_down.stl](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/v18_fifteen_pocket_test_face_down.stl) is a smaller, **already face-down** test section. It contains all eight tilt bands, a symmetry-equivalent instance of the narrowest 24°/28° pair, and adjacent three-pocket junctions at the exact production coordinates. Its exterior is simplified; it does not validate the complete side-wall panel treatment. Its envelope is approximately **88.74 × 23.24 × 14.00 mm**.
 
 ## Geometry
 
@@ -55,7 +64,7 @@ The rule concerns in-plane solid material remaining after all cuts and tilted pr
 
 An independent analytical sweep checked 9.65, 9.75, 9.80, 9.85, 9.90 and 9.95 mm. A deliberately underspaced, fully rendered 9.65 mm model was rejected by the same mesh validator with `FAIL: top web < 1.3 mm`. Only the temporary source's pitch guard was relaxed; the minimum-width measurement rule remained enabled. That negative control never replaced the production models.
 
-## Measured geometric validation
+## Historical measured geometric validation
 
 These are measurements of the exported upright STL, not just source dimensions:
 
@@ -83,7 +92,9 @@ CAD solid volume is **141.68 cm³**. Actual filament quantity depends on slicing
 
 ## Rebuild and validate
 
-Environment used: **OpenSCAD 2021.01**, Python **3.13.5**, NumPy **2.3.5**, Shapely **2.1.2**, Trimesh **4.11.1**, NetworkX **3.6.1**. OpenSCAD is a separate system dependency; the Python validation dependencies are pinned in `requirements-validation.txt`.
+These are commands for the **complete original bundle**, not this reduced project directory. Download the original ZIP linked above, extract it into a separate writable working area, and use `hex_bit_stand_continuous_web_169_v18/` as the working directory. Keep the archived source, tools, metadata and meshes together; do not combine them with a different published STL. Keep the Python environment outside that bundle directory: the build helper includes other local files in its checksum walk. The original toolchain versions and commands follow; they were inspected for paths and dependencies during preservation, not rerun as historical validation.
+
+Environment used: **OpenSCAD 2021.01**, Python **3.13.5**, NumPy **2.3.5**, Shapely **2.1.2**, Trimesh **4.11.1**, NetworkX **3.6.1**. OpenSCAD is a separate system dependency; the Python validation dependencies are pinned in [requirements-validation.txt](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/requirements-validation.txt).
 
 ```sh
 python -m pip install -r requirements-validation.txt
@@ -96,7 +107,7 @@ On Windows, supply the console executable when it is not on PATH:
 python build.py --openscad "C:\Program Files\OpenSCAD\openscad.com"
 ```
 
-The build helper exports the upright model, derives its exact face-down rigid transform, exports the coupon, runs the mesh and export validators, and refreshes `validation_summary.json` and the file manifest. Each subprocess has an explicit timeout. It does not regenerate narrative documentation, baseline provenance, regression comparison records or preview images.
+The build helper exports the upright model, derives its exact face-down rigid transform, exports the coupon, runs the mesh and export validators, and refreshes [validation_summary.json](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/validation_summary.json) and the file manifest. Each subprocess has an explicit timeout. It does not regenerate narrative documentation, baseline provenance, regression comparison records or preview images.
 
 The build steps can also be checked separately:
 
@@ -114,14 +125,14 @@ openscad -D 'print_face_down=true' -o v18_face_down.stl hex_bit_stand_continuous
 openscad -D 'export_part="coupon"' -D 'print_face_down=true' -o v18_coupon.stl hex_bit_stand_continuous_web_169_v18.scad
 ```
 
-`render_previews.py` renders the actual STL using OpenSCAD. It additionally requires Pillow (tested **12.3.0**) and uses `xvfb-run` when available on headless Linux. It only crops the uniform background; no geometry is invented or altered for the previews.
+[render_previews.py](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/render_previews.py) renders the actual STL using OpenSCAD. It additionally requires Pillow (tested **12.3.0**) and uses `xvfb-run` when available on headless Linux. It only crops the uniform background; no geometry is invented or altered for the previews.
 
 ## Package contents and integrity
 
 The package contains both full-model orientations, the coupon, standalone SCAD, build/validation tools, exact-mesh previews, full and summary validation records, export checks, spacing checks, regression comparisons, provenance and later-publication notes.
 
-The actual v17 packet was verified before derivation: all **29** entries in its `SHA256SUMS` matched, and the eight corresponding mounted attachments matched the packet bytes. `evidence/source_changes.patch` records this revision against that verified v17 source. The seven functional geometry modules were checked unchanged; the data now selects seven rings instead of six.
+The actual v17 packet was verified before derivation: all **29** entries in its [v17 SHA256SUMS](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v17/hex_bit_stand_continuous_web_127_v17/SHA256SUMS) matched, and the eight corresponding mounted attachments matched the packet bytes. [evidence/source_changes.patch](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/evidence/source_changes.patch) records this revision against that verified v17 source. The seven functional geometry modules were checked unchanged; the data now selects seven rings instead of six.
 
-`SHA256SUMS` records all supplied file bytes except itself. Rebuilding may change STL triangle ordering and byte hashes without changing geometry; rerun the geometry validators and refresh hashes. The ZIP checksum is supplied separately.
+[SHA256SUMS](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v18/hex_bit_stand_continuous_web_169_v18/SHA256SUMS) records all supplied file bytes except itself. Rebuilding may change STL triangle ordering and byte hashes without changing geometry; rerun the geometry validators and refresh hashes. Archive identities and their historical or newly observed provenance are recorded in the family archive index and preservation manifest.
 
-Everything is local and ready for later publication. No repository state was read or changed for this version.
+The source, upright STL and summary are published in this project. The complete original bundle is now preserved at the immutable archive linked above; original local-only preparation statements remain unchanged inside that archive.

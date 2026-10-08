@@ -2,6 +2,15 @@
 
 A first-layer reliability revision of v14, based on the owner's sliced and printed representative section. The intended effect-plate orientation is **top face down**.
 
+## Preserved original bundle
+
+The source and upright STL are already published in this project directory, alongside its validator and requirements. [Original ZIP](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/originals/hex_bit_stand_v15_bundle.zip) and the [matched source, tools and evidence](https://github.com/techrote/slopCAD/tree/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v15) preserve the complete original package separately.
+
+- [Original full face-down STL](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v15/hex_bit_stand_continuous_web_61_v15_face_down.stl); [9-pocket face-down coupon](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v15/v15_nine_pocket_test_face_down.stl); [full historical geometry report](https://github.com/techrote/slopCAD/blob/787cfcae9664eae1e94f732b54b8df4c9cdaca3e/checkpoints/hex-bit-stand/v15-v20/e4b17e6a741fa9f4/unpacked/v15/validation.json).
+- [Family archive index and tool-use instructions](../README.md#original-bundles-and-supplementary-tools).
+
+Measurements, validation outcomes, preview-inspection statements and toolchain versions below are historical records from the original bundle. They do not describe new executions during preservation or establish a new slice, physical print or fit result.
+
 ## What changed
 
 The deliberately misaligned mouth chamfers are removed. Every entrance follows its own shaft without a rotational step or a scalloped union of two differently rotated cutters. Shaft hexes now share the lattice-aligned orientation before tilting; they no longer acquire an extra tangential rotation around the stand. The actual axis angles remain **0° / 4° / 8° / 12° / 16°**.
@@ -33,7 +42,7 @@ The v14 STL's narrowest top-face gap measured about **0.024 mm**. Simply alignin
 
 The convex wall and softened lower lip remain. Panel positions are derived from the current parameters, rather than a hard-coded perimeter. Width changes must be revalidated; simple assertions are not a substitute for measuring the exported geometry.
 
-## Measured validation
+## Historical measured validation
 
 Measurements are from the exported STL, not only from source dimensions.
 
@@ -52,9 +61,11 @@ Both exposed surfaces remain connected after erosion by half the minimum web wid
 
 CAD solid volume is about **49.86 cm³**, versus **44.60 cm³** for the supplied v14 STL: approximately **11.8% more solid-model volume**. Actual filament consumption is slicer-dependent. This is an intentional trade for wider continuous face-down junctions.
 
-**Geometric validation passed. A slicer preview and physical print of v15 are still required; this is not a claim that all seam or extrusion artifacts have been eliminated.**
+**Historical bundle result: geometric validation passed; the original note still required a slicer preview and physical print.** The [family history](../README.md) subsequently records successful physical printing of v15. That existing record is not a new print or fit assessment performed by this preservation task, and does not establish that every seam or extrusion artifact has been eliminated.
 
 ## Export and test
+
+Run these existing project commands from `projects/hex-bit-stand/v15-continuous-web-61/`. For the original archived source and meshes, use a separate writable extraction of the flat v15 ZIP as described in the family archive index.
 
 The default source/STL orientation is upright for inspection. For the effect-plate export:
 
