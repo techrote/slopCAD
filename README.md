@@ -8,7 +8,7 @@ Practical CAD experiments and 3D-printable workshop parts, including parametric 
 | --- | --- | --- |
 | [Hex bit stands](projects/hex-bit-stand/) | 1/4-inch hex-bit storage; v1–v20 iteration history | [v20, 271 pockets](projects/hex-bit-stand/v20-continuous-web-271/) |
 | [Hex handles](projects/hex-handles/) | Compact, angular, five-rib 1/4-inch hex-shaft handles | [v1, 32 mm](projects/hex-handles/v1-32mm-five-rib/) |
-| [Fan guards](projects/fan-guards/) | Fan grilles and airflow-oriented patterns | [SweepHex 140 XL, 6 mm](projects/fan-guards/sweephex-140-xl/) |
+| [Fan guards](projects/fan-guards/) | Fan grilles and airflow-oriented patterns | [SweepHex XL family, 60–140 mm](projects/fan-guards/) |
 
 **[Browse the full project index](projects/README.md)** for the canonical `projects/` layout. Individual family READMEs link every historical version, source file, and printable model.
 
