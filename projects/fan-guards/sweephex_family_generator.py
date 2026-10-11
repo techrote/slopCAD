@@ -4,9 +4,9 @@
 Derived from the physically printed SweepHex 140 XL geometry. Each variant keeps a
 6 mm flat plate, strong anticlockwise radial sweep, nominal 3.3 mm mid-plane webs,
 1 mm x 45 degree chamfers on all airflow apertures, and the fan size's standard
-mounting pitch. The small variants use reduced outer/mount-hole face chamfer widths
-where a full 1+1 mm pair would collide with the standard mounting holes; bevel
-height remains 1 mm so those local bevels are steeper and support-free.
+mounting pitch. The compact variants retain the 1 mm outside chamfer except for smooth local
+relief around mounting bosses, while mount-hole face bevel width is reduced where
+a full 1+1 mm pair would collide with standard mounting geometry.
 
 Positive sweep is anticlockwise viewed from +Z / the presented face.
 """
@@ -25,6 +25,7 @@ class Settings:
     fan_mount_pitch: float
     outer_face_chamfer_xy: float
     mount_face_chamfer_xy: float
+    mount_edge_face_ligament_min: float = 1.3
     total_depth: float = 6.0
     bevel_height: float = 1.0
     airflow_face_chamfer_xy: float = 1.0
@@ -44,9 +45,9 @@ class Settings:
 
 PRESETS = {
     120: Settings(120.0, 105.0, 1.0, 1.0, sweep_reference_radius=76.0*120.0/140.0),
-    92:  Settings(92.0, 82.5, 0.3, 0.8, sweep_reference_radius=76.0*92.0/140.0),
-    80:  Settings(80.0, 71.5, 0.1, 0.5, sweep_reference_radius=76.0*80.0/140.0),
-    60:  Settings(60.0, 50.0, 0.4, 0.9, sweep_reference_radius=76.0*60.0/140.0),
+    92:  Settings(92.0, 82.5, 1.0, 0.8, sweep_reference_radius=76.0*92.0/140.0),
+    80:  Settings(80.0, 71.5, 1.0, 0.5, sweep_reference_radius=76.0*80.0/140.0),
+    60:  Settings(60.0, 50.0, 1.0, 0.9, sweep_reference_radius=76.0*60.0/140.0),
 }
 
 def mount_centres(s):
@@ -99,9 +100,20 @@ def construct_profiles(s):
     mid_outer=outline(s)
     middle=mid_outer.difference(unary_union(holes+mounts))
     if middle.geom_type!='Polygon' or not middle.is_valid: raise RuntimeError('middle slice disconnected')
+    # Keep the full 1 mm outside chamfer along the perimeter, but locally
+    # relax that inset around compact mounting bosses. A full 1 mm outer
+    # chamfer plus a full mounting-hole chamfer cannot coexist at the 80 mm
+    # standard pitch while retaining the repository's 1.3 mm face ligament.
     face_outer=mid_outer.buffer(-s.outer_face_chamfer_xy,join_style='round',quad_segs=s.bevel_corner_quadrant_segments)
+    mount_face_radius=s.mounting_hole_diameter/2+s.mount_face_chamfer_xy
+    boss_face_radius=mount_face_radius+s.mount_edge_face_ligament_min
+    boss_reliefs=unary_union([Point(x,y).buffer(boss_face_radius,quad_segs=s.mounting_circle_quadrant_segments)
+                              for x,y in mount_centres(s)])
+    face_outer=unary_union([face_outer,boss_reliefs]).intersection(mid_outer)
+    if face_outer.geom_type!='Polygon' or not face_outer.is_valid:
+        raise RuntimeError(f'outer face relief disconnected: {face_outer.geom_type}')
     face_holes=[h.buffer(s.airflow_face_chamfer_xy,join_style='round',quad_segs=s.bevel_corner_quadrant_segments) for h in holes]
-    face_mounts=[Point(x,y).buffer(s.mounting_hole_diameter/2+s.mount_face_chamfer_xy,quad_segs=s.mounting_circle_quadrant_segments) for x,y in mount_centres(s)]
+    face_mounts=[Point(x,y).buffer(mount_face_radius,quad_segs=s.mounting_circle_quadrant_segments) for x,y in mount_centres(s)]
     face=face_outer.difference(unary_union(face_holes+face_mounts))
     if face.geom_type!='Polygon' or not face.is_valid: raise RuntimeError(f'face slice disconnected: {face.geom_type}')
     expected=len(holes)+4
@@ -183,19 +195,23 @@ def generate(size,outdir):
     (outdir/(stem+'.3mf')).write_bytes(tmf.export_3MF(mesh))
     create_dxf(middle,face,outdir/(stem+'.dxf'))
     edge_mid=s.overall_side/2-s.fan_mount_pitch/2-s.mounting_hole_diameter/2
-    edge_face=edge_mid-s.outer_face_chamfer_xy-s.mount_face_chamfer_xy
+    global_edge_face=edge_mid-s.outer_face_chamfer_xy-s.mount_face_chamfer_xy
+    edge_face=max(global_edge_face,s.mount_edge_face_ligament_min)
+    local_outer_inset=max(0.0,edge_mid-s.mount_face_chamfer_xy-edge_face)
     metrics={
       'fan_size_mm':size,'hex_apertures':len(holes),'mount_holes':4,
       'midplane_open_fraction_full_square':float(1-middle.area/(s.overall_side*s.overall_side)),
       'face_open_fraction_full_square':float(1-face.area/(s.overall_side*s.overall_side)),
       'mount_edge_ligament_midplane_mm':edge_mid,'mount_edge_ligament_face_nominal_mm':edge_face,
+      'outer_face_chamfer_xy_global_mm':s.outer_face_chamfer_xy,
+      'mount_boss_local_outer_inset_mm':local_outer_inset,
       'nominal_midplane_web_mm':2*s.half_web_width,
       'nominal_face_web_between_airflow_apertures_mm':2*(s.half_web_width-s.airflow_face_chamfer_xy),
       'estimated_PLA_grams_at_1p24':float(mesh.volume/1000*1.24),
       'supports_required':'no; print either broad face down',
       'swirl':f'105 degrees CCW at {s.sweep_reference_radius:.3f} mm reference radius, +Z view',
       'mount_centres_mm':mount_centres(s),
-      'note':'Airflow apertures retain 1x1 mm chamfers. Outer/mount bevel XY widths are locally reduced on compact fan standards to preserve material around standard bolt locations.'}
+      'note':'Airflow apertures and most of the perimeter retain 1x1 mm chamfers. The perimeter chamfer relaxes smoothly only around compact mounting bosses, and the mounting-hole bevel width is reduced where required to preserve at least the target face ligament.'}
     (outdir/(stem+'.json')).write_text(json.dumps({'settings':asdict(s),'measurements':metrics,'validation':validation},indent=2))
     (outdir/(stem+'.scad')).write_text(
         f'// SweepHex {size} XL OpenSCAD convenience wrapper.\n'
@@ -236,12 +252,13 @@ The main aperture radius is deliberately kept at 13.6 mm across the family rathe
 
 ### Compact-frame bevel accommodation
 
-Airflow apertures retain the full 1 mm × 45° bevel. Standard mounting positions leave much less material between a bolt hole and the outer edge on compact fan frames, so the **outer-face and mounting-hole XY bevel widths are reduced locally by preset** while the bevel height remains 1 mm. This preserves at least about 1.3 mm nominal material at the nearest mount-to-edge section and is no more demanding to print than the 45° airflow bevel.
+Airflow apertures retain the full 1 mm × 45° bevel, and the outer perimeter also keeps its full 1 mm × 45° chamfer away from the mounting bosses. Standard mounting positions leave much less material between a bolt hole and the outer edge on compact fan frames, so the perimeter chamfer **relaxes only around each mounting boss** and the mounting-hole bevel width is reduced where necessary. This preserves at least about 1.3 mm nominal material at the nearest mount-to-edge section.
 
-- outer face bevel width: **{s.outer_face_chamfer_xy} mm**
+- normal outer perimeter chamfer width: **{s.outer_face_chamfer_xy} mm**
+- local outer inset beside the mounting boss: **{metrics['mount_boss_local_outer_inset_mm']:.2f} mm**
 - mounting-hole bevel width: **{s.mount_face_chamfer_xy} mm**
 
-A full 1 mm outer bevel plus full 1 mm screw-hole bevel is geometrically incompatible with the standard 80 mm mounting pitch and Ø4.7 mm bore because those bevels overlap.
+A full 1 mm outer bevel plus full 1 mm screw-hole bevel is geometrically incompatible with the standard 80 mm mounting pitch and Ø4.7 mm bore because those bevels overlap. The local relief preserves the visible 1 mm perimeter chamfer everywhere it fits instead of weakening the entire frame edge.
 
 ## Printing and qualification
 
