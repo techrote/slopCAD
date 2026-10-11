@@ -1,0 +1,77 @@
+{
+  "settings": {
+    "overall_side": 140.0,
+    "total_depth": 6.0,
+    "chamfer": 1.0,
+    "corner_xy_chamfer": 1.0,
+    "fan_mount_pitch": 124.5,
+    "mounting_hole_diameter": 4.7,
+    "mount_solid_keepout_radius": 6.35,
+    "square_frame_width": 3.2,
+    "hex_tile_circumradius": 13.6,
+    "half_web_width": 1.6,
+    "anticlockwise_sweep_degrees_at_reference": 105.0,
+    "sweep_reference_radius": 76.0,
+    "sweep_exponent": 1.2,
+    "hex_edge_samples": 12,
+    "min_aperture_area_mm2": 18.0,
+    "mounting_circle_quadrant_segments": 48,
+    "bevel_corner_quadrant_segments": 6
+  },
+  "measurements": {
+    "hex_apertures": 43,
+    "mount_holes": 4,
+    "hex_nominal_circumradius_mm": 13.6,
+    "nominal_hex_across_flats_unwarped_mm": 20.35589098293673,
+    "legacy_nominal_hex_across_flats_mm": 10.077945491468366,
+    "midplane_open_fraction_full_square": 0.5872062071260284,
+    "face_open_fraction_full_square": 0.8072278351372203,
+    "volume_mm3": 44279.712181467,
+    "estimated_PLA_grams_at_1p24": 54.906843105019085,
+    "supports_required": "no, printing either broad face down; 45-degree underside bevels",
+    "chamfer": "1 mm x 45 degrees, both large faces, all through-openings including bolts and outer outline",
+    "corner_vertical_chamfer_mm": 1.0,
+    "swirl": "105 degrees CCW at 76 mm radius as viewed from z-positive",
+    "mount_centres_mm": [
+      [
+        -62.25,
+        -62.25
+      ],
+      [
+        -62.25,
+        62.25
+      ],
+      [
+        62.25,
+        -62.25
+      ],
+      [
+        62.25,
+        62.25
+      ]
+    ],
+    "midplane_hole_count": 47,
+    "face_hole_count": 47
+  },
+  "validation": {
+    "watertight": true,
+    "consistent_winding": true,
+    "components": 1,
+    "volume_mm3": 44279.712181467,
+    "bounds_mm": [
+      [
+        -70.0,
+        -70.0,
+        0.0
+      ],
+      [
+        70.0,
+        70.0,
+        6.0
+      ]
+    ],
+    "vertices": 22136,
+    "faces": 44456,
+    "euler_number": -92
+  }
+}
