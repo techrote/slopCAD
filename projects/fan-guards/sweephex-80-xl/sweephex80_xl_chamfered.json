@@ -1,0 +1,78 @@
+{
+  "settings": {
+    "overall_side": 80.0,
+    "fan_mount_pitch": 71.5,
+    "outer_face_chamfer_xy": 0.1,
+    "mount_face_chamfer_xy": 0.5,
+    "total_depth": 6.0,
+    "bevel_height": 1.0,
+    "airflow_face_chamfer_xy": 1.0,
+    "corner_xy_chamfer": 1.0,
+    "mounting_hole_diameter": 4.7,
+    "mount_solid_keepout_radius": 6.35,
+    "square_frame_width": 3.3,
+    "hex_tile_circumradius": 13.6,
+    "half_web_width": 1.65,
+    "anticlockwise_sweep_degrees_at_reference": 105.0,
+    "sweep_reference_radius": 43.42857142857143,
+    "sweep_exponent": 1.2,
+    "hex_edge_samples": 12,
+    "min_aperture_area_mm2": 18.0,
+    "mounting_circle_quadrant_segments": 48,
+    "bevel_corner_quadrant_segments": 6
+  },
+  "measurements": {
+    "fan_size_mm": 80,
+    "hex_apertures": 17,
+    "mount_holes": 4,
+    "midplane_open_fraction_full_square": 0.5416751084619316,
+    "face_open_fraction_full_square": 0.7379575161262545,
+    "mount_edge_ligament_midplane_mm": 1.9,
+    "mount_edge_ligament_face_nominal_mm": 1.2999999999999998,
+    "nominal_midplane_web_mm": 3.3,
+    "nominal_face_web_between_airflow_apertures_mm": 1.2999999999999998,
+    "estimated_PLA_grams_at_1p24": 20.28899346126367,
+    "supports_required": "no; print either broad face down",
+    "swirl": "105 degrees CCW at 43.429 mm reference radius, +Z view",
+    "mount_centres_mm": [
+      [
+        -35.75,
+        -35.75
+      ],
+      [
+        -35.75,
+        35.75
+      ],
+      [
+        35.75,
+        -35.75
+      ],
+      [
+        35.75,
+        35.75
+      ]
+    ],
+    "note": "Airflow apertures retain 1x1 mm chamfers. Outer/mount bevel XY widths are locally reduced on compact fan standards to preserve material around standard bolt locations."
+  },
+  "validation": {
+    "watertight": true,
+    "consistent_winding": true,
+    "components": 1,
+    "volume_mm3": 16362.091501019086,
+    "bounds_mm": [
+      [
+        -40.0,
+        -40.0,
+        0.0
+      ],
+      [
+        40.0,
+        40.0,
+        6.0
+      ]
+    ],
+    "vertices": 9416,
+    "faces": 18912,
+    "euler_number": -40
+  }
+}
