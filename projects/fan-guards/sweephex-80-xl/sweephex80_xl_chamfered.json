@@ -2,8 +2,9 @@
   "settings": {
     "overall_side": 80.0,
     "fan_mount_pitch": 71.5,
-    "outer_face_chamfer_xy": 0.1,
+    "outer_face_chamfer_xy": 1.0,
     "mount_face_chamfer_xy": 0.5,
+    "mount_edge_face_ligament_min": 1.3,
     "total_depth": 6.0,
     "bevel_height": 1.0,
     "airflow_face_chamfer_xy": 1.0,
@@ -26,12 +27,14 @@
     "hex_apertures": 17,
     "mount_holes": 4,
     "midplane_open_fraction_full_square": 0.5416751084619316,
-    "face_open_fraction_full_square": 0.7379575161262545,
+    "face_open_fraction_full_square": 0.7781543667064533,
     "mount_edge_ligament_midplane_mm": 1.9,
-    "mount_edge_ligament_face_nominal_mm": 1.2999999999999998,
+    "mount_edge_ligament_face_nominal_mm": 1.3,
+    "outer_face_chamfer_xy_global_mm": 1.0,
+    "mount_boss_local_outer_inset_mm": 0.09999999999999987,
     "nominal_midplane_web_mm": 3.3,
     "nominal_face_web_between_airflow_apertures_mm": 1.2999999999999998,
-    "estimated_PLA_grams_at_1p24": 20.28899346126367,
+    "estimated_PLA_grams_at_1p24": 20.275819161028085,
     "supports_required": "no; print either broad face down",
     "swirl": "105 degrees CCW at 43.429 mm reference radius, +Z view",
     "mount_centres_mm": [
@@ -52,13 +55,13 @@
         35.75
       ]
     ],
-    "note": "Airflow apertures retain 1x1 mm chamfers. Outer/mount bevel XY widths are locally reduced on compact fan standards to preserve material around standard bolt locations."
+    "note": "Airflow apertures and most of the perimeter retain 1x1 mm chamfers. The perimeter chamfer relaxes smoothly only around compact mounting bosses, and the mounting-hole bevel width is reduced where required to preserve at least the target face ligament."
   },
   "validation": {
     "watertight": true,
     "consistent_winding": true,
     "components": 1,
-    "volume_mm3": 16362.091501019086,
+    "volume_mm3": 16351.467065345229,
     "bounds_mm": [
       [
         -40.0,
@@ -71,8 +74,8 @@
         6.0
       ]
     ],
-    "vertices": 9416,
-    "faces": 18912,
+    "vertices": 10104,
+    "faces": 20288,
     "euler_number": -40
   }
 }

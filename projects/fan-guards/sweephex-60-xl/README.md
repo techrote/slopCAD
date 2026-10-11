@@ -26,18 +26,19 @@ Unprinted size variant of the physically printed and installed [SweepHex 140 XL]
 | Airflow-aperture chamfer | **1 × 1 mm**, both broad faces |
 | Nominal middle web | **3.3 mm** |
 | Nominal broad-face airflow web | **1.3 mm** |
-| Nominal face ligament at nearest mount/outer edge | **1.35 mm** |
+| Nominal face ligament at nearest mount/outer edge | **1.30 mm** |
 
 The main aperture radius is deliberately kept at 13.6 mm across the family rather than scaling all holes down. This keeps the compact variants open and visually related to the printed 140 XL instead of turning the smaller guards into dense restrictive meshes.
 
 ### Compact-frame bevel accommodation
 
-Airflow apertures retain the full 1 mm × 45° bevel. Standard mounting positions leave much less material between a bolt hole and the outer edge on compact fan frames, so the **outer-face and mounting-hole XY bevel widths are reduced locally by preset** while the bevel height remains 1 mm. This preserves at least about 1.3 mm nominal material at the nearest mount-to-edge section and is no more demanding to print than the 45° airflow bevel.
+Airflow apertures retain the full 1 mm × 45° bevel, and the outer perimeter also keeps its full 1 mm × 45° chamfer away from the mounting bosses. Standard mounting positions leave much less material between a bolt hole and the outer edge on compact fan frames, so the perimeter chamfer **relaxes only around each mounting boss** and the mounting-hole bevel width is reduced where necessary. This preserves at least about 1.3 mm nominal material at the nearest mount-to-edge section.
 
-- outer face bevel width: **0.4 mm**
+- normal outer perimeter chamfer width: **1.0 mm**
+- local outer inset beside the mounting boss: **0.45 mm**
 - mounting-hole bevel width: **0.9 mm**
 
-A full 1 mm outer bevel plus full 1 mm screw-hole bevel is geometrically incompatible with the standard 80 mm mounting pitch and Ø4.7 mm bore because those bevels overlap.
+A full 1 mm outer bevel plus full 1 mm screw-hole bevel is geometrically incompatible with the standard 80 mm mounting pitch and Ø4.7 mm bore because those bevels overlap. The local relief preserves the visible 1 mm perimeter chamfer everywhere it fits instead of weakening the entire frame edge.
 
 ## Printing and qualification
 

@@ -2,8 +2,9 @@
   "settings": {
     "overall_side": 92.0,
     "fan_mount_pitch": 82.5,
-    "outer_face_chamfer_xy": 0.3,
+    "outer_face_chamfer_xy": 1.0,
     "mount_face_chamfer_xy": 0.8,
+    "mount_edge_face_ligament_min": 1.3,
     "total_depth": 6.0,
     "bevel_height": 1.0,
     "airflow_face_chamfer_xy": 1.0,
@@ -26,12 +27,14 @@
     "hex_apertures": 19,
     "mount_holes": 4,
     "midplane_open_fraction_full_square": 0.5590594470624111,
-    "face_open_fraction_full_square": 0.7576770362413539,
+    "face_open_fraction_full_square": 0.7854144748218891,
     "mount_edge_ligament_midplane_mm": 2.4,
     "mount_edge_ligament_face_nominal_mm": 1.3,
+    "outer_face_chamfer_xy_global_mm": 1.0,
+    "mount_boss_local_outer_inset_mm": 0.2999999999999998,
     "nominal_midplane_web_mm": 3.3,
     "nominal_face_web_between_airflow_apertures_mm": 1.2999999999999998,
-    "estimated_PLA_grams_at_1p24": 25.7100020385139,
+    "estimated_PLA_grams_at_1p24": 25.693821491471066,
     "supports_required": "no; print either broad face down",
     "swirl": "105 degrees CCW at 49.943 mm reference radius, +Z view",
     "mount_centres_mm": [
@@ -52,13 +55,13 @@
         41.25
       ]
     ],
-    "note": "Airflow apertures retain 1x1 mm chamfers. Outer/mount bevel XY widths are locally reduced on compact fan standards to preserve material around standard bolt locations."
+    "note": "Airflow apertures and most of the perimeter retain 1x1 mm chamfers. The perimeter chamfer relaxes smoothly only around compact mounting bosses, and the mounting-hole bevel width is reduced where required to preserve at least the target face ligament."
   },
   "validation": {
     "watertight": true,
     "consistent_winding": true,
     "components": 1,
-    "volume_mm3": 20733.87261170476,
+    "volume_mm3": 20720.823783444408,
     "bounds_mm": [
       [
         -46.0,
@@ -71,8 +74,8 @@
         6.0
       ]
     ],
-    "vertices": 10292,
-    "faces": 20672,
+    "vertices": 10884,
+    "faces": 21856,
     "euler_number": -44
   }
 }
