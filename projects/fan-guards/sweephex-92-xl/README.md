@@ -1,6 +1,6 @@
 # SweepHex 92 XL — 6 mm vortex fan guard
 
-Unprinted size variant of the physically tested [SweepHex 140 XL](../sweephex-140-xl/), preserving the same flat large-aperture swept-hex design language and anticlockwise vortex direction.
+Unprinted size variant of the physically printed and installed [SweepHex 140 XL](../sweephex-140-xl/), preserving the same flat large-aperture swept-hex design language and anticlockwise vortex direction.
 
 ## Files
 
